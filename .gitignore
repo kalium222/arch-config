@@ -1,6 +1,9 @@
-# ignore all
-*
+# ignore
+# none
 
 # except
-!.bashrc
-!packages.txt
+#!.bashrc
+#!packages.txt
+#!.config/*
+
+#!.config/hypr/*
