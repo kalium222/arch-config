@@ -4,72 +4,53 @@
     "output": "eDP-1",
     "position": "top", // Waybar position (top|bottom|left|right)
     "height": 30, // Waybar height (to be removed for auto height)
-    // "width": 1280, // Waybar width
+    "width": 1920, // Waybar width
     "spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
         "hyprland/workspaces",
         "hyprland/submap",
-        "sway/scratchpad",
         "custom/media"
     ],
     "modules-center": [
         "hyprland/window"
     ],
     "modules-right": [
-        "mpd",
+        //"mpd",
         "idle_inhibitor",
-        "pulseaudio",
+        // "pulseaudio",
         "network",
         "cpu",
         "memory",
         "temperature",
         "backlight",
-        "keyboard-state",
-        "sway/language",
         "battery",
-        "battery#bat2",
         "clock",
         "tray"
     ],
     // Modules configuration
     "hyprland/workspaces": {
-        //"disable-scroll": true,
-        //"all-outputs": true,
-        //"warp-on-scroll": false,
         "format": "<sub>{icon}</sub>\n{windows}",
-        "format-window-seperator": "\n",
+        "format-icons": {
+            "active": "",
+            "default": ""
+        },
+        "format-window-seperator": "|",
         "window-rewrite-default": "",
         "window-rewrite": {
             "class<firefox>": "",
+            "class<firefox> title<.*github.*>": "",
             "class<kitty>": ""
-            //"2": "",
-            //"3": "",
-            //"4": "",
-            //"5": "",
-            //"urgent": "",
-            //"focused": "",
-            //"default": ""
         }
     },
-    "keyboard-state": {
-        "numlock": true,
-        "capslock": true,
-        "format": "{name} {icon}",
-        "format-icons": {
-            "locked": "",
-            "unlocked": ""
-        }
+    "hyprland/submap": {
+        "format": "{}",
+        "max-length": 8,
+        "tooltip": false
     },
-    "sway/mode": {
-        "format": "<span style=\"italic\">{}</span>"
-    },
-    "sway/scratchpad": {
-        "format": "{icon} {count}",
-        "show-empty": false,
-        "format-icons": ["", ""],
-        "tooltip": true,
-        "tooltip-format": "{app}: {title}"
+    "hyprland/window": {
+        "format": "㉿ {}",
+        "separate-outputs": true
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
@@ -147,9 +128,6 @@
         // "format-good": "", // An empty format will hide the module
         // "format-full": "",
         "format-icons": ["", "", "", "", ""]
-    },
-    "battery#bat2": {
-        "bat": "BAT2"
     },
     "network": {
         // "interface": "wlp2*", // (Optional) To force the use of this interface
