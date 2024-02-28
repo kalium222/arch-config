@@ -26,8 +26,8 @@
         "memory",
         "temperature",
         "backlight",
-        "battery",
-        "tray"
+        "battery"
+        //"tray"
     ],
 
     // Modules configuration
@@ -108,10 +108,10 @@
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}"
     },
-    "tray": {
-        // "icon-size": 21,
-        "spacing": 10
-    },
+    //"tray": {
+        //// "icon-size": 21,
+        //"spacing": 10
+    //},
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
