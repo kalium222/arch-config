@@ -80,6 +80,7 @@ button:hover {
 #temperature,
 #backlight,
 #network,
+#bluetooth,
 #pulseaudio,
 #wireplumber,
 #custom-media,
@@ -157,6 +158,14 @@ label:focus {
 }
 
 #backlight {
+    background-color: #90b1b1;
+}
+
+#bluetooth {
+    background-color: #2980b9;
+}
+
+#bluetooth.off {
     background-color: #90b1b1;
 }
 
