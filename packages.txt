@@ -4,7 +4,6 @@ bdf-unifont
 bluez-utils
 brightnessctl
 clang
-code
 dolphin
 firefox
 gdb
@@ -27,14 +26,17 @@ paru-debug
 pavucontrol
 pkgstats
 polkit-kde-agent
+python-lsp-all
 ranger
 tlp
 tmux
 ttf-font-awesome
 ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
+ufw
 v2raya-bin
 vim-wayland-clipboard-git
+vscodium-bin
 waybar
 wl-clipboard
 wofi
