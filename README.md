@@ -15,3 +15,5 @@ Use hard links in this repo to synchronize the configurations.
 - [ ] suspend/hibernate.
 - [ ] some kernel parameters.
 - [ ] grub theme.
+- [ ] network.
+- [ ] proxy.
