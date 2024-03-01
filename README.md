@@ -14,3 +14,4 @@ Use hard links in this repo to synchronize the configurations.
 - [ ] color in `pacman`.
 - [ ] suspend/hibernate.
 - [ ] some kernel parameters.
+- [ ] grub theme.
