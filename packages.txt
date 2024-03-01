@@ -28,6 +28,7 @@ pkgstats
 polkit-kde-agent
 python-lsp-all
 ranger
+timeshift
 tlp
 tmux
 ttf-font-awesome
