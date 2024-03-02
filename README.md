@@ -9,18 +9,16 @@ Follow the wiki.
     See [AUR](https://wiki.archlinux.org/title/Arch_User_Repository)
     and [AUR helper](https://wiki.archlinux.org/title/AUR_helpers).
     We use paru.
-- [ ] Proxy.
+- [ ] Proxy. Use `v2raya`. TODO: how to set proxy in a global range?
 - [ ] console.
-- [ ] console keymap.
+- [x] Console keymap. See [wiki](https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration).
 - [x] DE.
 - [ ] Display manager.
 - [ ] DE keymap.
 - [x] grub theme.
-- [ ] Synchronization and backup.
+- [x] Synchronization and backup.
 - [x] Bluetooth. Just follow the [wiki](https://wiki.archlinux.org/title/Bluetooth).
 - [ ] input Chinese.
-- [ ] multimedia.
-- [ ] mail server.
 - [ ] webcam.
 - [x] color in `pacman`.
 - [ ] suspend/hibernate.
@@ -34,6 +32,7 @@ Chose [iwd](https://wiki.archlinux.org/title/Iwd).
 For network configuration, see `man iwd.network`.
 
 ### DE
+Use [wayland](https://wiki.archlinux.org/title/Wayland).
 We chose [Hyprland](https://wiki.archlinux.org/title/Hyprland).
 Use [waybar](https://github.com/Alexays/Waybar) as status bar.
 
@@ -47,9 +46,9 @@ First see [wiki of kernel parameter for grub](https://wiki.archlinux.org/title/K
 Then we should be able to do this. 
 
 ### Synchronization and backup
-TODO:
 First we use `timeshift`, but cannot open the GUI.
-Choose to use cli or change to another.
+That's because some relative env wasn't kept when
+we enter `su -` or `sudo`. Launch it in `su`.
 
 ### Suspend/Hibernate
 TODO:
