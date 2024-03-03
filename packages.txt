@@ -4,6 +4,9 @@ bdf-unifont
 bluez-utils
 brightnessctl
 clang
+fcitx5-chinese-addons
+fcitx5-configtool
+fcitx5-gtk
 firefox
 git-lfs
 glmark2
@@ -11,7 +14,6 @@ go
 grub
 hyprland
 hyprpaper
-ibus-libpinyin
 intel-ucode
 iwgtk
 kitty
