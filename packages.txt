@@ -31,9 +31,6 @@ intel-ucode
 iwd
 iwgtk
 kitty
-lightdm
-lightdm-gtk-greeter
-lightdm-gtk-greeter-settings
 linux
 linux-firmware
 mako
@@ -59,9 +56,12 @@ pulseaudio-bluetooth
 python-lsp-all
 python-lsp-server
 python-pip
+qt5-graphicaleffects
+qt5-quickcontrols2
 qt5-wayland
 ranger
 rust
+sddm
 sshfs
 sudo
 texinfo
