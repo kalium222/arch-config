@@ -2,7 +2,7 @@
 
 THIS_DIR="$(pwd)"
 CONFIG_DIR="$HOME/.config"
-DIRS=("hypr" "kitty" "neofetch" "tmux" "tmux-powerline" "waybar" "wofi")
+DIRS=("hypr" "kitty" "neofetch" "tmux" "tmux-powerline" "waybar" "wofi" "mpd")
 
 ln -f .bashrc "$HOME/.bashrc"
 
