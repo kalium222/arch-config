@@ -13,12 +13,12 @@ Follow the wiki.
 - [ ] console.
 - [x] Console keymap. See [wiki](https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration).
 - [x] DE.
-- [ ] Display manager.
+- [x] Display manager.
 - [ ] DE keymap.
 - [x] grub theme.
 - [x] Synchronization and backup.
 - [x] Bluetooth. Just follow the [wiki](https://wiki.archlinux.org/title/Bluetooth).
-- [ ] input Chinese.
+- [x] input Chinese.
 - [ ] webcam.
 - [x] color in `pacman`.
 - [ ] suspend/hibernate.
@@ -26,10 +26,22 @@ Follow the wiki.
 ### Enable color in the output of `pacman`
 `man pacman.conf`. Then uncoment the relative line.
 
-### Network Configuration
+### Network Configuration and Proxy
+This is alway the most fucked.
+
+#### Network
+
 First see [wiki](https://wiki.archlinux.org/title/Network_configuration).
 Chose [iwd](https://wiki.archlinux.org/title/Iwd).
+Remember to set dynamic ip and dns.
 For network configuration, see `man iwd.network`.
+
+#### Proxy
+
+When connecting to subscribe address, we got
+```
+failed to resolve subscription address: Get "https://u.cdncloud.uk/kalium222@outlook.com-11837": dial tcp: lookup u.cdncloud.uk on [::1]:53: read udp [::1]:41407->[::1]:53: read: connection refused
+```
 
 ### DE
 Use [wayland](https://wiki.archlinux.org/title/Wayland).

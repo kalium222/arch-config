@@ -1,7 +1,7 @@
 base
 base-devel
 bash-completion
-bdf-unifont
+blueman
 bluez
 bluez-utils
 brightnessctl
@@ -21,6 +21,7 @@ glmark2
 go
 grub
 gtk3
+gtk4
 gvfs
 gvfs-smb
 gvim
@@ -35,14 +36,13 @@ lightdm-gtk-greeter
 lightdm-gtk-greeter-settings
 linux
 linux-firmware
-lynx
 mako
 man-db
 man-pages
 meson
 neofetch
 ninja
-nomacs-qt6-git
+nomacs
 noto-fonts-cjk
 noto-fonts-emoji
 openssh
@@ -56,13 +56,11 @@ polkit-kde-agent
 pulseaudio
 pulseaudio-alsa
 pulseaudio-bluetooth
-python
 python-lsp-all
 python-lsp-server
 python-pip
-qt6-wayland
+qt5-wayland
 ranger
-rhythmbox
 rust
 sshfs
 sudo
@@ -80,7 +78,6 @@ unzip
 v2ray
 v2raya-bin
 vim-wayland-clipboard-git
-vscodium-bin
 waybar
 wayland
 which
