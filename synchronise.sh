@@ -5,6 +5,7 @@ CONFIG_DIR="$HOME/.config"
 DIRS=("hypr" "kitty" "neofetch" "tmux" "tmux-powerline" "waybar" "wofi")
 
 ln -f .bashrc "$HOME/.bashrc"
+ln -f code-flag.conf "$HOME/code-flag.conf"
 
 for dir in "${DIRS[@]}"; do
     mkdir -p "${CONFIG_DIR}/${dir}"
