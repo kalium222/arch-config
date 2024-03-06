@@ -22,6 +22,7 @@ Follow the wiki.
 - [ ] webcam.
 - [x] color in `pacman`.
 - [ ] suspend/hibernate.
+- [x] Shell.
 
 ### Enable color in the output of `pacman`
 `man pacman.conf`. Then uncoment the relative line.
@@ -66,3 +67,12 @@ we enter `su -` or `sudo`. Launch it in `su`.
 TODO:
 Follow the [wiki](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate).
 We can `suspend` and `hybrid-sleep` now, but still cannot `hibernate`.
+
+### Shell
+
+#### Bash
+Just write in `.bashrc`
+
+#### Zsh
+Check the path of the plugins with `pacman -Fl *package_name*` and source them in `.zshrc`.
+
