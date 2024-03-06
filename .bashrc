@@ -1,3 +1,4 @@
+# This file is copied from kali linux, and it is very cool
 # ~/.bashrc: executed by bash(1) for non-login shells.
 # see /usr/share/doc/bash/examples/startup-files (in the package bash-doc)
 # for examples
@@ -160,6 +161,17 @@ if ! shopt -oq posix; then
     . /etc/bash_completion
   fi
 fi
+
+# prevent ranger from starting multiple times
+ranger_check() {
+    if [ -z "$RANGER_LEVEL" ]
+    then
+        ranger
+    else
+        exit
+    fi
+}
+alias ranger='ranger_check'
 
 # some aliases
 alias py='python3'
