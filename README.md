@@ -41,7 +41,7 @@ For network configuration, see `man iwd.network`.
 
 When connecting to subscribe address, we got
 ```
-failed to resolve subscription address: Get "https://u.cdncloud.uk/kalium222@outlook.com-11837": dial tcp: lookup u.cdncloud.uk on [::1]:53: read udp [::1]:41407->[::1]:53: read: connection refused
+failed to resolve subscription address: Get "xxxxxx": dial tcp: lookup u.cdncloud.uk on [::1]:53: read udp [::1]:41407->[::1]:53: read: connection refused
 ```
 
 ### DE
