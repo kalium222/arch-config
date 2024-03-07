@@ -50,9 +50,14 @@ We chose [Hyprland](https://wiki.archlinux.org/title/Hyprland).
 Use [waybar](https://github.com/Alexays/Waybar) as status bar.
 
 #### Keymap in DE
-TODO:
 First we modified the `/usr/share/X11/xkb/keycodes/evdev`. 
 But this may be bad.
+
+It is very strange that there is no relative configuration for keymapping in wayland.
+Wayland still uses something about xkb, which is complicated and verbose.
+Fortunately, hyprland provide us with some simple variables such as `input:kb_xxx`.
+
+TODO: But both will lead to a strange behaviour of `vim/nvim` plugins in the `vscode`.
 
 ### Grub theme
 First see [wiki of kernel parameter for grub](https://wiki.archlinux.org/title/Kernel_parameters#GRUB).
