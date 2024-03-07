@@ -92,3 +92,7 @@ wofi
 xdg-desktop-portal-hyprland
 yarn
 zip
+zsh
+zsh-autosuggestions
+zsh-completions
+zsh-syntax-highlighting
