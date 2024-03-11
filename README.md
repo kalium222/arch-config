@@ -81,3 +81,15 @@ Just write in `.bashrc`
 #### Zsh
 Check the path of the plugins with `pacman -Fl *package_name*` and source them in `.zshrc`.
 
+## Troubleshooting
+
+### Can't open timeshift-launcher in wofi or terminal
+We run timeshift-laucher in terminal, and it complained that there is not xhost.
+Just install xorg-xhost.
+I wish one of wayland and xorg can completely substitute another one day.
+
+### Can not Hibernate
+TODO:
+
+### Can't share screen
+TODO:
