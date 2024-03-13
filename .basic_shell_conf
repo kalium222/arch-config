@@ -1,5 +1,5 @@
 # Some basic configurations such as
-# prompt, alias, colors, functions and others
+# alias, colors, functions and others
 # should be sourced in whichever .xxshrc file
 
 
@@ -57,6 +57,36 @@ avoid_multiple_ranger() {
     fi
 }
 alias ranger='avoid_multiple_ranger'
+
+# set the proxy
+setproxy() {
+    local proxy_server="127.0.0.1"
+    local socks5_port="20170"
+    local http_port="20171"
+    local http_rule_port="20172"
+    if [ "$1" = "http" ]; then
+        export http_proxy="http://${proxy_server}:${http_port}"
+        export https_proxy="http://${proxy_server}:${http_port}"
+        echo "HTTP proxy is set."
+    elif [ "$1" = "socks5" ]; then
+        export http_proxy="socks5://${proxy_server}:${socks5_port}"
+        export https_proxy="socks5://${proxy_server}:${socks5_port}"
+        echo "SOCKS5 proxy is set."
+    elif [ "$1" = "all" ] || [ "$1" = "on" ]; then
+        export ALL_PROXY="socks5://${proxy_server}:${socks5_port}"
+        echo "ALL_PROXY is set."
+    elif [ "$1" = "off" ]; then
+        unset http_proxy
+        unset https_proxy
+        unset ALL_PROXY
+        echo "Proxy settings are unset."
+    else
+        echo "Usage: set_proxy on|all|http|socks5|off"
+    fi
+    # check the proxy
+    echo "\nnow:"
+    curl cip.cc
+}
 
 # some aliases
 alias py='python3'
