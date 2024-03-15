@@ -92,3 +92,6 @@ setproxy() {
 alias py='python3'
 wechatfiles=~/Documents/WechatFiles
 
+# let ranger behave as we set
+#export RANGER_LOAD_DEFAULT_RC=FALSE
+
