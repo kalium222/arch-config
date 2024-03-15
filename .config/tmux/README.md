@@ -12,4 +12,4 @@ Use [tpm](https://github.com/tmux-plugins/tpm) as the plugins manager.
 Clone this repo to `~/.config/tmux/plugins/tpm`. 
 Then run `./bindings/install_plugins` when tmux is running.
 Uses
-1. `tmux-powerline`. 
+1. [`tmux-powerline`](https://github.com/erikw/tmux-powerline). 
