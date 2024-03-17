@@ -81,6 +81,15 @@ Just write in `.bashrc`
 #### Zsh
 Check the path of the plugins with `pacman -Fl *package_name*` and source them in `.zshrc`.
 
+### Docker
+First install docker engine, docker compose, docker buildx.
+To run docker in rootless mode, install docker-rootless-extras.
+Set a context for rootless daemon.
+For the configuration of the dockerd, see [manual](https://docs.docker.com/config/daemon/).
+
+TODO:
+some application in docker, such as wechat, feishu, ...
+
 ## Troubleshooting
 
 ### Can't open timeshift-launcher in wofi or terminal
