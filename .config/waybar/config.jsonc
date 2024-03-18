@@ -108,7 +108,7 @@
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        "on-click": "blueman-manager"
+        "on-click": "systemsettings kcm_bluetooth"
     },
     //"tray": {
         //// "icon-size": 21,
@@ -162,7 +162,7 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
-        "on-click": "iwgtk"
+        "on-click": "systemsettings kcm_networkmanagement"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
