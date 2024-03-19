@@ -37,12 +37,19 @@ Chose [iwd](https://wiki.archlinux.org/title/Iwd).
 Remember to set dynamic ip and dns.
 For network configuration, see `man iwd.network`.
 
+We give up iwd. Use [NetworkManager](https://wiki.archlinux.org/title/NetworkManager).
+iwd will bring some problem unexpectively. 
+
 #### Proxy
 
-When connecting to subscribe address, we got
+When connecting to subscribe address with iwd, we got
 ```
 failed to resolve subscription address: Get "xxxxxx": dial tcp: lookup u.cdncloud.uk on [::1]:53: read udp [::1]:41407->[::1]:53: read: connection refused
 ```
+Use NetworkManager. V2raya gives some local sockets for proxy. 
+Set proxy in every application settings, or the environment variables,
+or just do it in nm.
+
 
 ### DE
 Use [wayland](https://wiki.archlinux.org/title/Wayland).
@@ -101,4 +108,7 @@ I wish one of wayland and xorg can completely substitute another one day.
 TODO:
 
 ### Can't share screen
+TODO:
+
+### Fingerprint reader
 TODO:

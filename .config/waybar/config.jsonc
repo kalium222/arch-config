@@ -164,7 +164,7 @@
         "format-disconnected": "Disconnected ⚠",
         "format-alt": "{ifname}: {ipaddr}/{cidr}",
         //"on-click": "systemsettings kcm_networkmanagement"
-        "on-click": "iwgtk"
+        "on-click": "nm-connection-editor"
     },
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
