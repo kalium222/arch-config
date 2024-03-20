@@ -110,5 +110,12 @@ TODO:
 ### Can't share screen
 TODO:
 
+### Mic with pipewire
+TODO:
+
 ### Fingerprint reader
 TODO:
+
+### Cannot connect to xbox controller with bluetooth
+TODO:
+
