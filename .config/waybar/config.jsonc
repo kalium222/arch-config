@@ -3,51 +3,74 @@
     "layer": "top",
     "output": "eDP-1",
     "position": "top", // Waybar position (top|bottom|left|right)
-    "height": 30,
-    "width": 1920,
-    "spacing": 4, // Gaps between modules (4px)
+    //"height": 30,
+    //"width": 1920,
+    //"spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "hyprland/workspaces",
-        "hyprland/submap"
+        "wireplumber",
+        "bluetooth",
+        "network",
+        "backlight",
+        "hyprlan/submap",
+        "privacy"
         // "custom/media"
     ],
     "modules-center": [
-        "hyprland/window",
+        "custom/launcher",
+        "hyprland/workspaces",
+        //"hyprland/window",
         "clock"
     ],
     "modules-right": [
         //"mpd",
         //"idle_inhibitor",
-        "pulseaudio",
-        "bluetooth",
-        "network",
+        //"pulseaudio",
         "cpu",
         "memory",
         "temperature",
-        "backlight",
         //"keyboard-state",
-        "battery"
+        "battery",
         //"tray"
+        "custom/power"
     ],
 
     // Modules configuration
     "hyprland/workspaces": {
-        "format": "<sub>{icon}</sub>\n{windows}",
+        "format": "{icon}: {windows}",
+        //"persistent-workspaces": {
+            //"eDP-1": [1, 2, 3, 4]
+        //},
         "format-icons": {
-            "active": "",
-            "default": ""
+            //"1": " ",࿃
+			//"2": " ",࿇
+            //"3": " ",࿊
+			//"2": " ",ௐ
+			//"4": " ", ߷
+			//"5": " ",֍ ۞۞
+            // ᐛ † ⏲ ⏵ ☯ ♪ ⛥  ⨕ 𐍄 𐦝 🖂 🗀  🖫  🗎
+		    "active": " ",
+		    "default": " "
         },
         "format-window-seperator": "|",
-        "window-rewrite-default": "",
+        "window-rewrite-default": "ᐛ ",
         "window-rewrite": {
-            "class<firefox>": "",
-            "class<firefox> title<.*github.*>": "",
-            "class<kitty>": ""
+            "class<firefox>": " ",
+            "class<firefox> title<.*github.*>": " ",
+            "class<kitty>": " ",
+            "foot": " ",
+            "code": "󰨞 ",
+            "sayonara": "♪",
+            "nemo": "🗀 ",
+            "blueman-manager": "",
+            "nm-connection-editor": " ",
+            "libreoffice": "🗎 ",
+            "thunderbird": "🖂 ",
+            "timeshift-launcher": "𐍄"
         }
     },
     "hyprland/submap": {
-        "format": "{}",
+        "format": "✌️ {}",
         "max-length": 8,
         "tooltip": false
     },
@@ -63,9 +86,19 @@
     //     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
     //     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
     // },
-    "hyprland/window": {
-        "format": "㉿ {}",
-        "separate-outputs": true
+    //"hyprland/window": {
+        //"format": "  {}",
+        //"rewrite": {
+            //"(.*) — Mozilla Firefox": "🌎 $1",
+            //"(.*) - fish": "> [$1]"
+        //},
+        //"separate-outputs": true
+    //},
+    "wireplumber": {
+        "format": "{volume}% {icon}",
+        "format-muted": "",
+        "on-click": "helvum",
+        "format-icons": ["", "", ""]
     },
      //"mpd": {
          //"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
@@ -118,13 +151,16 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format-alt": "{:%Y-%m-%d}"
+        "format": "{:%H:%M   %d %m %Y}"
+        //"format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
+        "interval": 15,
         "format": "{usage}% ",
-        "tooltip": false
+        "tooltip": true
     },
     "memory": {
+        "interval": 15,
         "format": "{}% "
     },
     "temperature": {
@@ -166,8 +202,17 @@
         //"on-click": "systemsettings kcm_networkmanagement"
         "on-click": "nm-connection-editor"
     },
+    "custom/launcher":{
+        "format": " ",
+        "on-click": "rofi -show drun",
+        "on-click-right": "killall rofi"
+    },
+    "custom/power":{
+        "format": "⏻ ",
+        "on-click": "bash ~/.config/rofi/leave/leave.sh"
+    },
     "pulseaudio": {
-        // "scroll-step": 1, // %, can be a float
+        "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
         "format-bluetooth": "{volume}% {icon} {format_source}",
         "format-bluetooth-muted": " {icon} {format_source}",
@@ -184,15 +229,37 @@
             "default": ["", "", ""]
         },
         "on-click": "pavucontrol"
-    }
+    },
     //"keyboard-state": {
         //"numlock": true,
         //"capslock": true,
         //"format": "{name} {icon}",
         //"format-icons": {
             //"locked": "",
-            //"unlocked": ""
+            //"unlocked": " "
         //}
     //}
+    "privacy": {
+        "icon-spacing": 4,
+        "icon-size": 18,
+        "transition-duration": 250,
+        "modules": [
+            {
+                "type": "screenshare",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-out",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            },
+            {
+                "type": "audio-in",
+                "tooltip": true,
+                "tooltip-icon-size": 24
+            }
+        ]
+    }
 }
 
