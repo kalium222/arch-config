@@ -8,7 +8,8 @@
     //"spacing": 4, // Gaps between modules (4px)
     // Choose the order of the modules
     "modules-left": [
-        "wireplumber",
+        "pulseaudio",
+        //"wireplumber",
         "bluetooth",
         "network",
         "backlight",
@@ -16,16 +17,15 @@
         // "custom/media"
     ],
     "modules-center": [
+        "privacy",
         "custom/launcher",
         "hyprland/workspaces",
         //"hyprland/window",
-        "clock",
-        "privacy"
+        "clock"
     ],
     "modules-right": [
         //"mpd",
         //"idle_inhibitor",
-        //"pulseaudio",
         "cpu",
         "memory",
         "temperature",
@@ -94,12 +94,13 @@
         //},
         //"separate-outputs": true
     //},
-    "wireplumber": {
-        "format": "{volume}% {icon}",
-        "format-muted": "",
-        "on-click": "helvum",
-        "format-icons": ["", "", ""]
-    },
+    //"wireplumber": {
+        //"format": "{volume}% {icon}",
+        //"format-muted": "",
+        //"on-click":"pavucontrol",
+        //"on-click-right": "helvum",
+        //"format-icons": ["", "", ""]
+    //},
      //"mpd": {
          //"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
          //"format-disconnected": "Disconnected ",
@@ -134,14 +135,13 @@
         //}
     //},
     "bluetooth": {
-        // "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
+        "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
         "format": " {status}",
         "format-disabled": "", // an empty format will hide the module
         "format-connected": " {num_connections} connected",
         "tooltip-format": "{controller_alias}\t{controller_address}",
         "tooltip-format-connected": "{controller_alias}\t{controller_address}\n\n{device_enumerate}",
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
-        //"on-click": "systemsettings kcm_bluetooth"
         "on-click": "blueman-manager"
     },
     //"tray": {
@@ -152,7 +152,6 @@
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%H:%M   %d %m %Y}"
-        //"format-alt": "{:%Y-%m-%d}"
     },
     "cpu": {
         "interval": 15,
@@ -199,7 +198,6 @@
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}",
-        //"on-click": "systemsettings kcm_networkmanagement"
         "exec-on-event": false,
         "on-click-right": "~/.config/wofi-wifi-menu/wofi-wifi-menu.sh",
         "on-click": "nm-connection-editor"
@@ -211,7 +209,7 @@
     },
     "custom/power":{
         "format": "⏻ ",
-        "on-click": "bash ~/.config/rofi/leave/leave.sh"
+        "on-click": "bash ~/.config/wofi/leave.sh"
     },
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
@@ -230,7 +228,8 @@
             "car": "",
             "default": ["", "", ""]
         },
-        "on-click": "pavucontrol"
+        "on-click":"pavucontrol",
+        "on-click-right": "helvum"
     },
     //"keyboard-state": {
         //"numlock": true,

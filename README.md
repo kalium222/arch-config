@@ -104,13 +104,15 @@ We run timeshift-laucher in terminal, and it complained that there is not xhost.
 Just install xorg-xhost.
 I wish one of wayland and xorg can completely substitute another one day.
 
+### Mic with pipewire
+TODO:
+Can't pipewire handle mics? Just install pipewire-pulse.
+Idk.
+
 ### Can not Hibernate
 TODO:
 
 ### Can't share screen
-TODO:
-
-### Mic with pipewire
 TODO:
 
 ### Fingerprint reader

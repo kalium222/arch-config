@@ -78,6 +78,8 @@ button:hover {
 #idle_inhibitor,
 #scratchpad,
 #submap,
+#privacy,
+#privacy-item,
 #mpd {
     padding: 0px 10px;
     margin: 3px 3px;
@@ -130,15 +132,12 @@ label:focus {
 #cpu {
     background-color: rgb(34, 117, 48);
 }
-
 #memory {
     background-color: #9b59b6;
 }
-
 #disk {
     background-color: #964B00;
 }
-
 #backlight {
     background-color: #90b1b1;
 }
@@ -157,14 +156,14 @@ label:focus {
     background-color: #90b1b1;
 }
 
-/*#pulseaudio {*/
-    /*background-color: #f1c40f;*/
-    /*color: #000000;*/
-/*}*/
-/*#pulseaudio.muted {*/
-    /*background-color: #90b1b1;*/
-    /*color: #2a5c45;*/
-/*}*/
+#pulseaudio {
+    background-color: #f1c40f;
+    color: #000000;
+}
+#pulseaudio.muted {
+    background-color: #90b1b1;
+    color: #2a5c45;
+}
 
 #wireplumber {
     background-color: #f1c40f;
@@ -267,13 +266,6 @@ label:focus {
 	/*background-color: transparent;*/
 /*}*/
 
-#privacy {
-    padding: 0; 
-}
-#privacy-item {
-    padding: 0 5px;
-    color: white;
-}
 #privacy-item.screenshare {
     background-color: #cf5700;
 }

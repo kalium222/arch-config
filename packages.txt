@@ -35,10 +35,8 @@ gvfs
 gvfs-smb
 gvim
 helvum
-hyprcursor-git
-hyprland-git
-hyprlang-git
-hyprpaper-git
+hyprland
+hyprpaper
 intel-ucode
 kitty
 libreoffice-still
@@ -64,8 +62,10 @@ openssh
 os-prober
 paru
 paru-debug
+pavucontrol
 pipewire
 pipewire-alsa
+pipewire-pulse
 pkgstats
 polkit
 polkit-kde-agent
@@ -75,7 +75,6 @@ qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
 ranger
-rofi
 rust
 sayonara-player
 scdoc
@@ -132,7 +131,8 @@ wireplumber
 wl-clipboard
 wofi
 xarchiver
-xdg-desktop-portal-hyprland-git
+xdg-desktop-portal-gtk
+xdg-desktop-portal-hyprland
 xorg-xhost
 yarn
 zip
