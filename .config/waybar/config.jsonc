@@ -12,15 +12,15 @@
         "bluetooth",
         "network",
         "backlight",
-        "hyprlan/submap",
-        "privacy"
+        "hyprland/submap"
         // "custom/media"
     ],
     "modules-center": [
         "custom/launcher",
         "hyprland/workspaces",
         //"hyprland/window",
-        "clock"
+        "clock",
+        "privacy"
     ],
     "modules-right": [
         //"mpd",
@@ -48,7 +48,7 @@
 			//"2": " ",ௐ
 			//"4": " ", ߷
 			//"5": " ",֍ ۞۞
-            // ᐛ † ⏲ ⏵ ☯ ♪ ⛥  ⨕ 𐍄 𐦝 🖂 🗀  🖫  🗎
+            // ᐛ † ⏲ ⏵ ☯ ♪ ⛥  ⨕ 𐍄 𐦝 🖂 🗀  🖫  🗎 🖿
 		    "active": " ",
 		    "default": " "
         },
@@ -60,13 +60,13 @@
             "class<kitty>": " ",
             "foot": " ",
             "code": "󰨞 ",
-            "sayonara": "♪",
-            "nemo": "🗀 ",
+            "sayonara": "♪ ",
+            "nemo": "🖿 ",
             "blueman-manager": "",
             "nm-connection-editor": " ",
             "libreoffice": "🗎 ",
             "thunderbird": "🖂 ",
-            "timeshift-launcher": "𐍄"
+            "timeshift-gtk": "𐍄"
         }
     },
     "hyprland/submap": {
@@ -198,8 +198,10 @@
         "tooltip-format": "{ifname} via {gwaddr} ",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        "format-alt": "{ifname}: {ipaddr}/{cidr}",
+        //"format-alt": "{ifname}: {ipaddr}/{cidr}",
         //"on-click": "systemsettings kcm_networkmanagement"
+        "exec-on-event": false,
+        "on-click-right": "~/.config/wofi-wifi-menu/wofi-wifi-menu.sh",
         "on-click": "nm-connection-editor"
     },
     "custom/launcher":{
