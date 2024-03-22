@@ -35,7 +35,9 @@ gvfs
 gvfs-smb
 gvim
 helvum
+hypridle
 hyprland
+hyprlock
 hyprpaper
 intel-ucode
 kitty
