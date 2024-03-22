@@ -4,7 +4,8 @@ THIS_DIR="$(pwd)"
 CONFIG_DIR="$HOME/.config"
 FILES=(".bashrc" ".zshrc" ".basic_shell_conf" "code-flags.conf")
 DIRS=("hypr" "kitty" "neofetch" "tmux" "tmux-powerline"\
-    "waybar" "wofi" "wofi-wifi-menu" "ranger" "docker" "mako")
+    "waybar" "wofi" "wofi-wifi-menu" "wofi-exit-menu"\
+    "ranger" "docker" "mako")
 
 for file in "${FILES[@]}"; do
     ln -f ${file} "${HOME}/${file}"

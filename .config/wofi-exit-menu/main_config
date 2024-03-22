@@ -1,0 +1,11 @@
+# hide_search=true
+prompt=option
+cache_file=/dev/null
+sort_order=default
+layer=top
+width=5%
+x=-10
+lines=6
+dynamic_lines=true
+location=top_right
+monitor=eDP-1

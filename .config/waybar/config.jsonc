@@ -58,9 +58,9 @@
             "class<firefox>": " ",
             "class<firefox> title<.*github.*>": " ",
             "class<kitty>": " ",
-            "foot": " ",
+            //"foot": " ",
             "code": "󰨞 ",
-            "sayonara": "♪ ",
+            "sayonara": "🎜 ",
             "nemo": "🖿 ",
             "blueman-manager": "",
             "nm-connection-editor": " ",
@@ -209,7 +209,7 @@
     },
     "custom/power":{
         "format": "⏻ ",
-        "on-click": "bash ~/.config/wofi/leave.sh"
+        "on-click": "bash ~/.config/wofi-exit-menu/exit.sh"
     },
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
