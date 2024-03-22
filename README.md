@@ -5,21 +5,21 @@ Use hard links in this repo to synchronize the configurations.
 ## Things to do
 Follow the wiki.
 - [x] Network configuraion.
+- [x] Proxy. Use `v2raya`. 
 - [x] AUR helper.
     See [AUR](https://wiki.archlinux.org/title/Arch_User_Repository)
     and [AUR helper](https://wiki.archlinux.org/title/AUR_helpers).
     We use paru.
-- [ ] Proxy. Use `v2raya`. TODO: how to set proxy in a global range?
 - [ ] console.
 - [x] Console keymap. See [wiki](https://wiki.archlinux.org/title/Linux_console/Keyboard_configuration).
 - [x] DE.
 - [x] Display manager.
-- [ ] DE keymap.
+- [x] DE keymap.
 - [x] grub theme.
 - [x] Synchronization and backup.
 - [x] Bluetooth. Just follow the [wiki](https://wiki.archlinux.org/title/Bluetooth).
 - [x] input Chinese.
-- [ ] webcam.
+- [ ] multimedia. TODO: cannot share screen.
 - [x] color in `pacman`.
 - [ ] suspend/hibernate.
 - [x] Shell.
@@ -97,6 +97,9 @@ For the configuration of the dockerd, see [manual](https://docs.docker.com/confi
 TODO:
 some application in docker, such as wechat, feishu, ...
 
+TODO:
+cannot open wechat in docker.
+
 ## Troubleshooting
 
 ### Can't open timeshift-launcher in wofi or terminal
@@ -105,15 +108,18 @@ Just install xorg-xhost.
 I wish one of wayland and xorg can completely substitute another one day.
 
 ### Mic with pipewire
-TODO:
 Can't pipewire handle mics? Just install pipewire-pulse.
 Idk.
+Using -git package can avoid this.
 
 ### Can not Hibernate
 TODO:
 
 ### Can't share screen
 TODO:
+
+### Virtual camera in obs
+TODO: when building the kernel module, got error.
 
 ### Fingerprint reader
 TODO:

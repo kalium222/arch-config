@@ -60,6 +60,7 @@ nomacs
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+obs-studio
 openssh
 os-prober
 paru
@@ -123,6 +124,7 @@ ufw
 unzip
 v2ray
 v2raya-bin
+v4l2loopback-dkms-git
 vim-wayland-clipboard-git
 visual-studio-code-bin
 waybar
