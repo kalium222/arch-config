@@ -4,7 +4,7 @@ THIS_DIR="$(pwd)"
 CONFIG_DIR="$HOME/.config"
 FILES=(".bashrc" ".zshrc" ".basic_shell_conf" "code-flags.conf")
 DIRS=("hypr" "kitty" "neofetch" "tmux" "tmux-powerline"\
-    "waybar" "wofi" "wofi-wifi-menu" "wofi-exit-menu"\
+    "waybar" "wofi" "wofi-menus" "wofi-menus"\
     "ranger" "docker" "mako")
 
 for file in "${FILES[@]}"; do

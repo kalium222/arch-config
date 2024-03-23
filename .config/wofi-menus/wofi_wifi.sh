@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-conf=~/.config/wofi-wifi-menu
+conf=~/.config/wofi-menus
 
 # this prints a beautifully formatted list. bash was a mistake
 nmcli -t d wifi rescan
@@ -15,7 +15,7 @@ elif [[ "$CONSTATE" =~ "disabled" ]]; then
 fi
 
 # display menu; store user choice
-CHENTRY=$(echo -e "$TOGGLE\n$LIST" | uniq -u | wofi -d -c $conf/main_config -s $conf/style.css)
+CHENTRY=$(echo -e "$TOGGLE\n$LIST" | uniq -u | wofi -d -c $conf/wifi_config -s $conf/style.css)
 # store selected SSID
 CHSSID=$(echo "$CHENTRY" | sed  's/\s\{2,\}/\|/g' | awk -F "|" '{print $1}')
 
