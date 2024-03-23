@@ -11,7 +11,7 @@ choice=$(printf "\
 ⏻    shutdown\n\
 " \
     | wofi -d  \
-    -c $conf/quit_config \
+    -c $conf/tweaks_config \
     -s $conf/style.css)
 if [[ $choice == "🞋    lock" ]];then
     hyprlock

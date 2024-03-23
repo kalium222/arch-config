@@ -199,17 +199,16 @@
         "format-disconnected": "Disconnected ⚠",
         //"format-alt": "{ifname}: {ipaddr}/{cidr}",
         "exec-on-event": false,
-        "on-click-right": "~/.config/wofi-wifi-menu/wofi-wifi-menu.sh",
+        "on-click-right": "~/.config/wofi-menus/wofi_wifi.sh",
         "on-click": "nm-connection-editor"
     },
     "custom/launcher":{
         "format": " ",
-        "on-click": "rofi -show drun",
-        "on-click-right": "killall rofi"
+        "on-click": "~/.config/wofi-menus/wofi_tweaks.sh"
     },
     "custom/power":{
         "format": "⏻ ",
-        "on-click": "bash ~/.config/wofi-exit-menu/exit.sh"
+        "on-click": "bash ~/.config/wofi-menus/wofi_quit.sh"
     },
     "pulseaudio": {
         "scroll-step": 1, // %, can be a float
