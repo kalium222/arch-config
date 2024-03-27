@@ -14,12 +14,14 @@ docker
 docker-buildx
 docker-compose
 docker-rootless-extras
+dotnet-sdk
 efibootmgr
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-qt
+feishu-bin
 firefox
 gdb
 git
@@ -51,6 +53,7 @@ man-db
 man-pages
 meson
 minecraft-launcher
+mono
 nemo
 neofetch
 network-manager-applet
@@ -121,6 +124,7 @@ ttf-font-awesome
 ttf-iosevka-nerd
 ttf-jetbrains-mono-nerd
 ufw
+unityhub
 unzip
 v2ray
 v2raya-bin
