@@ -134,6 +134,7 @@ visual-studio-code-bin
 waybar
 wayland
 wechat-beta-bwrap
+wget
 which
 wireplumber
 wl-clipboard
