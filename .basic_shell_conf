@@ -89,9 +89,12 @@ setproxy() {
 }
 
 # some aliases
+alias v='nvim'
+alias vi='nvim'
 alias py='python3'
 wechatfiles=~/Documents/WechatFiles
 
 # let ranger behave as we set
 #export RANGER_LOAD_DEFAULT_RC=FALSE
+export PATH="$PATH:$HOME/.cargo/bin"
 

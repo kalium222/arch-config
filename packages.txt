@@ -1,3 +1,4 @@
+alacritty
 base
 base-devel
 bash-completion
@@ -9,6 +10,7 @@ btop
 clang
 cmake
 d-spy
+dbus-python
 dkms
 docker
 docker-buildx
@@ -37,6 +39,7 @@ gvfs
 gvfs-smb
 gvim
 helvum
+highlight
 hypridle
 hyprland
 hyprlock
@@ -56,6 +59,7 @@ minecraft-launcher
 mono
 nemo
 neofetch
+neovim
 network-manager-applet
 networkmanager
 ninja
@@ -76,12 +80,14 @@ pkgstats
 polkit
 polkit-kde-agent
 pyright
+python-pillow
 python-pip
+python-pynvim
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
 ranger
-rust
+rustup
 sayonara-player
 scdoc
 sddm
@@ -129,7 +135,6 @@ unzip
 v2ray
 v2raya-bin
 v4l2loopback-dkms-git
-vim-wayland-clipboard-git
 visual-studio-code-bin
 waybar
 wayland
