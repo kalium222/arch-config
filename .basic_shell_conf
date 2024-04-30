@@ -95,6 +95,10 @@ alias f='neofetch'
 alias py='python3'
 wechatfiles=~/Documents/wechatfiles
 
+# env
+export EDITOR='nvim'
+export VISUAL='nvim'
+
 # let ranger behave as we set
 #export RANGER_LOAD_DEFAULT_RC=FALSE
 export PATH="$PATH:$HOME/.cargo/bin"
