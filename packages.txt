@@ -10,7 +10,6 @@ btop
 clang
 cmake
 d-spy
-dbus-python
 dkms
 docker
 docker-buildx
@@ -37,7 +36,6 @@ gtk3
 gtk4
 gvfs
 gvfs-smb
-gvim
 helvum
 highlight
 hypridle
@@ -51,6 +49,7 @@ linux
 linux-firmware
 linux-headers
 lua
+lua-language-server
 mako
 man-db
 man-pages
@@ -87,6 +86,7 @@ qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
 ranger
+ripgrep
 rustup
 sayonara-player
 scdoc
@@ -126,9 +126,12 @@ timeshift
 tlp
 tmux
 traceroute
+tree-sitter-cli
+ttf-3270-nerd
 ttf-font-awesome
-ttf-iosevka-nerd
+ttf-hack-nerd
 ttf-jetbrains-mono-nerd
+ttf-monofur-nerd
 ufw
 unityhub
 unzip

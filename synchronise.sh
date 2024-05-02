@@ -3,7 +3,7 @@
 THIS_DIR="$(pwd)"
 CONFIG_DIR="$HOME/.config"
 FILES=(".bashrc" ".zshrc" ".basic_shell_conf" "code-flags.conf")
-DIRS=("hypr" "kitty" "neofetch" "tmux" "tmux-powerline"\
+DIRS=("hypr" "alacritty" "kitty" "neofetch" "tmux" "tmux-powerline"\
     "waybar" "wofi" "wofi-menus" "wofi-menus"\
     "ranger" "docker" "mako")
 

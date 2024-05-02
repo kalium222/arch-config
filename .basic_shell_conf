@@ -56,7 +56,7 @@ avoid_multiple_ranger() {
         exit
     fi
 }
-alias ranger='avoid_multiple_ranger'
+alias r='avoid_multiple_ranger'
 
 # set the proxy
 setproxy() {
@@ -91,8 +91,9 @@ setproxy() {
 # some aliases
 alias v='nvim'
 alias vi='nvim'
+alias f='neofetch'
 alias py='python3'
-wechatfiles=~/Documents/WechatFiles
+wechatfiles=~/Documents/wechatfiles
 
 # let ranger behave as we set
 #export RANGER_LOAD_DEFAULT_RC=FALSE
