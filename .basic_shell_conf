@@ -91,7 +91,8 @@ setproxy() {
 # some aliases
 alias v='nvim'
 alias vi='nvim'
-alias f='neofetch'
+alias vim='nvim'
+alias f='fastfetch'
 alias py='python3'
 wechatfiles=~/Documents/wechatfiles
 

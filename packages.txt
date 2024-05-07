@@ -17,6 +17,7 @@ docker-compose
 docker-rootless-extras
 dotnet-sdk
 efibootmgr
+fastfetch
 fcitx5
 fcitx5-chinese-addons
 fcitx5-configtool
@@ -57,7 +58,6 @@ meson
 minecraft-launcher
 mono
 nemo
-neofetch
 neovim
 network-manager-applet
 networkmanager
@@ -132,6 +132,7 @@ ttf-font-awesome
 ttf-hack-nerd
 ttf-jetbrains-mono-nerd
 ttf-monofur-nerd
+ttf-nerd-fonts-symbols-mono
 ufw
 unityhub
 unzip
@@ -139,6 +140,7 @@ v2ray
 v2raya-bin
 v4l2loopback-dkms-git
 visual-studio-code-bin
+warp-terminal
 waybar
 wayland
 wechat-beta-bwrap

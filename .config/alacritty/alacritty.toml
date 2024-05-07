@@ -1,6 +1,6 @@
 [font]
 size = 14.0
-normal = {family = "MonofurNerdFont"}
+# normal = {family = "JetBrainsMonoNF"}
 
 [colors.primary]
 foreground = "#D9E0EE"
