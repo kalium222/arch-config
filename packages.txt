@@ -82,13 +82,11 @@ pkgstats
 polkit
 polkit-kde-agent
 pyright
-python-pillow
 python-pip
 python-pynvim
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
-ranger
 ripgrep
 rustup
 sayonara-player
