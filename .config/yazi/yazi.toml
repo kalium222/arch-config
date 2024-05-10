@@ -1,0 +1,5 @@
+[manager]
+linemode = "size"
+show_symlink = true
+scrolloff = 10
+
