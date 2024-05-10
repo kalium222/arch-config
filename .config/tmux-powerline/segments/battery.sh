@@ -93,6 +93,8 @@ __battery_osx() {
 	__battery_linux() {
 		case "$SHELL_PLATFORM" in
 			"linux")
+                ACPATH=/sys/class/power_supply/AC
+                AC_ONLINE=$ACPATH/online
 				BATPATH=/sys/class/power_supply/BAT0
 				if [ ! -d $BATPATH ]; then
 					BATPATH=/sys/class/power_supply/BAT1
@@ -149,12 +151,26 @@ __battery_osx() {
 	}
 
 	__linux_get_bat() {
+        online=$(cat $AC_ONLINE)
 		bf=$(cat $BAT_FULL)
 		bn=$(cat $BAT_NOW)
-		if [ $bn -gt $bf ]; then
+		if [ $bn -ge $bf ]; then
 			bn=$bf
-		fi
-		echo "$BATTERY_MED $(( 100 * $bn / $bf ))"
+        fi
+        SHOW_SYMBOL=""
+        if [ $online = 1 ]; then
+            SHOW_SYMBOL=$BATTERY_CHARGE
+        else
+            # TODO:
+            if python -c "exit(0 if $bn/$bf < 0.5 else 1)"; then
+                SHOW_SYMBOL=$BATTERY_EMPTY
+            elif python -c "exit(0 if $bn/$bf < 0.9 else 1)"; then
+                SHOW_SYMBOL=$BATTERY_MED
+            else
+                SHOW_SYMBOL=$BATTERY_FULL
+            fi
+        fi
+		    echo "$SHOW_SYMBOL $(( 100 * $bn / $bf ))"
 	}
 
 	__freebsd_get_bat() {
