@@ -79,9 +79,9 @@ fi
 
 if [ -z $TMUX_POWERLINE_LEFT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_LEFT_STATUS_SEGMENTS=(
-        "hostname 10 0" \
+        "icon 4 234" \
         "tmux_session_info 148 234" \
-        #"lan_ip 24 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
+        # "lan_ip 24 255 ${TMUX_POWERLINE_SEPARATOR_RIGHT_THIN}" \
         "wan_ip 24 255" \
 		"vcs_branch 29 88" \
         "vcs_compare 60 255" \
@@ -96,6 +96,8 @@ if [ -z $TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
 		"pwd 89 211" \
         "battery 240 120" \
+		"weather 3 234" \
 		"time 235 136" \
 	)
 fi
+
