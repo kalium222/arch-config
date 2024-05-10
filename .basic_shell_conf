@@ -56,7 +56,18 @@ avoid_multiple_ranger() {
         exit
     fi
 }
-alias r='avoid_multiple_ranger'
+alias ranger='avoid_multiple_ranger'
+
+# yazi wrapper
+function yazi_wrapper() {
+	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+	yazi "$@" --cwd-file="$tmp"
+	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+		cd -- "$cwd"
+	fi
+	rm -f -- "$tmp"
+}
+alias r='yazi_wrapper'
 
 # set the proxy
 setproxy() {
