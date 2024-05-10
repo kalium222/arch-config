@@ -141,7 +141,7 @@ __get_yrno_condition_symbol() {
 	local condition=$1
 	case "$condition" in
 		"clearsky_day")
-			echo "☀️ "
+			echo "☀"
 			;;
 		"clearsky_night")
 			echo "🌙"

@@ -1,9 +1,11 @@
 #!/bin/bash
 
+# synchronize .config
+#
 # Define the source and target directories
 source_dir="$(pwd)/.config"
 target_dir="$HOME/.config"
-
+#
 # Function to create symbolic links recursively
 sync_config() {
     local source="$1"
@@ -23,7 +25,13 @@ sync_config() {
         fi
     done
 }
-
+#
 # Call function to synchronize directories
 sync_config "$source_dir" "$target_dir"
+
+# synchronize the other things
+files=(".bashrc" ".zshrc" ".basic_shell_conf")
+for file in "${files[@]}"; do
+    ln -sf "$(pwd)/$file" "$HOME/$file"
+done
 
