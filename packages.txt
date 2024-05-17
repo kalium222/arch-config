@@ -48,6 +48,7 @@ hyprlock
 hyprpaper
 intel-ucode
 kitty
+lib32-nvidia-utils
 libreoffice-still
 linux
 linux-firmware
@@ -65,10 +66,14 @@ neovim
 network-manager-applet
 networkmanager
 ninja
+nmap
 nomacs
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+nvidia
+nvidia-utils
+nvtop
 obs-studio
 openssh
 os-prober
@@ -134,6 +139,7 @@ ttf-hack-nerd
 ttf-jetbrains-mono-nerd
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
+ttf-wps-fonts
 ufw
 unarchiver
 unityhub
@@ -151,6 +157,8 @@ which
 wireplumber
 wl-clipboard
 wofi
+wps-office-cn
+wps-office-mui-zh-cn
 xarchiver
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland

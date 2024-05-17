@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top",
-    "output": "eDP-1",
+    // "output": "eDP-1",
     "position": "top", // Waybar position (top|bottom|left|right)
     //"height": 30,
     //"width": 1920,
@@ -48,7 +48,7 @@
 			//"2": " ",ௐ
 			//"4": " ", ߷
 			//"5": " ",  ֍   ۞۞
-            // ᐛ †  ⏲  ⏵ ☯ ♪ ⛥  ⨕ 𐍄 𐦝 🖂 🗀  🖫  🗎 🖿    
+            // ᐛ †  ⏲  ⏵ ☯ ♪ ⛥  ⨕ 𐍄 𐦝 🖂 🗀  🖫  🗎 🖿    
 		    "active": " ",
 		    "default": " "
         },
@@ -58,10 +58,12 @@
             "class<firefox>": " ",
             "class<firefox> title<.*github.*>": " ",
             "class<kitty>": " ",
-            //"foot": " ",
             "code": "󰨞 ",
             "sayonara": "♪ ",
             "nemo": "🖿 ",
+            "Feishu": "",
+            "微信": "",
+            "steam": "",
             "blueman-manager": "",
             "nm-connection-editor": " ",
             "libreoffice": "🗎 ",
@@ -151,7 +153,7 @@
     "clock": {
         // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
-        "format": "{:%H:%M   %m/%d}"
+        "format": "{:%H:%M  %a,  %m/%d}"
     },
     "cpu": {
         "interval": 15,

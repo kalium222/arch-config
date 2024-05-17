@@ -14,14 +14,13 @@ choice=$(printf "\
     -c $conf/tweaks_config \
     -s $conf/style.css)
 if [[ $choice == "🞋    lock" ]];then
-    hyprlock
+    notify-send "TODO!"
 elif [[ $choice == "֍    logout" ]];then
-    #pkill -KILL -u "$USER"
     notify-send "TODO!"
 elif [[ $choice == "⚙    suspend" ]];then
-    systemctl suspend
+    notify-send "TODO!"
 elif [[ $choice == "⚛    reboot" ]];then
-    systemctl reboot
+    notify-send "TODO!"
 elif [[ $choice == "⏻    shutdown" ]];then
-    systemctl poweroff
+    notify-send "TODO!"
 fi
