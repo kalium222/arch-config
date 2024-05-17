@@ -77,6 +77,7 @@ nvtop
 obs-studio
 openssh
 os-prober
+otf-geist-mono-nerd
 paru
 paru-debug
 pavucontrol
@@ -133,9 +134,7 @@ tlp
 tmux
 traceroute
 tree-sitter-cli
-ttf-3270-nerd
 ttf-font-awesome
-ttf-hack-nerd
 ttf-jetbrains-mono-nerd
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
