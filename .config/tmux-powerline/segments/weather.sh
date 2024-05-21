@@ -153,10 +153,10 @@ __get_yrno_condition_symbol() {
 			echo "🌜"
 			;;
 		"fog")
-			echo "🌫 "
+			echo "🌫"
 			;;
 		"cloudy")
-			echo "☁️ "
+			echo "☁"
 			;;
 		"rain" | "lightrain" | "heavyrain" | "sleet" | "lightsleet" | "heavysleet")
 			echo "🌧 "

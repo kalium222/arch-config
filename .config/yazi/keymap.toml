@@ -19,3 +19,9 @@ on = [ "b", "D" ]
 run = "plugin bookmarks --args=delete_all"
 desc = "Delete all bookmarks"
 
+[manager]
+append_keymap = [
+    { on = [ "g", "D" ], run = 'cd ~/Documents/', desc = "Go to the documents directory" },
+    { on = [ "g", "C" ], run = 'cd ~/Documents/course', desc = "Go to the course directory" },
+]
+
