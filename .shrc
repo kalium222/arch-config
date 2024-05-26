@@ -1,3 +1,5 @@
+# !/bin/bash
+
 # Some basic configurations such as
 # alias, colors, functions and others
 # should be sourced in whichever .xxshrc file
@@ -127,7 +129,6 @@ setproxy() {
 # some aliases
 alias v='nvim'
 alias vi='nvim'
-alias vim='nvim'
 alias f='fastfetch'
 alias py='python3'
 
@@ -160,11 +161,21 @@ __get_prompt_extra_info() {
     echo ${debian_chroot:+($debian_chroot)─}$(__get_conda_env)$(__get_py_venv)
 }
 
-__get_conda_env() {
-    echo ${CONDA_PREFIX:+<-$(basename $CONDA_PREFIX)->}
-}
-
 __get_py_venv() {
     echo ${VIRTUAL_ENV:+{𝔓𝔶: $(basename $VIRTUAL_ENV)}─}
+}
+
+__get_conda_env() {
+    CONDA_SYMBOL="⨕:"
+    CONDA_ENV=""
+    if [ -n "$CONDA_PREFIX" ]; then
+        CONDA_DIR=$(basename $CONDA_PREFIX)
+        if [ "$CONDA_DIR" == "anaconda" ]; then
+            CONDA_ENV="base"
+        else
+            CONDA_ENV=$CONDA_DIR
+        fi
+    fi
+    echo ${CONDA_PREFIX:+{${CONDA_SYMBOL}${CONDA_ENV}}─}
 }
 
