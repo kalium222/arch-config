@@ -113,6 +113,8 @@ if [ -n "$force_color_prompt" ]; then
     fi
 fi
 
+__get_prompt_extra_info() {}
+
 configure_prompt() {
     prompt_symbol=㉿
     # Skull emoji for root terminal

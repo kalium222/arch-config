@@ -43,7 +43,10 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 
+
 # ---------------------- OTHERS ---------------------
+
+# ---------------- functions ----------------
 
 # # prevent ranger from starting multiple times
 # # if we need to run ranger with some options,
@@ -119,19 +122,49 @@ setproxy() {
     curl cip.cc
 }
 
+# ---------------- constants ----------------
+
 # some aliases
 alias v='nvim'
 alias vi='nvim'
 alias vim='nvim'
 alias f='fastfetch'
 alias py='python3'
-wechatfiles=~/Documents/wechatfiles
 
 # env
 export EDITOR='nvim'
 export VISUAL='nvim'
-
-# let ranger behave as we set
-#export RANGER_LOAD_DEFAULT_RC=FALSE
 export PATH="$PATH:$HOME/.cargo/bin"
+
+
+
+# >>> conda initialize >>>
+# !! Contents within this block are managed by 'conda init' !!
+__conda_setup="$('/home/Kalium/Public/anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+if [ $? -eq 0 ]; then
+    eval "$__conda_setup"
+else
+    if [ -f "/home/Kalium/Public/anaconda/etc/profile.d/conda.sh" ]; then
+        . "/home/Kalium/Public/anaconda/etc/profile.d/conda.sh"
+    else
+        export PATH="/home/Kalium/Public/anaconda/bin:$PATH"
+    fi
+fi
+unset __conda_setup
+# <<< conda initialize <<<
+
+
+# ---------------- misc ----------------
+
+__get_prompt_extra_info() {
+    echo ${debian_chroot:+($debian_chroot)─}$(__get_conda_env)$(__get_py_venv)
+}
+
+__get_conda_env() {
+    echo ${CONDA_PREFIX:+<-$(basename $CONDA_PREFIX)->}
+}
+
+__get_py_venv() {
+    echo ${VIRTUAL_ENV:+{𝔓𝔶: $(basename $VIRTUAL_ENV)}─}
+}
 

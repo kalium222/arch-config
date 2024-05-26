@@ -30,7 +30,7 @@ sync_config() {
 sync_config "$source_dir" "$target_dir"
 
 # synchronize the other things
-files=(".bashrc" ".zshrc" ".basic_shell_conf")
+files=(".bashrc" ".zshrc" ".shrc" ".condarc")
 for file in "${files[@]}"; do
     ln -sf "$(pwd)/$file" "$HOME/$file"
 done
