@@ -47,7 +47,7 @@ gvfs-smb
 helvum
 highlight
 hypridle
-hyprland-displaylink-git
+hyprland
 hyprlock
 hyprpaper
 intel-ucode
@@ -180,6 +180,7 @@ which
 wireplumber
 wl-clipboard
 wlr-randr
+wlroots
 wofi
 wps-office-cn
 wps-office-mui-zh-cn
