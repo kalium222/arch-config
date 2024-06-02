@@ -131,6 +131,7 @@ alias v='nvim'
 alias vi='nvim'
 alias f='fastfetch'
 alias py='python3'
+alias ewww='~/Public/eww/target/release/eww'
 
 # env
 export EDITOR='nvim'
