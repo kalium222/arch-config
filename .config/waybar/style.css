@@ -15,9 +15,6 @@ window#waybar {
 	background: transparent;
     color: transparent;
 }
-window#waybar.empty #window {
-    background-color: transparent;
-}
 
 button {
     /* Use box-shadow instead of border so the text isn't offset */

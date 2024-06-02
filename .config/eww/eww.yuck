@@ -1,0 +1,67 @@
+(
+    defwindow powermenu
+    :monitor 0
+    :stacking "fg"
+    :windowtype "dock"
+    :wm-ignore false
+    :geometry
+    (
+        geometry
+        :width "100%"
+        :height "50%"
+    )
+    (
+        box
+        :orientation "vertical"
+        :class "bx"
+        (button :onclick "notify-send fuck")
+        (label :text "fuck!")
+    )
+)
+
+(defwidget labled-container [name]
+    (box :class "container"
+        name
+        (children)
+    )
+)
+
+(defwindow test
+    :monitor 0
+    (labled-container :name "foo"
+        (workspaces)
+    )
+)
+
+(defwindow main-bar
+    :monitor 0
+    :stacking "fg"
+    ; wayland
+    :exclusive true
+    :focusable false
+    ; xorg
+    :wm-ignore true
+    ; :reserve true
+    :windowtype "dock"
+
+    :geometry (geometry :anchor "top center" :width "98%" :height "30px")
+    ; "TODO: eww main-bar"
+    (workspaces)
+)
+
+(deflisten workspaces :initial "[]" "bash ~/.config/eww/scripts/get-workspace.sh")
+(deflisten current_workspace :initial "1" "bash ~/.config/eww/scripts/get-active-workspace.sh")
+(defwidget workspaces []
+  (eventbox :onscroll "bash ~/.config/eww/scripts/change-active-workspace.sh {} ${current_workspace}" :class "workspaces-widget"
+    (box :space-evenly true
+      (label :text "${workspaces}${current_workspace}" :visible false)
+      (for workspace in workspaces
+        (eventbox :onclick "hyprctl dispatch workspace ${workspace.id}"
+          (box :class "workspace-entry ${workspace.id == current_workspace ? "current" : ""} ${workspace.windows > 0 ? "occupied" : "empty"}"
+            (label :text "${workspace.id}")
+            )
+          )
+        )
+      )
+    )
+  )
