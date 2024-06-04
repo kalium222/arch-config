@@ -1,0 +1,9 @@
+
+(
+	border_width: 3,
+	margin: (10, 10, 10, 10),
+	focused_border_color: "#FF0000",
+	// default_border_color: "#00FF00",
+	// floating_border_color: "#0000FF",
+)
+
