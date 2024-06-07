@@ -34,6 +34,10 @@ ffmpegthumbnailer
 firefox
 flake8
 fzf
+gcc11
+gcc11-debug
+gcc11-fortran
+gcc11-libs
 gdb
 git
 git-lfs
@@ -193,7 +197,6 @@ xclip
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xdotool
-xf86-video-vesa
 xorg-bdftopcf
 xorg-docs
 xorg-font-util
@@ -226,7 +229,7 @@ xorg-xpr
 xorg-xrefresh
 xorg-xsetroot
 xorg-xvinfo
-xorg-xwayland-git
+xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud

@@ -32,11 +32,17 @@ if [ -d /etc/X11/xinit/xinitrc.d ] ; then
     unset f
 fi
 
+# xrandr --output eDP-1 --scale 0.5
+# xrandr --output DP-1 --above eDP-1 
+# xrandr --output DP-3 --right-of eDP-1
+
 if [ -z "$WM" ]; then
+    exec leftwm
+elif [ "$WM" = "xfce" ]; then
     exec startxfce4
-elif [ "$WM" = "xfce"]; then
-    exec startxfce4
-elif [ "$WM" = "leftwm"]; then
+elif [ "$WM" = "awesome" ]; then
+    exec awesome
+elif [ "$WM" = "leftwm" ]; then
     exec leftwm
 fi
 
