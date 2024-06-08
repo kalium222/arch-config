@@ -53,7 +53,7 @@
 
     keybind: [
         (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
-        (command: Execute, value: "rofi -show run", modifier: ["modkey"], key: "r"),
+        (command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "r"),
         (command: Execute, value: "alacritty", modifier: ["modkey", "Shift"], key: "Return"),
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "BackSpace"),
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
