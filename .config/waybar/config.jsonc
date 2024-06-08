@@ -3,33 +3,27 @@
     "layer": "top",
     // "output": "eDP-1",
     "position": "top", // Waybar position (top|bottom|left|right)
-    //"height": 30,
-    //"width": 1920,
-    //"spacing": 4, // Gaps between modules (4px)
+
     // Choose the order of the modules
     "modules-left": [
         "pulseaudio",
-        //"wireplumber",
         "bluetooth",
         "network",
-        "backlight",
-        "hyprland/submap"
-        // "custom/media"
+        "backlight"
+        // "hyprland/submap",
+        // "hyprland/window"
     ],
     "modules-center": [
         "privacy",
         "custom/launcher",
         "hyprland/workspaces",
-        //"hyprland/window",
         "clock"
     ],
     "modules-right": [
-        //"mpd",
-        //"idle_inhibitor",
+        "tray",
         "cpu",
         "memory",
         "temperature",
-        //"keyboard-state",
         "battery",
         "custom/power"
     ],
@@ -41,13 +35,6 @@
             //"eDP-1": [1, 2, 3, 4]
         //},
         "format-icons": {
-            //"1": " ",࿃
-			//"2": " ",࿇
-            //"3": " ",࿊
-			//"2": " ",ௐ
-			//"4": " ", ߷
-			//"5": " ",  ֍   ۞۞
-            // ᐛ †  ⏲  ⏵ ☯ ♪ ⛥  ⨕ 𐍄 𐦝 🖂 🗀  🖫  🗎 🖿    🌀 🖙
 		    "active": " ",
 		    "default": " "
         },
@@ -70,71 +57,19 @@
             "timeshift-gtk": "𐍄"
         }
     },
-    "hyprland/submap": {
-        "format": "✌️ {}",
-        "max-length": 8,
-        "tooltip": false
-    },
-    // "custom/media": {
-    //     "format": "{icon} {}",
-    //     "return-type": "json",
-    //     "max-length": 40,
-    //     "format-icons": {
-    //         "spotify": "",
-    //         "default": "🎜"
-    //     },
-    //     "escape": true,
-    //     "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null" // Script in resources folder
-    //     // "exec": "$HOME/.config/waybar/mediaplayer.py --player spotify 2> /dev/null" // Filter player based on name
+    // "hyprland/submap": {
+    //     "format": "✌️ {}",
+    //     "max-length": 8,
+    //     "tooltip": false
     // },
-    //"hyprland/window": {
-        //"format": "  {}",
-        //"rewrite": {
-            //"(.*) — Mozilla Firefox": "🌎 $1",
-            //"(.*) - fish": "> [$1]"
-        //},
-        //"separate-outputs": true
-    //},
-    //"wireplumber": {
-        //"format": "{volume}% {icon}",
-        //"format-muted": "",
-        //"on-click":"pavucontrol",
-        //"on-click-right": "helvum",
-        //"format-icons": ["", "", ""]
-    //},
-     //"mpd": {
-         //"format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon}{artist} - {album} - {title} ({elapsedTime:%M:%S}/{totalTime:%M:%S}) ⸨{songPosition}|{queueLength}⸩ {volume}% ",
-         //"format-disconnected": "Disconnected ",
-         //"format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
-         //"unknown-tag": "N/A",
-         //"interval": 2,
-         //"consume-icons": {
-             //"on": " "
-         //},
-         //"random-icons": {
-             //"off": "<span color=\"#f53c3c\"></span> ",
-             //"on": " "
-         //},
-         //"repeat-icons": {
-             //"on": " "
-         //},
-         //"single-icons": {
-             //"on": "1 "
-         //},
-         //"state-icons": {
-             //"paused": "",
-             //"playing": ""
-         //},
-         //"tooltip-format": "MPD (connected)",
-         //"tooltip-format-disconnected": "MPD (disconnected)"
-     //},
-    //"idle_inhibitor": {
-        //"format": "{icon}",
-        //"format-icons": {
-            //"activated": "",
-            //"deactivated": ""
-        //}
-    //},
+    // "hyprland/window": {
+    //     "format": "  {}",
+    //     "rewrite": {
+    //         "(.*) — Mozilla Firefox": "  $1",
+    //         "(.*) - zsh": "> [$1]"
+    //     },
+    //     "separate-outputs": true
+    // },
     "bluetooth": {
         "controller": "controller1", // specify the alias of the controller if there are more than 1 on the system
         "format": " {status}",
@@ -145,12 +80,11 @@
         "tooltip-format-enumerate-connected": "{device_alias}\t{device_address}",
         "on-click": "blueman-manager"
     },
-    //"tray": {
-        //// "icon-size": 21,
-        //"spacing": 10
-    //},
+    "tray": {
+        "icon-size": 21,
+        "spacing": 10
+    },
     "clock": {
-        // "timezone": "America/New_York",
         "tooltip-format": "<big>{:%Y %B}</big>\n<tt><small>{calendar}</small></tt>",
         "format": "{:%H:%M  %a,  %m/%d}"
     },
@@ -166,13 +100,12 @@
     "temperature": {
         "thermal-zone": 2,
         "hwmon-path": "/sys/class/hwmon/hwmon2/temp1_input",
-        "critical-threshold": 70,
+        "critical-threshold": 60,
         "format-critical": "{temperatureC}°C {icon}",
         "format": "{temperatureC}°C {icon}",
         "format-icons": ["", "", ""]
     },
     "backlight": {
-        // "device": "acpi_video1",
         "format": "{percent}% {icon}",
         "format-icons": ["", "", "", "", "", "", "", "", ""]
     },
@@ -187,18 +120,14 @@
         "format-charging": "{capacity}% ",
         "format-plugged": "{capacity}% ",
         "format-alt": "{time} {icon}",
-        // "format-good": "", // An empty format will hide the module
-        // "format-full": "",
         "format-icons": ["", "", "", "", ""]
     },
     "network": {
-        // "interface": "wlp2*", // (Optional) To force the use of this interface
         "format-wifi": "{essid} ({signalStrength}%) ",
         "format-ethernet": "{ipaddr}/{cidr} ",
-        "tooltip-format": "{ifname} via {gwaddr} ",
+        "tooltip-format": "{ifname} via {gwaddr}",
         "format-linked": "{ifname} (No IP) ",
         "format-disconnected": "Disconnected ⚠",
-        //"format-alt": "{ifname}: {ipaddr}/{cidr}",
         "exec-on-event": false,
         "on-click-right": "~/.config/wofi-menus/wofi_wifi.sh",
         "on-click": "nm-connection-editor"
@@ -231,15 +160,6 @@
         "on-click":"pavucontrol",
         "on-click-right": "helvum"
     },
-    //"keyboard-state": {
-        //"numlock": true,
-        //"capslock": true,
-        //"format": "{name} {icon}",
-        //"format-icons": {
-            //"locked": "",
-            //"unlocked": " "
-        //}
-    //}
     "privacy": {
         "icon-spacing": 4,
         "icon-size": 18,
