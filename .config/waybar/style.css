@@ -163,9 +163,11 @@ label:focus {
     padding: 0px 10px;
     color: #f38ba8;
 }
-
+#privacy {
+    background: transparent;
+}
 #privacy-item.screenshare {
-    background-color: #f38ba8;
+    background: #f38ba8;
 }
 #privacy-item.audio-in {
     background: #a6e3a1;

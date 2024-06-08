@@ -42,6 +42,8 @@ elif [ "$WM" = "xfce" ]; then
     exec startxfce4
 elif [ "$WM" = "awesome" ]; then
     exec awesome
+elif [ "$WM" = "i3" ]; then
+    exec i3
 elif [ "$WM" = "leftwm" ]; then
     exec leftwm
 fi

@@ -58,7 +58,11 @@ or just do it in NetworkManager.
 ### DE/WM/WC
 
 #### Leftwm
+##### Xorg settings
 TODO:
+- dpi settings in .Xresources
+- touchpad gestures
+- .xinitrc
 
 #### [Hyprland](https://hyprland.org/)
 Use [wayland](https://wiki.archlinux.org/title/Wayland).
@@ -73,11 +77,6 @@ Use [waybar](https://github.com/Alexays/Waybar) as status bar.
 ### Grub theme
 First see [wiki of kernel parameter for grub](https://wiki.archlinux.org/title/Kernel_parameters#GRUB).
 Then we should be able to do this. 
-
-### Synchronization and backup
-First we use `timeshift`, but cannot open the GUI.
-That's because some relative env wasn't kept when
-we enter `su -` or `sudo`. Launch it in `su`.
 
 ### Suspend/Hibernate
 TODO:
@@ -121,6 +120,9 @@ Change to NetworkManager solved this.
 
 ### swapping caps and esc behave strange in `vim/nvim` plugins in `vscode`
 Some configuraion in vscode. I forgot. Just search online.
+
+### Can't open timeshift-launcher in xorg
+TODO:
 
 ### Can't open timeshift-launcher in wofi or terminal
 We run timeshift-laucher in terminal, and it complained that there is not xhost.
