@@ -122,7 +122,7 @@ qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
 ripgrep
-rofi
+rofi-wayland
 rustup
 sayonara-player
 scdoc
