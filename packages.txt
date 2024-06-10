@@ -3,11 +3,12 @@ autopep8
 base
 base-devel
 bash-completion
-blueman
+blueberry
 bluez
 bluez-utils
 brightnessctl
 btop
+cinnamon
 clang
 cmake
 d-spy
@@ -165,6 +166,7 @@ tmux
 traceroute
 tree-sitter-cli
 ttf-font-awesome
+ttf-icomoon-feather
 ttf-jetbrains-mono-nerd
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
@@ -178,6 +180,7 @@ v2raya-bin
 v4l2loopback-dkms-git
 vim
 visual-studio-code-bin
+vulkan-tools
 warp-terminal
 waybar
 wayland

@@ -1,5 +1,8 @@
 #!/bin/sh
 
+xrandr --setprovideroutputsource modesetting NVIDIA-0
+xrandr --auto
+
 userresources=$HOME/.Xresources
 usermodmap=$HOME/.Xmodmap
 sysresources=/etc/X11/xinit/.Xresources
@@ -42,6 +45,8 @@ elif [ "$WM" = "xfce" ]; then
     exec startxfce4
 elif [ "$WM" = "awesome" ]; then
     exec awesome
+elif [ "$WM" = "cinnamon" ]; then
+    exec cinnamon-session
 elif [ "$WM" = "i3" ]; then
     exec i3
 elif [ "$WM" = "leftwm" ]; then
