@@ -39,17 +39,17 @@ fi
 # xrandr --output DP-1 --above eDP-1 
 # xrandr --output DP-3 --right-of eDP-1
 
-if [ -z "$WM" ]; then
-    exec leftwm
-elif [ "$WM" = "xfce" ]; then
-    exec startxfce4
-elif [ "$WM" = "awesome" ]; then
-    exec awesome
-elif [ "$WM" = "cinnamon" ]; then
+if [ -z "$session" ]; then
     exec cinnamon-session
-elif [ "$WM" = "i3" ]; then
+elif [ "$session" = "xfce" ]; then
+    exec startxfce4
+elif [ "$session" = "awesome" ]; then
+    exec awesome
+elif [ "$session" = "cinnamon" ]; then
+    exec cinnamon-session
+elif [ "$session" = "i3" ]; then
     exec i3
-elif [ "$WM" = "leftwm" ]; then
+elif [ "$session" = "leftwm" ]; then
     exec leftwm
 fi
 
