@@ -52,9 +52,9 @@ mainbox {
 imagebox {
     padding:                     20px;
     background-color:            transparent;
-    background-image:            url("~/Pictures/Games/ba/108826156_p0.jpg", width);
+    background-image:            url("~/.config/rofi/rofi-theme.png", width);
     orientation:                 vertical;
-    children:                    [ "inputbar", "dummy", "mode-switcher" ];
+    children:                    [ "mode-switcher", "dummy", "inputbar" ];
 }
 
 listbox {

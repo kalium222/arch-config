@@ -1,5 +1,4 @@
 alacritty
-autopep8
 base
 base-devel
 bash-completion
@@ -11,6 +10,7 @@ btop
 cinnamon
 clang
 cmake
+cuda
 d-spy
 dkms
 docker
@@ -39,6 +39,8 @@ gcc11
 gcc11-debug
 gcc11-fortran
 gcc11-libs
+gcc13
+gcc13-libs
 gdb
 git
 git-lfs
@@ -130,7 +132,6 @@ scdoc
 sddm
 seahorse
 slurp
-socat
 sshfs
 steam
 sudo
@@ -236,7 +237,6 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
-yapf
 yarn
 yazi
 zip
