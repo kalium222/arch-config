@@ -2,6 +2,7 @@ alacritty
 base
 base-devel
 bash-completion
+blender
 blueberry
 bluez
 bluez-utils
@@ -34,6 +35,7 @@ feishu-bin
 ffmpegthumbnailer
 firefox
 flake8
+freerdp
 fzf
 gcc11
 gcc11-debug
@@ -124,6 +126,7 @@ python-whatthepatch
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
+remmina
 ripgrep
 rofi-wayland
 rustup
@@ -178,7 +181,7 @@ unityhub
 unzip
 v2ray
 v2raya-bin
-v4l2loopback-dkms-git
+v4l2loopback-dkms
 vim
 visual-studio-code-bin
 vulkan-tools
