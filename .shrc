@@ -129,6 +129,7 @@ setproxy() {
 # some aliases
 alias v='nvim'
 alias vi='nvim'
+alias t='tmux'
 alias f='fastfetch'
 alias py='python3'
 alias ewww='~/Public/eww/target/release/eww'

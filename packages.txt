@@ -44,6 +44,7 @@ gcc11-libs
 gcc13
 gcc13-libs
 gdb
+gimp
 git
 git-lfs
 glmark2
@@ -88,7 +89,7 @@ network-manager-applet
 networkmanager
 ninja
 nmap
-nomacs
+nomacs-git
 noto-fonts-cjk
 noto-fonts-emoji
 npm
