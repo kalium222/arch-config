@@ -181,7 +181,7 @@ unarchiver
 unityhub
 unzip
 v2ray
-v2raya-bin
+v2raya
 v4l2loopback-dkms
 vim
 visual-studio-code-bin
