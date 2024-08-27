@@ -8,6 +8,7 @@ bluez
 bluez-utils
 brightnessctl
 btop
+chromium
 cinnamon
 clang
 cmake
@@ -124,6 +125,7 @@ python-pynvim
 python-rope
 python-shellingham
 python-whatthepatch
+qbittorrent
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
@@ -190,6 +192,7 @@ warp-terminal
 waybar
 wayland
 wechat-beta-bwrap
+wemeet-bin
 wget
 which
 wireplumber
@@ -243,6 +246,7 @@ xorg-xwininfo
 xorg-xwud
 yarn
 yazi
+zathura
 zip
 zsh
 zsh-autosuggestions
