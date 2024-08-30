@@ -103,6 +103,7 @@ openssh
 os-prober
 otf-geist-mono-nerd
 ozone
+p7zip
 paru
 paru-debug
 pavucontrol
