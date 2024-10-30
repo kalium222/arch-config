@@ -104,8 +104,8 @@ os-prober
 otf-geist-mono-nerd
 ozone
 p7zip
-paru
-paru-debug
+paru-git
+paru-git-debug
 pavucontrol
 picom
 pipewire
@@ -173,12 +173,12 @@ tlp
 tmux
 traceroute
 tree-sitter-cli
+tree-sitter-python
 ttf-font-awesome
 ttf-icomoon-feather
 ttf-jetbrains-mono-nerd
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
-ttf-wps-fonts
 ufw
 unarchiver
 unityhub
@@ -202,8 +202,6 @@ wlr-randr
 wlroots
 wmctrl
 wofi
-wps-office-cn
-wps-office-mui-zh-cn
 xarchiver
 xclip
 xdg-desktop-portal-gtk
@@ -247,6 +245,7 @@ xorg-xwininfo
 xorg-xwud
 yarn
 yazi
+yesplaymusic
 zathura
 zip
 zsh
