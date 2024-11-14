@@ -58,8 +58,8 @@
 
     // window
     max_window_width: None,
-    default_width: 1800,
-    default_height: 1000,
+    // default_width: 1800,
+    // default_height: 1000,
     disable_tile_drag: false,
     focus_behaviour: ClickTo,
     focus_new_windows: true,

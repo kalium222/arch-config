@@ -3,4 +3,4 @@
 leftwm-command "UnloadTheme"
 
 # pkill polybar
-# pkill picom
+pkill picom
