@@ -76,17 +76,31 @@
     modkey: "Mod4",
     mousekey: "Mod4",
     keybind: [
+        // basic
         (command: Execute, value: "kitty", modifier: ["modkey"], key: "Return"),
         (command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "space"),
+        (command: Execute, value: "nemo", modifier: ["modkey"], key: "e"),
         (command: ToggleScratchPad, value: "Alacritty", modifier: ["modkey"], key: "backslash"),
 
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
-        (command: Execute, value: "loginctl kill-session $XDG_SESSION_ID", modifier: ["modkey", "Shift"], key: "BackSpace"),
+        (command:
+            Execute,
+            value: "loginctl kill-session $XDG_SESSION_ID",
+            modifier: ["modkey", "Shift"],
+            key: "BackSpace"
+        ),
 
+        (command: NextLayout, value: "", modifier: ["modkey", "Control"], key: "space"),
+        // (command: PreviousLayout, value: "", modifier: ["modkey", "Control"], key: "j"),
+        // (command: NextLayout, value: "", modifier: ["modkey", "Control"], key: "Up"),
+        // (command: PreviousLayout, value: "", modifier: ["modkey", "Control"], key: "Down"),
+
+
+        // windows
         (command: CloseWindow, value: "", modifier: ["modkey"], key: "BackSpace"),
         (command: ToggleFloating, modifier: ["modkey"], key: "t"),
         (command: ToggleFullScreen, modifier: ["modkey"], key: "f"),
-        // (command: MoveWindowTop, value: "", modifier: ["modkey"], key: "Return"),
+        (command: SwapWindowTop, modifier: ["modkey"], key: "semicolon"),
 
         (command: FocusWindowUp, value: "", modifier: ["modkey"], key: "k"),
         (command: FocusWindowDown, value: "", modifier: ["modkey"], key: "j"),
@@ -96,11 +110,6 @@
         (command: MoveWindowDown, value: "", modifier: ["modkey", "Shift"], key: "j"),
         (command: MoveWindowUp, value: "", modifier: ["modkey", "Shift"], key: "Up"),
         (command: MoveWindowDown, value: "", modifier: ["modkey", "Shift"], key: "Down"),
-
-        (command: NextLayout, value: "", modifier: ["modkey", "Control"], key: "space"),
-        // (command: PreviousLayout, value: "", modifier: ["modkey", "Control"], key: "j"),
-        // (command: NextLayout, value: "", modifier: ["modkey", "Control"], key: "Up"),
-        // (command: PreviousLayout, value: "", modifier: ["modkey", "Control"], key: "Down"),
 
         (command: FocusWorkspaceNext, value: "", modifier: ["modkey"], key: "l"),
         (command: FocusWorkspacePrevious, value: "", modifier: ["modkey"], key: "h"),
