@@ -77,7 +77,6 @@ linux-zen-headers
 lshw
 lua
 lua-language-server
-mako
 man-db
 man-pages
 mesa-utils
