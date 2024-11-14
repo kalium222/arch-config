@@ -21,6 +21,6 @@ fi
 # load polybar
 # polybar -c $SCRIPTPATH/polybar.ini &> /dev/null &
 
-# load picom (note: cannot set daemon command from config file)
+dunst &
 picom --daemon
-# --config $SCRIPTPATH/picom.conf
+
