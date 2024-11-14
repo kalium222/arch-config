@@ -111,11 +111,13 @@
         (command: MoveWindowUp, value: "", modifier: ["modkey", "Shift"], key: "Up"),
         (command: MoveWindowDown, value: "", modifier: ["modkey", "Shift"], key: "Down"),
 
+        // workspace/monitor
         (command: FocusWorkspaceNext, value: "", modifier: ["modkey"], key: "l"),
         (command: FocusWorkspacePrevious, value: "", modifier: ["modkey"], key: "h"),
         (command: FocusWorkspaceNext, value: "", modifier: ["modkey"], key: "Right"),
         (command: FocusWorkspacePrevious, value: "", modifier: ["modkey"], key: "Left"),
 
+        // tag
         (command: FocusNextTag, modifier: ["modkey"], key: "equal"),
         (command: FocusPreviousTag, modifier: ["modkey"], key: "minus"),
         (command: SwapTags, value: "", modifier: ["modkey"], key: "u"),
@@ -157,5 +159,43 @@
         (command: MoveToTag, value: "7", modifier: ["modkey", "Shift"], key: "KP_Home"),
         (command: MoveToTag, value: "8", modifier: ["modkey", "Shift"], key: "KP_Up"),
         (command: MoveToTag, value: "9", modifier: ["modkey", "Shift"], key: "KP_Prior"),
+
+        // others
+        (
+            command: Execute,
+            value: "wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle",
+            modifier: [],
+            key: "XF86AudioMute"
+        ),
+        (
+            command: Execute,
+            value: "wpctl set-mute @DEFAULT_SINK@ 0; wpctl set-volume -l 1.5 @DEFAULT_AUDIO_SINK@ 5%+",
+            modifier: [],
+            key: "XF86AudioRaiseVolume"
+        ),
+        (
+            command: Execute,
+            value: "wpctl set-mute @DEFAULT_SINK@ 0; wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-",
+            modifier: [],
+            key: "XF86AudioLowerVolume"
+        ),
+        (
+            command: Execute,
+            value: "notify-send test key",
+            modifier: [],
+            key: "XF86AudioPlay"
+        ),
+        (
+            command: Execute,
+            value: "brightnessctl set 5%+",
+            modifier: [],
+            key: "XF86MonBrightnessUp"
+        ),
+        (
+            command: Execute,
+            value: "brightnessctl set 5%-",
+            modifier: [],
+            key: "XF86MonBrightnessDown"
+        ),
     ],
 )
