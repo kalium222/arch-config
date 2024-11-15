@@ -9,19 +9,23 @@
     frame_width = 0
     corner_radius = 20
     separator_color = "#88c0d0" 
+    highlight = "#88c0d0"
     offset = 0x60
     icon_theme = "Adwaita"
     enable_recursive_icon_lookup = true
+    progress_bar_max_width = 200
+    progress_bar_corner_radius = 5
+    indicate_hidden = false
 
 [urgency_low]
     background = "#429abab6"
     foreground = "#ABE9B3"
-    timeout = 10
+    timeout = 5
 
 [urgency_normal]
     background = "#429abab6"
     foreground = "#FAE3B0"
-    timeout = 15
+    timeout = 10
 
 [urgency_critical]
     background = "#429abab6"

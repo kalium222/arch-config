@@ -15,7 +15,8 @@ leftwm-command "LoadTheme $SCRIPTPATH/theme.ron"
 
 # set background using .fehbg file if it exists
 if [ -x "$(command -v feh)" ] && [ -f "$HOME/.fehbg" ]; then
-    feh --bg-fill "$HOME/Pictures/others/voxel6.jpg"
+    # feh --bg-fill "$HOME/Pictures/others/voxel6.jpg"
+    feh --bg-fill "$HOME/Pictures/Games/zelda/logo.jpg"
 fi
 
 # load polybar
@@ -23,4 +24,5 @@ fi
 
 dunst &
 picom --daemon
+polybar
 
