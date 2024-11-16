@@ -55,6 +55,7 @@ grim
 grub
 gtk3
 gtk4
+gucharmap
 gvfs
 gvfs-smb
 helvum
@@ -113,6 +114,7 @@ pipewire-pulse
 pkgstats
 polkit
 polkit-kde-agent
+polybar
 pyright
 python-click-completion
 python-lsp-server
