@@ -1,3 +1,4 @@
+7zip
 alacritty
 base
 base-devel
@@ -78,6 +79,7 @@ linux-zen-headers
 lshw
 lua
 lua-language-server
+maim
 man-db
 man-pages
 mesa-utils
@@ -103,7 +105,6 @@ openssh
 os-prober
 otf-geist-mono-nerd
 ozone
-p7zip
 paru-git
 paru-git-debug
 pavucontrol
@@ -139,6 +140,7 @@ sayonara-player
 scdoc
 sddm
 seahorse
+slop
 slurp
 sshfs
 steam
