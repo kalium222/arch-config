@@ -104,6 +104,8 @@ configuration {
 	/*---------- Keybindings ----------*/
 	kb-mode-next: "Shift+Right,Control+Tab";
 	kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";
+	kb-page-prev: "Page_Up,Control+[20]";
+	kb-page-next: "Page_Down,Control+[21]";
 /*
 	kb-primary-paste: "Control+V,Shift+Insert";
 	kb-secondary-paste: "Control+v,Insert";
@@ -128,8 +130,6 @@ configuration {
 	kb-row-left: "Control+Page_Up";
 	kb-row-right: "Control+Page_Down";
 	kb-row-down: "Down,Control+n";
-	kb-page-prev: "Page_Up";
-	kb-page-next: "Page_Down";
 	kb-row-first: "Home,KP_Home";
 	kb-row-last: "End,KP_End";
 	kb-row-select: "Control+space";
