@@ -58,8 +58,8 @@
 
     // window
     max_window_width: None,
-    default_width: 1800,
-    default_height: 1000,
+    default_width: 1600,
+    default_height: 600,
     disable_tile_drag: false,
     focus_behaviour: ClickTo,
     focus_new_windows: true,
@@ -71,10 +71,15 @@
         (window_class: "blueberry.py", spawn_floating: true),
         (window_class: "pavucontrol", spawn_floating: true),
         (window_class: "nm-connection-editor", spawn_floating: true),
+        (window_class: "wechat", spawn_floating: true),
+        (window_class: "fem 3d", spawn_floating: true),
+        (window_class: "Open3D", spawn_floating: true),
     ],
 
     scratchpad: [
         (name: "Alacritty", value: "alacritty", x: 1020, y: 580, height: 1000, width: 1800),
+        // (name: "Wechat", value: "wechat-beta", x: 1020, y: 580, height: 1000, width: 1800),
+        // (name: "Wechat", value: "kitty", x: 1020, y: 580, height: 1000, width: 1800),
     ],
 
     // keybindings
@@ -86,6 +91,22 @@
         (command: Execute, value: "rofi -show drun", modifier: ["modkey"], key: "space"),
         (command: Execute, value: "nemo", modifier: ["modkey"], key: "e"),
         (command: ToggleScratchPad, value: "Alacritty", modifier: ["modkey"], key: "backslash"),
+        // (command: NextScratchPadWindow,
+        //     value: "Alacritty",
+        //     modifier: ["modkey"],
+        //     key: "rightanglebracket"
+        // ),
+        // (command: PrevScratchPadWindow,
+        //     value: "Alacritty",
+        //     modifier: ["modkey"],
+        //     key: "leftanglebracket"
+        // ),
+        (command:
+            Execute,
+            value: "maim -g $(slop) $HOME/Pictures/screenshot.png; notify-send screenshot!",
+            modifier: ["modkey"],
+            key: "p"
+        ),
 
         (command: SoftReload, value: "", modifier: ["modkey", "Shift"], key: "r"),
         (command:
