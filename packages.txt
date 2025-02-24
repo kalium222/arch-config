@@ -20,6 +20,7 @@ docker
 docker-buildx
 docker-compose
 docker-rootless-extras
+dosfstools
 dotnet-sdk
 dotnet-sdk-8.0
 doxygen
@@ -104,10 +105,10 @@ nvidia-settings
 nvidia-utils
 nvtop
 obs-studio
+openshot
 openssh
 os-prober
 otf-geist-mono-nerd
-ozone
 paru-git
 paru-git-debug
 pavucontrol
@@ -197,7 +198,6 @@ vim
 virt-manager
 visual-studio-code-bin
 vulkan-tools
-warp-terminal
 waybar
 wayland
 wechat-bin

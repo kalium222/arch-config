@@ -168,7 +168,7 @@ __get_py_venv() {
 }
 
 __get_conda_env() {
-    CONDA_SYMBOL="⨕:"
+    CONDA_SYMBOL=" : "
     CONDA_ENV=""
     if [ -n "$CONDA_PREFIX" ]; then
         CONDA_DIR=$(basename $CONDA_PREFIX)
