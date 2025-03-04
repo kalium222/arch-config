@@ -54,6 +54,7 @@ git-lfs
 glmark2
 gnome-keyring
 go
+gputest
 grim
 grub
 gtk3
@@ -194,6 +195,7 @@ unzip
 v2ray
 v2raya
 v4l2loopback-dkms
+valgrind
 vim
 virt-manager
 visual-studio-code-bin
