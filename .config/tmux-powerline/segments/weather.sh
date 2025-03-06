@@ -7,11 +7,8 @@ TMUX_POWERLINE_SEG_WEATHER_UNIT_DEFAULT="c"
 TMUX_POWERLINE_SEG_WEATHER_UPDATE_PERIOD_DEFAULT="600"
 
 
-if shell_is_bsd  && [ -f /user/local/bin/grep  ]; then
-	TMUX_POWERLINE_SEG_WEATHER_GREP_DEFAULT="/usr/local/bin/grep"
-else
-	TMUX_POWERLINE_SEG_WEATHER_GREP_DEFAULT="grep"
-fi
+TMUX_POWERLINE_SEG_WEATHER_GREP_DEFAULT="grep"
+
 
 
 generate_segmentrc() {
