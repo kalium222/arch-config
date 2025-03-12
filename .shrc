@@ -22,6 +22,7 @@ if [ -x /usr/bin/dircolors ]; then
     alias diff='diff --color=auto'
     alias ip='ip --color=auto'
 
+    export MANROFFOPT=-c
     export LESS=-R
     export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
     export LESS_TERMCAP_md=$'\E[1;36m'     # begin bold
@@ -138,6 +139,7 @@ alias ewww='~/Public/eww/target/release/eww'
 export EDITOR='nvim'
 export VISUAL='nvim'
 export PATH="$PATH:$HOME/.cargo/bin"
+export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
 
 
 

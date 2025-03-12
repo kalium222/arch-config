@@ -7,7 +7,7 @@
 	# Show which segment fails and its exit code.
 	export TMUX_POWERLINE_DEBUG_MODE_ENABLED="true"
 	# Use patched font symbols.
-	export TMUX_POWERLINE_PATCHED_FONT_IN_USE="false"
+	export TMUX_POWERLINE_PATCHED_FONT_IN_USE="true"
 
 	# The theme to use.
 	export TMUX_POWERLINE_THEME="kalium-theme"
@@ -20,7 +20,7 @@
 	export TMUX_POWERLINE_STATUS_VISIBILITY="on"
 	# The status bar refresh interval in seconds.
 	# Note that events that force-refresh the status bar (such as window renaming) will ignore this.
-	export TMUX_POWERLINE_STATUS_INTERVAL="1"
+	export TMUX_POWERLINE_STATUS_INTERVAL="3"
 	# The location of the window list. Can be {"absolute-centre, centre, left, right"}.
 	# Note that "absolute-centre" is only supported on `tmux -V` >= 3.2.
 	export TMUX_POWERLINE_STATUS_JUSTIFICATION="centre"

@@ -3,7 +3,6 @@ alacritty
 base
 base-devel
 bash-completion
-blender
 blueberry
 bluez
 bluez-utils
@@ -33,11 +32,11 @@ fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-qt
-fd
 feh
 feishu-bin
 ffmpegthumbnailer
 firefox
+firewalld
 flake8
 freerdp
 fzf
@@ -69,6 +68,7 @@ hyprland
 hyprlock
 hyprpaper
 intel-ucode
+iptables-nft
 kitty
 leftwm
 lib32-nvidia-utils
@@ -80,7 +80,6 @@ linux-firmware
 linux-headers
 linux-zen
 linux-zen-headers
-lmstudio
 lshw
 lua
 lua-language-server
@@ -101,6 +100,7 @@ nomacs-git
 noto-fonts-cjk
 noto-fonts-emoji
 npm
+ntfs-3g
 nvidia-dkms
 nvidia-settings
 nvidia-utils
@@ -188,7 +188,6 @@ ttf-icomoon-feather
 ttf-jetbrains-mono-nerd
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
-ufw
 unarchiver
 unityhub
 unzip
@@ -202,14 +201,13 @@ visual-studio-code-bin
 vulkan-tools
 waybar
 wayland
-wechat-bin
+wechat
 wemeet-bin
 wget
 which
 wireplumber
 wl-clipboard
 wlr-randr
-wlroots
 wmctrl
 wofi
 xarchiver
