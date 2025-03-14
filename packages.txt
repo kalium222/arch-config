@@ -109,7 +109,6 @@ obs-studio
 openshot
 openssh
 os-prober
-otf-geist-mono-nerd
 paru-git
 paru-git-debug
 pavucontrol
@@ -183,9 +182,9 @@ tmux
 traceroute
 tree-sitter-cli
 tree-sitter-python
+ttf-fira-code
 ttf-font-awesome
 ttf-icomoon-feather
-ttf-jetbrains-mono-nerd
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
 unarchiver
