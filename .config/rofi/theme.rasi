@@ -2,10 +2,10 @@
 configuration {
     modi:                       "drun,run,filebrowser,window";
     show-icons:                 true;
-    display-drun:               " ";
+    display-drun:               "🖤";
     display-run:                " ";
-    display-filebrowser:        "🖿 ";
-    display-window:             "ᐛ ";
+    display-filebrowser:        "🖿";
+    display-window:             " ";
     drun-display-format:        "{name}";
     window-format:              "{w} · {c} · {t}";
 }
@@ -14,7 +14,7 @@ configuration {
 * {
     font:                        "MonofurNerdFont 15";
     background:     rgba(21, 22, 30, 0.8);
-    background-alt: rgba(26, 27, 38, 0.8);
+    background-alt: rgba(34, 36, 59, 0.8);
     foreground:     #C0CAF5FF;
     selected:       #33467CFF;
     active:         #414868FF;
@@ -34,8 +34,10 @@ window {
     y-offset:                    0px;
 
     /* properties for all widgets */
-    enabled:                     true;
-    border-radius:               15px;
+    padding:                     0px;
+    border:                      2px solid;
+    border-radius:               10px;
+    border-color:                @selected;
     cursor:                      "default";
     background-color:            @background;
 }
