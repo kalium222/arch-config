@@ -150,6 +150,7 @@ slurp
 sshfs
 steam
 sudo
+termshark
 texinfo
 texlab
 texlive-basic
@@ -205,10 +206,11 @@ wemeet-bin
 wget
 which
 wireplumber
+wireshark-cli
+wireshark-qt
 wl-clipboard
 wlr-randr
 wmctrl
-wofi
 xarchiver
 xclip
 xdg-desktop-portal-gtk
