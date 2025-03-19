@@ -79,7 +79,7 @@ First see [wiki of kernel parameter for grub](https://wiki.archlinux.org/title/K
 Then we should be able to do this. 
 
 ### Suspend/Hibernate
-TODO:
+
 Follow the [wiki](https://wiki.archlinux.org/title/Power_management/Suspend_and_hibernate).
 We can `suspend` and `hybrid-sleep` now, but still cannot `hibernate`.
 
@@ -129,15 +129,11 @@ We run timeshift-laucher in terminal, and it complained that there is not xhost.
 Just install xorg-xhost.
 I wish one of wayland and xorg can completely substitute another one day.
 
+polkit.
+
 ### Mic with pipewire
 Can't pipewire handle mics? Just install pipewire-pulse.
 Idk.
-
-### Can not Hibernate
-TODO:
-
-### Can't share screen
-TODO:
 
 ### Virtual camera in obs
 When building the kernel module, got error.
@@ -145,7 +141,4 @@ Using -git package can avoid this.
 
 ### Fingerprint reader
 The avaliable driver doesn't support my device.
-
-### Cannot connect to xbox controller with bluetooth
-TODO:
 
