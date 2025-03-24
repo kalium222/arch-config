@@ -15,10 +15,6 @@ cmake
 cuda
 d-spy
 dkms
-docker
-docker-buildx
-docker-compose
-docker-rootless-extras
 dosfstools
 dotnet-sdk
 dotnet-sdk-8.0
@@ -52,6 +48,7 @@ git
 git-lfs
 glmark2
 gnome-keyring
+gnu-netcat
 go
 gputest
 grim
@@ -117,6 +114,7 @@ pipewire
 pipewire-alsa
 pipewire-pulse
 pkgstats
+podman
 polkit
 polkit-kde-agent
 polybar
