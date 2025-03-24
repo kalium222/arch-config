@@ -140,8 +140,7 @@ alias docker='podman '
 export EDITOR='nvim'
 export VISUAL='nvim'
 export PATH="$PATH:$HOME/.cargo/bin"
-# export DOCKER_HOST=unix://$XDG_RUNTIME_DIR/docker.sock
-
+export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
 
 
 # >>> conda initialize >>>
