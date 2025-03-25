@@ -67,6 +67,7 @@ hyprpaper
 intel-ucode
 iptables-nft
 kitty
+lazydocker-bin
 leftwm
 lib32-nvidia-utils
 libreoffice-still

@@ -134,7 +134,6 @@ alias t='tmux'
 alias f='fastfetch'
 alias py='python3'
 alias ewww='~/Public/eww/target/release/eww'
-alias docker='podman '
 
 # env
 export EDITOR='nvim'
