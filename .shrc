@@ -125,6 +125,17 @@ setproxy() {
     curl cip.cc
 }
 
+curl_github_repo() {
+    local repo="$1"
+    local branch="$2"
+    local file="$3"
+
+    local url="https://raw.githubusercontent.com/${repo}/${branch}/${file}"
+
+    echo "Downloading $file from $repo@$branch..."
+    curl -o "$file" "$url"
+}
+
 # ---------------- constants ----------------
 
 # some aliases
@@ -144,14 +155,14 @@ export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
 
 # >>> conda initialize >>>
 # !! Contents within this block are managed by 'conda init' !!
-__conda_setup="$('/home/Kalium/Public/anaconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
+__conda_setup="$('/home/Kalium/Applications/miniconda/bin/conda' 'shell.bash' 'hook' 2> /dev/null)"
 if [ $? -eq 0 ]; then
     eval "$__conda_setup"
 else
-    if [ -f "/home/Kalium/Public/anaconda/etc/profile.d/conda.sh" ]; then
-        . "/home/Kalium/Public/anaconda/etc/profile.d/conda.sh"
+    if [ -f "/home/Kalium/Applications/miniconda/etc/profile.d/conda.sh" ]; then
+        . "/home/Kalium/Applications/miniconda/etc/profile.d/conda.sh"
     else
-        export PATH="/home/Kalium/Public/anaconda/bin:$PATH"
+        export PATH="/home/Kalium/Applications/miniconda/bin:$PATH"
     fi
 fi
 unset __conda_setup
