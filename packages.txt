@@ -9,7 +9,6 @@ bluez
 bluez-utils
 brightnessctl
 btop
-chromium
 cinnamon
 clang
 cmake
@@ -19,7 +18,6 @@ dkms
 dosfstools
 dotnet-sdk
 dotnet-sdk-8.0
-doxygen
 dunst
 efibootmgr
 eww
@@ -46,7 +44,6 @@ gdb
 gimp
 git
 git-lfs
-glmark2
 gnome-keyring
 gnu-netcat
 go
@@ -107,6 +104,7 @@ nvidia-settings
 nvidia-utils
 nvtop
 obs-studio
+obsidian
 openshot
 openssh
 os-prober
@@ -139,6 +137,7 @@ qemu-desktop
 qt5-graphicaleffects
 qt5-quickcontrols2
 qt5-wayland
+qutebrowser
 remmina
 ripgrep
 rofi-wayland
@@ -191,11 +190,10 @@ ttf-font-awesome
 ttf-icomoon-feather
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
-unarchiver
 unityhub
 unzip
-v2ray
-v2raya
+v2raya-bin
+v2raya-bin-debug
 v4l2loopback-dkms
 valgrind
 vim
@@ -255,6 +253,7 @@ xorg-xwayland
 xorg-xwd
 xorg-xwininfo
 xorg-xwud
+xray-bin
 yarn
 yazi
 yesplaymusic

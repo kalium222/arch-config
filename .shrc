@@ -106,16 +106,17 @@ setproxy() {
         export https_proxy="http://${proxy_server}:${http_port}"
         echo "HTTP proxy is set."
     elif [ "$1" = "socks5" ]; then
-        export http_proxy="socks5://${proxy_server}:${socks5_port}"
-        export https_proxy="socks5://${proxy_server}:${socks5_port}"
+        export SOCKS5_PROXY="${proxy_server}:${socks5_port}"
         echo "SOCKS5 proxy is set."
     elif [ "$1" = "all" ] || [ "$1" = "on" ]; then
-        export ALL_PROXY="socks5://${proxy_server}:${socks5_port}"
+        export http_proxy="http://${proxy_server}:${http_rule_port}"
+        export https_proxy="http://${proxy_server}:${http_rule_port}"
+        export SOCKS5_PROXY="${proxy_server}:${socks5_port}"
         echo "ALL_PROXY is set."
     elif [ "$1" = "off" ]; then
         unset http_proxy
         unset https_proxy
-        unset ALL_PROXY
+        unset SOCKS5_PROXY
         echo "Proxy settings are unset."
     else
         echo "Usage: set_proxy on|all|http|socks5|off"
