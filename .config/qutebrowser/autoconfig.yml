@@ -11,7 +11,7 @@ settings:
   colors.webpage.darkmode.enabled:
     global: true
   content.proxy:
-    global: socks://localhost:20170
+    global: http://localhost:20172
   fonts.default_family:
     global: MonofurNerdFont
   fonts.default_size:
