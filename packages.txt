@@ -48,7 +48,6 @@ gnome-keyring
 gnu-netcat
 go
 gopls
-gputest
 grim
 grub
 gtk3
@@ -88,11 +87,13 @@ mesa-utils
 meson
 minecraft-launcher
 mono
+musikcube-bin
 nemo
 neovim
 network-manager-applet
 networkmanager
 ninja
+nix
 nmap
 nomacs
 noto-fonts-cjk
@@ -105,7 +106,6 @@ nvidia-utils
 nvtop
 obs-studio
 obsidian
-openshot
 openssh
 os-prober
 paru-git
@@ -152,6 +152,7 @@ sshfs
 steam
 sudo
 termshark
+termusic
 texinfo
 texlab
 texlive-basic
@@ -257,6 +258,8 @@ xray-bin
 yarn
 yazi
 yesplaymusic
+zathura
+zathura-pdf-poppler
 zip
 zsh
 zsh-autosuggestions
