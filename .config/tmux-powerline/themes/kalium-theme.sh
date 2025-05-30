@@ -165,8 +165,8 @@ fi
 if [ -z "$TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS" ]; then
 	TMUX_POWERLINE_RIGHT_STATUS_SEGMENTS=(
 		# "earthquake 3 0"
-		"pwd $mauve $surface0" \
-		#"macos_notification_count 29 255"
+		# "pwd $mauve $surface0" \
+		# "macos_notification_count 29 255"
 		#"mailcount 9 255"
 		# "now_playing $spotify_green $spotify_black"
 		#"cpu 240 136"

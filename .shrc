@@ -173,7 +173,13 @@ unset __conda_setup
 # ---------------- misc ----------------
 
 __get_prompt_extra_info() {
-    echo ${debian_chroot:+($debian_chroot)─}$(__get_conda_env)$(__get_py_venv)
+    echo ${debian_chroot:+($debian_chroot)─}$(__get_conda_env)$(__get_py_venv)$(__get_nix_shell)
+}
+
+__get_nix_shell() {
+    if [ -n "$IN_NIX_SHELL" ]; then
+        echo " :${IN_NIX_SHELL}-"
+    fi
 }
 
 __get_py_venv() {
