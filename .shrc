@@ -97,7 +97,7 @@ function fuck() {
 
 # set the proxy
 setproxy() {
-    local proxy_server="127.0.0.1"
+    local proxy_server="localhost"
     local socks5_port="20170"
     local http_port="20171"
     local http_rule_port="20172"
