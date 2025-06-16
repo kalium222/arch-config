@@ -16,6 +16,8 @@ settings:
     global: MonofurNerdFont
   fonts.default_size:
     global: 15pt
+  qt.force_software_rendering:
+    global: qt-quick
   statusbar.show:
     global: in-mode
   tabs.indicator.padding:

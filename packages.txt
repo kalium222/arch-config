@@ -9,6 +9,7 @@ bluez
 bluez-utils
 brightnessctl
 btop
+cabal-install
 cinnamon
 clang
 cmake
@@ -41,6 +42,7 @@ gcc11-libs
 gcc13
 gcc13-libs
 gdb
+ghc
 gimp
 git
 git-lfs
@@ -56,6 +58,7 @@ gucharmap
 gvfs
 gvfs-gphoto2
 gvfs-smb
+haskell-language-server
 helvum
 highlight
 hypridle
@@ -149,6 +152,7 @@ seahorse
 slop
 slurp
 sshfs
+stack
 steam
 sudo
 termshark
