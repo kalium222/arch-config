@@ -31,9 +31,6 @@
     // Modules configuration
     "hyprland/workspaces": {
         "format": "{icon}: {windows}",
-        //"persistent-workspaces": {
-            //"eDP-1": [1, 2, 3, 4]
-        //},
         "format-icons": {
 		    "active": " ",
 		    "default": " "
@@ -45,7 +42,9 @@
             "class<firefox> title<.*github.*>": " ",
             "class<kitty>": " ",
             "class<Alacritty>": " ",
-            "code": "󰨞 ",
+            "class<com.mitchellh.ghostty>": " ",
+            "class<code>": "󰨞 ",
+            "class<org.qutebrowser.qutebrowser>": "Ҩ",
             "sayonara": "𝄞",
             "nemo": "🖿 ",
             "Feishu": "",
