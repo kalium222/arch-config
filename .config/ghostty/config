@@ -46,6 +46,7 @@
 theme = catppuccin-mocha
 
 # font
+font-size = 14.0
 font-family = Fira Code
 font-feature = +ss07, +ss09, +cv32,
 font-style = Light
