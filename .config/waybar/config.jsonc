@@ -48,6 +48,7 @@
             "class<code>": "󰨞 ",
             "class<org.qutebrowser.qutebrowser>": "Ҩ",
             "sayonara": "𝄞",
+            "class<ario>": "𝄞",
             "nemo": "🖿 ",
             "Feishu": "",
             "微信": "",
@@ -193,6 +194,9 @@
     },
     "mpd": {
         "format": "{stateIcon} {consumeIcon}{randomIcon}{repeatIcon}{singleIcon} {album} - {title}",
+        "album-len": 15,
+        "title-len": 15,
+        "max-len": 30,
         "format-disconnected": "Disconnected ",
         "format-stopped": "{consumeIcon}{randomIcon}{repeatIcon}{singleIcon}Stopped ",
         "interval": 10,
