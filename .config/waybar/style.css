@@ -163,9 +163,6 @@ label:focus {
     padding: 0px 10px;
     color: #f38ba8;
 }
-#privacy {
-    background: transparent;
-}
 #privacy-item.screenshare {
     background: #f38ba8;
 }
@@ -174,4 +171,7 @@ label:focus {
 }
 #privacy-item.audio-out {
     background: #89b4fa;
+}
+#mpd.playing {
+    color: #f2cdcd;
 }
