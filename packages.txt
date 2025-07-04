@@ -1,5 +1,6 @@
 7zip
 alacritty
+ario
 base
 base-devel
 bash-completion
@@ -21,7 +22,6 @@ dotnet-sdk
 dotnet-sdk-8.0
 dunst
 efibootmgr
-eww
 fastfetch
 fcitx5
 fcitx5-chinese-addons
@@ -114,6 +114,7 @@ obs-studio
 obsidian
 openssh
 os-prober
+otf-cascadia-code
 paru-git
 paru-git-debug
 pavucontrol
