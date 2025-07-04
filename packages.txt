@@ -43,6 +43,7 @@ gcc13
 gcc13-libs
 gdb
 ghc
+ghostty
 gimp
 git
 git-lfs
@@ -90,6 +91,8 @@ mesa-utils
 meson
 minecraft-launcher
 mono
+mpc
+mpd
 musikcube-bin
 nemo
 neovim
