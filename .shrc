@@ -146,6 +146,8 @@ alias t='tmux'
 alias f='fastfetch'
 alias py='python3'
 alias ewww='~/Public/eww/target/release/eww'
+alias wine='~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
+alias proton='STEAM_COMPAT_DATA_PATH=~/.local/share/Steam/steamapps/compatdata  STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam ~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/proton'
 
 # env
 export EDITOR='nvim'
@@ -187,7 +189,7 @@ __get_py_venv() {
 }
 
 __get_conda_env() {
-    CONDA_SYMBOL=" : "
+    CONDA_SYMBOL="𝔓𝔶:"
     CONDA_ENV=""
     if [ -n "$CONDA_PREFIX" ]; then
         CONDA_DIR=$(basename $CONDA_PREFIX)
