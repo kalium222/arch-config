@@ -15,6 +15,7 @@ cinnamon
 clang
 cmake
 cuda
+cups
 d-spy
 dkms
 dosfstools
@@ -84,6 +85,7 @@ linux-zen-headers
 lshw
 lua
 lua-language-server
+ly
 maim
 man-db
 man-pages
@@ -195,7 +197,6 @@ traceroute
 tree-sitter-cli
 tree-sitter-python
 ttf-fira-code
-ttf-font-awesome
 ttf-icomoon-feather
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols-mono
@@ -221,6 +222,7 @@ wireshark-qt
 wl-clipboard
 wlr-randr
 wmctrl
+woff2-font-awesome
 xarchiver
 xclip
 xdg-desktop-portal-gtk
