@@ -17,6 +17,7 @@ cmake
 cuda
 cups
 d-spy
+darktable
 dkms
 dosfstools
 dotnet-sdk
@@ -103,7 +104,6 @@ networkmanager
 ninja
 nix
 nmap
-nomacs
 noto-fonts-cjk
 noto-fonts-emoji
 npm
