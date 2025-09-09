@@ -17,12 +17,12 @@ lastlogin="`last $USER | head -n1 | tr -s ' ' | cut -d' ' -f5,6,7`"
 uptime="`uptime -p | sed -e 's/up //g'`"
 
 # Options
-hibernate='💤'
-shutdown='⏻ '
-reboot='🔁'
-lock='🔒'
-suspend='🌙'
-logout='🚪'
+hibernate='󱋑'
+shutdown=''
+reboot=''
+lock=''
+suspend='⏾'
+logout='󰍃'
 
 # Rofi CMD
 rofi_cmd() {

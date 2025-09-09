@@ -149,7 +149,7 @@ qt5-wayland
 qutebrowser
 remmina
 ripgrep
-rofi-wayland
+rofi
 rustup
 sayonara-player
 scdoc
