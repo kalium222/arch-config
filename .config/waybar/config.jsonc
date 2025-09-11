@@ -58,7 +58,8 @@
             "nm-connection-editor": " ",
             "libreoffice": "🗎 ",
             "thunderbird": "",
-            "timeshift-gtk": "𐍄"
+            "timeshift-gtk": "𐍄",
+            "class<obsidian>": "󱓧"
         }
     },
     // "hyprland/submap": {

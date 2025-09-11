@@ -10,14 +10,14 @@ settings:
     global: true
   colors.webpage.preferred_color_scheme:
     global: dark
-  content.proxy:
-    global: http://localhost:20172
+  # content.proxy:
+  #   global: http://localhost:20172
   fonts.default_family:
     global: MonofurNerdFont
   fonts.default_size:
     global: 15pt
-  qt.force_software_rendering:
-    global: qt-quick
+  # qt.force_software_rendering:
+  #   global: qt-quick
   statusbar.show:
     global: in-mode
   tabs.indicator.padding:
