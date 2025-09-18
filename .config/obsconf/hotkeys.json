@@ -1,0 +1,28 @@
+{
+  "obsidian-completr:completr-fake-tab": [],
+  "obsidian-completr:completr-open-suggestion-popup": [],
+  "obsidian-completr:completr-select-next-suggestion": [
+    {
+      "key": "ArrowDown",
+      "modifiers": []
+    },
+    {
+      "modifiers": [
+        "Mod"
+      ],
+      "key": "Tab"
+    }
+  ],
+  "obsidian-completr:completr-select-previous-suggestion": [
+    {
+      "key": "ArrowUp",
+      "modifiers": []
+    },
+    {
+      "modifiers": [
+        "Shift"
+      ],
+      "key": "Tab"
+    }
+  ]
+}
