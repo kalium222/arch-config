@@ -56,7 +56,7 @@
             "blueman-manager": "", // blueman-manager window
             "class<blueberry.py>": "", // blueberry window
             "nm-connection-editor": " ",
-            "libreoffice": "🗎 ",
+            "libreoffice": "",
             "thunderbird": "",
             "timeshift-gtk": "𐍄",
             "class<obsidian>": "󱓧"
