@@ -185,11 +185,11 @@ __get_nix_shell() {
 }
 
 __get_py_venv() {
-    echo ${VIRTUAL_ENV:+{𝔓𝔶: $(basename $VIRTUAL_ENV)}─}
+    echo ${VIRTUAL_ENV:+{: $(basename $VIRTUAL_ENV)}─}
 }
 
 __get_conda_env() {
-    CONDA_SYMBOL="𝔓𝔶:"
+    CONDA_SYMBOL=":"
     CONDA_ENV=""
     if [ -n "$CONDA_PREFIX" ]; then
         CONDA_DIR=$(basename $CONDA_PREFIX)
