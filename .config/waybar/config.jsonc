@@ -38,7 +38,7 @@
 		    "default": " "
         },
         "format-window-seperator": "|",
-        "window-rewrite-default": "ᐛ ",
+        "window-rewrite-default": "",
         "window-rewrite": {
             "class<firefox>": " ",
             "class<firefox> title<.*github.*>": " ",
@@ -47,8 +47,8 @@
             "class<com.mitchellh.ghostty>": " ",
             "class<code>": "󰨞 ",
             "class<org.qutebrowser.qutebrowser>": "Ҩ",
-            "sayonara": "𝄞",
-            "class<ario>": "𝄞",
+            "sayonara": " ",
+            "class<ario>": " ",
             "nemo": "🖿 ",
             "Feishu": "",
             "微信": "",
@@ -57,8 +57,8 @@
             "class<blueberry.py>": "", // blueberry window
             "nm-connection-editor": " ",
             "libreoffice": "",
-            "thunderbird": "",
-            "timeshift-gtk": "𐍄",
+            "thunderbird": "",
+            "timeshift-gtk": "󰋚",
             "class<obsidian>": "󱓧"
         }
     },
