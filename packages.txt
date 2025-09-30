@@ -14,7 +14,6 @@ cabal-install
 cinnamon
 clang
 cmake
-cuda
 cups
 d-spy
 darktable
@@ -22,6 +21,7 @@ dkms
 dosfstools
 dotnet-sdk
 dotnet-sdk-8.0
+drawio-desktop
 dunst
 efibootmgr
 fastfetch
@@ -43,6 +43,7 @@ gcc11-fortran
 gcc11-libs
 gcc13
 gcc13-libs
+gcc14
 gdb
 ghc
 ghostty
@@ -75,7 +76,7 @@ kitty
 lazydocker-bin
 leftwm
 lib32-nvidia-utils
-libreoffice-still
+libreoffice-fresh
 libva-nvidia-driver
 libvirt
 linux
@@ -90,13 +91,16 @@ ly
 maim
 man-db
 man-pages
+mariadb
 mesa-utils
 meson
+micromamba-bin
 minecraft-launcher
 mono
 mpc
 mpd
-musikcube-bin
+mpv
+mysql-workbench
 nemo
 neovim
 network-manager-applet
@@ -117,7 +121,7 @@ obsidian
 openssh
 os-prober
 otf-cascadia-code
-paru-git
+paru
 paru-git-debug
 pavucontrol
 picom
@@ -150,10 +154,10 @@ qutebrowser
 remmina
 ripgrep
 rofi
+ruff
 rustup
 sayonara-player
 scdoc
-sddm
 seahorse
 slop
 slurp
@@ -162,7 +166,6 @@ stack
 steam
 sudo
 termshark
-termusic
 texinfo
 texlab
 texlive-basic
