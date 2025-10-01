@@ -1,5 +1,4 @@
 7zip
-alacritty
 ario
 base
 base-devel
@@ -65,7 +64,6 @@ gvfs-smb
 haskell-language-server
 helvum
 highlight
-hypridle
 hyprland
 hyprlock
 hyprpaper
@@ -273,6 +271,7 @@ yazi
 yesplaymusic
 zathura
 zathura-pdf-poppler
+zellij
 zip
 zsh
 zsh-autosuggestions
