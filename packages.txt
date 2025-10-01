@@ -192,7 +192,6 @@ texlive-xetex
 thunderbird
 timeshift
 tlp
-tmux
 torbrowser-launcher
 traceroute
 tree-sitter-cli

@@ -4,7 +4,6 @@ theme "catppuccin-macchiato"
 simplified_ui true
 show_startup_tips false
 scroll_buffer_size 2000
-session_name "◠ڼ◠"
 attach_to_session true
 session_serialization false
 disable_session_metadata true
