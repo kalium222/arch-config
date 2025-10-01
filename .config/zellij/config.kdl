@@ -1,9 +1,13 @@
 default_mode "normal"
-// pane_frames false
-
+pane_frames false
 theme "catppuccin-macchiato"
+// simplified_ui true
 show_startup_tips false
 scroll_buffer_size 2000
+session_name "◠ڼ◠"
+attach_to_session true
+session_serialization false
+disable_session_metadata true
 
 keybinds clear-defaults=true {
     shared {
@@ -27,20 +31,20 @@ keybinds clear-defaults=true {
         // control
         bind "Alt \\" { ToggleFloatingPanes; }
         bind "Alt Space" { NextSwapLayout; }
-        bind "Alt Backspace" { Detach; }
+        bind "Alt Backspace" { Quit; }
     }
     shared_except "normal" "entersearch" "renametab" "renamepane" {
         bind "esc" { SwitchToMode "normal"; }
     }
 
     pane {
-        bind "s" { NewPane "down"; SwitchToMode "normal"; }
-        bind "v" { NewPane "right"; SwitchToMode "normal"; }
+        bind "i" { NewPane "up"; SwitchToMode "normal"; }
+        bind "s" { NewPane "left"; SwitchToMode "normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "normal"; }
         bind "Tab" { SwitchFocus; }
 
         bind "r" { SwitchToMode "renamepane"; PaneNameInput 0; }
-        bind "i" { TogglePanePinned; SwitchToMode "normal"; }
+        bind "p" { TogglePanePinned; SwitchToMode "normal"; }
         bind "e" { TogglePaneEmbedOrFloating; SwitchToMode "normal"; }
         bind "z" { TogglePaneFrames; SwitchToMode "normal"; }
         bind "x" { CloseFocus; SwitchToMode "normal"; }
@@ -175,13 +179,11 @@ plugins {
     welcome-screen location="zellij:session-manager" {
         welcome_screen true
     }
+    zjstatus location="file:~/.local/share/zellij/plugins/zjstatus.wasm"
 }
 // Plugins to load in the background when a new session starts
 // eg. "file:/path/to/my-plugin.wasm"
 // eg. "https://example.com/my-plugin.wasm"
-load_plugins {}
-
-session_name "◠ڼ◠"
-attach_to_session true
-session_serialization false
-disable_session_metadata true
+load_plugins {
+    "file:~/.local/share/zellij/plugins/zjstatus.wasm"
+}

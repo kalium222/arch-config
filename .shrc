@@ -75,6 +75,16 @@ function yazi_wrapper() {
 }
 alias y='yazi_wrapper'
 
+function zellij_wrapper() {
+    zellij "$@"
+    # remove all the temp cache
+    find "${XDG_CACHE_HOME:-$HOME/.cache}/zellij" \
+        -maxdepth 1 -type d \
+        -name "????????-????-????-????-????????????" \
+        -exec rm -rf {} +
+}
+alias z='zellij_wrapper'
+
 function fuck() {
     ah="
         ⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂
