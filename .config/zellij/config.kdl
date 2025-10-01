@@ -1,7 +1,7 @@
 default_mode "normal"
 pane_frames false
 theme "catppuccin-macchiato"
-// simplified_ui true
+simplified_ui true
 show_startup_tips false
 scroll_buffer_size 2000
 session_name "◠ڼ◠"
