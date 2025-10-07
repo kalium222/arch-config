@@ -107,6 +107,8 @@ cannot open wechat in docker.
 `man pacman.conf`. Then uncoment the relative line.
 
 ## Troubleshooting
+### swap esc and capslock in X/compositor level, but doesn't work in vscode wayland
+See [this issue](github.com/vscode-neovim/vscode-neovim/issues/124)
 
 ### glmark2 got low score on xorg
 TODO: 
