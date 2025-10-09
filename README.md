@@ -11,8 +11,8 @@ put the correspounding place by hand.
 ## TODO
 Follow the wiki.
 - [ ] virtual console settings.
-- [ ] multimedia. TODO: cannot share screen.
-- [ ] suspend/hibernate.
+- [x] multimedia. TODO: cannot share screen.
+- [x] suspend/hibernate.
 - [x] Network configuraion.
 - [x] Proxy. Use `v2raya`. 
 - [x] AUR helper.
@@ -29,7 +29,7 @@ Follow the wiki.
 for it.
 - [x] Bluetooth. Just follow the 
 [wiki](https://wiki.archlinux.org/title/Bluetooth).
-- [x] Chinese input.
+- [x] cjk input.
 - [x] color in `pacman`.
 - [x] Shell.
 
@@ -91,7 +91,7 @@ Just write in `.bashrc`
 #### Zsh
 Check the path of the plugins with `pacman -Fl *package_name*` and source them in `.zshrc`.
 
-### Docker
+### Container
 First install docker engine, docker compose, docker buildx.
 To run docker in rootless mode, install docker-rootless-extras.
 Set a context for rootless daemon.
@@ -103,13 +103,12 @@ some application in docker, such as wechat, feishu, ...
 TODO:
 cannot open wechat in docker.
 
+move to podman. see arch wiki
+
 ### Enable color in the output of `pacman`
 `man pacman.conf`. Then uncoment the relative line.
 
 ## Troubleshooting
-### swap esc and capslock in X/compositor level, but doesn't work in vscode wayland
-See [this issue](github.com/vscode-neovim/vscode-neovim/issues/124)
-
 ### glmark2 got low score on xorg
 TODO: 
 
@@ -122,6 +121,7 @@ Change to NetworkManager solved this.
 
 ### swapping caps and esc behave strange in `vim/nvim` plugins in `vscode`
 Some configuraion in vscode. I forgot. Just search online.
+See [this issue](github.com/vscode-neovim/vscode-neovim/issues/124)
 
 ### Can't open timeshift-launcher in xorg
 TODO:
