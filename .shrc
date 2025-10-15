@@ -136,17 +136,6 @@ setproxy() {
     curl cip.cc
 }
 
-curl_github_repo() {
-    local repo="$1"
-    local branch="$2"
-    local file="$3"
-
-    local url="https://raw.githubusercontent.com/${repo}/${branch}/${file}"
-
-    echo "Downloading $file from $repo@$branch..."
-    curl -o "$file" "$url"
-}
-
 # ---------------- constants ----------------
 
 # some aliases
@@ -155,7 +144,6 @@ alias vi='nvim'
 alias t='tmux'
 alias f='fastfetch'
 alias py='python3'
-alias ewww='~/Public/eww/target/release/eww'
 alias wine='~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
 alias proton='STEAM_COMPAT_DATA_PATH=~/.local/share/Steam/steamapps/compatdata  STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam ~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/proton'
 
@@ -185,17 +173,13 @@ unset __mamba_setup
 # ---------------- misc ----------------
 
 __get_prompt_extra_info() {
-    echo ${debian_chroot:+($debian_chroot)─}$(__get_conda_env)$(__get_py_venv)$(__get_nix_shell)
+    echo $(__get_conda_env)$(__get_nix_shell)
 }
 
 __get_nix_shell() {
     if [ -n "$IN_NIX_SHELL" ]; then
-        echo " :${IN_NIX_SHELL}-"
+        echo ":${IN_NIX_SHELL}-"
     fi
-}
-
-__get_py_venv() {
-    echo ${VIRTUAL_ENV:+{: $(basename $VIRTUAL_ENV)}─}
 }
 
 __get_conda_env() {
@@ -209,6 +193,6 @@ __get_conda_env() {
             CONDA_ENV=$CONDA_DIR
         fi
     fi
-    echo ${CONDA_PREFIX:+{${CONDA_SYMBOL}${CONDA_ENV}}─}
+    echo ${CONDA_PREFIX:+{${CONDA_SYMBOL}${CONDA_ENV}}-}
 }
 
