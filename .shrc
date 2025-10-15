@@ -178,7 +178,7 @@ __get_prompt_extra_info() {
 
 __get_nix_shell() {
     if [ -n "$IN_NIX_SHELL" ]; then
-        echo ":${IN_NIX_SHELL}-"
+        echo "─{:${name}}"
     fi
 }
 
@@ -192,7 +192,7 @@ __get_conda_env() {
         else
             CONDA_ENV=$CONDA_DIR
         fi
+        echo "─{${CONDA_SYMBOL}${CONDA_ENV}}"
     fi
-    echo ${CONDA_PREFIX:+{${CONDA_SYMBOL}${CONDA_ENV}}-}
 }
 

@@ -103,7 +103,7 @@ if [ "$color_prompt" = yes ]; then
     VIRTUAL_ENV_DISABLE_PROMPT=1
     prompt_symbol=㉿
     [ "$EUID" -eq 0 ] && prompt_symbol=💀
-    PROMPT=$'%F{%(#.blue.green)}╭─$(__get_prompt_extra_info)%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)}-[%F{reset}%(6~.%-1~/…/%2~.%5~)%b%F{%(#.blue.green)}]\n╰─%B%F{%(#.red.blue)}󰐊%b%F{reset} '
+    PROMPT=$'%F{%(#.blue.green)}╭─%B%F{%(#.red.blue)}%n'$prompt_symbol$'%m%b%F{%(#.blue.green)}─[%F{reset}%(6~.%-1~/…/%2~.%5~)%b%F{%(#.blue.green)}]$(__get_prompt_extra_info)\n╰─%B%F{%(#.red.blue)}󰐊%b%F{reset} '
     RPROMPT=$'%(?.. %? %F{red}%B⨯%b%F{reset})%(1j. %j %F{yellow}%B⚙%b%F{reset}.)'
     unset prompt_symbol
 else
