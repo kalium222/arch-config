@@ -1,4 +1,5 @@
 7zip
+android-tools
 ario
 base
 base-devel
@@ -18,7 +19,6 @@ darktable
 dkms
 dosfstools
 dotnet-sdk
-dotnet-sdk-8.0
 drawio-desktop
 dunst
 efibootmgr
@@ -31,6 +31,7 @@ fcitx5-qt
 ffmpegthumbnailer
 firefox
 firewalld
+flatpak
 freerdp
 fzf
 gcc11
