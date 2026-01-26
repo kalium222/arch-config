@@ -74,6 +74,8 @@ Use [waybar](https://github.com/Alexays/Waybar) as status bar.
     Wayland still uses something about xkb, which is complicated and verbose.
     Fortunately, hyprland provide us with some simple variables such as `input:kb_xxx`.
 
+### Input method and dictionary
+Use fcitx5. [Dictionary setup](https://github.com/twoic/sogou2fcitx5)
 ### Grub theme
 First see [wiki of kernel parameter for grub](https://wiki.archlinux.org/title/Kernel_parameters#GRUB).
 Then we should be able to do this. 
