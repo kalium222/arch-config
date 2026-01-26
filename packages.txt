@@ -28,6 +28,7 @@ fcitx5-chinese-addons
 fcitx5-configtool
 fcitx5-gtk
 fcitx5-qt
+fcitx5-theme-macos12
 ffmpegthumbnailer
 firefox
 firewalld
@@ -40,7 +41,6 @@ gcc11-fortran
 gcc11-libs
 gcc13
 gcc13-libs
-gcc14
 gdb
 ghostty
 gimp
@@ -65,10 +65,10 @@ hyprlock
 hyprpaper
 hyprpolkitagent
 intel-ucode
+inxi
 iptables-nft
 kitty
 lazydocker-bin
-lib32-nvidia-utils
 libreoffice-fresh
 libva-nvidia-driver
 libvirt
@@ -104,7 +104,7 @@ noto-fonts-cjk
 noto-fonts-emoji
 npm
 ntfs-3g
-nvidia-dkms
+nvidia-open-dkms
 nvidia-settings
 nvidia-utils
 nvtop
@@ -140,7 +140,6 @@ seahorse
 slop
 slurp
 sshfs
-steam
 sudo
 termshark
 texinfo
