@@ -19,7 +19,6 @@ darktable
 dkms
 dosfstools
 dotnet-sdk
-drawio-desktop
 dunst
 efibootmgr
 fastfetch
@@ -132,6 +131,7 @@ qutebrowser
 remmina
 ripgrep
 rofi
+roslyn-ls
 ruff
 rustup
 sayonara-player
