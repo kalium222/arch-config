@@ -22,9 +22,9 @@ layout {
                 mode_rename_pane   "#[fg=black,bg=#89B4FA] 󰑕 "
                 mode_session       "#[fg=black,bg=#89B4FA]  "
                 // formatting for inactive tabs
-                tab_normal              "  #[fg=#6C7086]"
-                tab_normal_fullscreen   "  #[fg=#6C7086]"
-                tab_normal_sync         "  #[fg=#6C7086]"
+                tab_normal              "  #[fg=#6C7086]"
+                tab_normal_fullscreen   "  #[fg=#6C7086]"
+                tab_normal_sync         "  #[fg=#6C7086]"
 
                 // formatting for the current active tab
                 tab_active              "  #[fg=blue,bold]#[fg=yellow,bold]{floating_indicator}"
