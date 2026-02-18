@@ -152,7 +152,7 @@ export EDITOR='nvim'
 export VISUAL='nvim'
 export PATH="$PATH:$HOME/.cargo/bin"
 export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
-
+export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
 
 
 # >>> mamba initialize >>>
