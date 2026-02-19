@@ -6,7 +6,7 @@ base-devel
 bash-completion
 bash-language-server
 bat
-blueberry
+bluetui
 bluez
 bluez-utils
 brightnessctl
