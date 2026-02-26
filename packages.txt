@@ -30,6 +30,7 @@ fcitx5-qt
 fcitx5-theme-macos12
 fd
 firefox
+firewall-config
 firewalld
 flatpak
 freerdp
