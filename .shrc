@@ -1,4 +1,4 @@
-# !/bin/bash
+#!/bin/bash
 
 # Some basic configurations such as
 # alias, colors, functions and others
@@ -136,6 +136,10 @@ setproxy() {
     curl cip.cc
 }
 
+passgen() {
+    read -s MSG
+    echo -n "$MSG" | openssl dgst -sha256 -binary | base64 | head -c 12 | awk '{print $0"K@!"}'
+}
 # ---------------- constants ----------------
 
 # some aliases
