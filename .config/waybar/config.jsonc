@@ -59,7 +59,9 @@
             "libreoffice": "",
             "thunderbird": "",
             "timeshift-gtk": "󰋚",
-            "class<obsidian>": "󱓧"
+            "class<obsidian>": "󱓧",
+            "class<org.godotengine.Editor>": "",
+            "class<blender>": ""
         }
     },
     // "hyprland/submap": {
