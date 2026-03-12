@@ -1,6 +1,5 @@
 7zip
 android-tools
-ario
 base
 base-devel
 bash-completion
@@ -125,7 +124,6 @@ slurp
 sshfs
 sudo
 termshark
-texinfo
 texlab
 texlive-basic
 texlive-bibtexextra
