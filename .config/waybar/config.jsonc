@@ -1,7 +1,7 @@
 // -*- mode: jsonc -*-
 {
     "layer": "top",
-    // "output": "eDP-1",
+    "output": "DP-2",
     "position": "top", // Waybar position (top|bottom|left|right)
 
     // Choose the order of the modules
