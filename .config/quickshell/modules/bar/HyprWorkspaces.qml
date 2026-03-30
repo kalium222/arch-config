@@ -6,13 +6,11 @@ import Quickshell.Hyprland
 
 import qs.theme
 
-Rectangle {
+Capsule {
     id: root
     anchors.verticalCenter: parent.verticalCenter
-    implicitHeight: Theme.bar.height - 4
-    implicitWidth: workspaces.implicitWidth + 9
     radius: height / 2
-    color: Theme.bar.capsules.background_color
+    color: "transparent"
 
     Behavior on implicitWidth {
         NumberAnimation {
@@ -25,14 +23,6 @@ Rectangle {
         anchors.verticalCenter: parent.verticalCenter
         spacing: 0
 
-        Text {
-            text: ""
-            bottomPadding: 1.5
-            font.pointSize: 16
-            color: "#89DCEB"
-            Layout.leftMargin: root.radius
-            Layout.rightMargin: root.radius - 5
-        }
         Repeater {
             // NOTE: read https://quickshell.org/docs/v0.1.0/types/Quickshell/ScriptModel/
             model: ScriptModel {
@@ -41,13 +31,13 @@ Rectangle {
             CapsuleText {
                 // NOTE: read https://quickshell.org/docs/v0.1.0/types/Quickshell/ObjectModel/
                 required property var modelData
-                property bool active: modelData.active
-                property bool urgent: modelData.urgent
                 Layout.preferredWidth: root.radius * 2
                 background_color: "transparent"
                 hover_background_color: "white"
-                text_color: modelData.urgent ? Theme.bar.workspace.urgent_color : active ? Theme.bar.workspace.active_color : Theme.bar.workspace.inactive_color
+
                 text: ""
+                text_size: 7.5
+                text_color: modelData.urgent ? Theme.bar.workspace.urgent_color : modelData.active ? Theme.bar.workspace.active_color : Theme.bar.workspace.inactive_color
                 Behavior on text_color {
                     ColorAnimation {
                         duration: 200

@@ -19,11 +19,6 @@ PanelWindow {
     color: "transparent"
     WlrLayershell.layer: WlrLayer.Top
 
-    HyprWorkspaces {
-        anchors.left: parent.left
-        anchors.leftMargin: 5
-    }
-
     component CapsuleRow: RowLayout {
         spacing: Theme.bar.capsules.spacing
         anchors {
@@ -32,6 +27,13 @@ PanelWindow {
         }
     }
 
+    // Left Components
+    CapsuleRow {
+        anchors.left: parent.left
+        Audio {}
+        Bluetooth {}
+        Network {}
+    }
     // Middle Components
     CapsuleRow {
         anchors.horizontalCenter: parent.horizontalCenter
@@ -40,14 +42,12 @@ PanelWindow {
             color: "#89DCEB"
             font.pointSize: 17
         }
+        HyprWorkspaces {}
         Datetime {}
     }
     // Right Components
     CapsuleRow {
         anchors.right: parent.right
         SystemTray {}
-        Network {}
-        Bluetooth {}
-        Audio {}
     }
 }

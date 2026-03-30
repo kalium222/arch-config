@@ -13,7 +13,7 @@ Rectangle {
     // is there better way?
     Layout.preferredHeight: Theme.bar.height - 4
     Layout.preferredWidth: children.length == 1 ? 60 : children[1].implicitWidth
-    implicitHeight: Theme.bar.height
+    implicitHeight: Theme.bar.height - 4
     implicitWidth: children.length == 1 ? 60 : children[1].implicitWidth
 
     property alias mouser: mouser
@@ -32,7 +32,7 @@ Rectangle {
     }
     Behavior on color {
         ColorAnimation {
-            duration: 100
+            duration: 300
         }
     }
     Behavior on Layout.preferredWidth {

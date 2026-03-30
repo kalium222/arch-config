@@ -20,4 +20,5 @@ CapsuleText {
         else
             return `${bluetooth_icon} ${connected_num} connected`
     }
+    onClicked: adapter.enabled = !adapter.enabled
 }

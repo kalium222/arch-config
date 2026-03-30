@@ -11,10 +11,8 @@ Capsule {
     RowLayout {
         id: row
         anchors.centerIn: parent
-        Text {
-            text: "todo: system tray"
-            color: "white"
-        }
+        // FIX: margins doesn't work
+        // anchors.margins: 10
         Repeater {
             model: SystemTray.items
             IconImage {
