@@ -12,7 +12,7 @@ sync_config() {
     local config_target="$2"
 
     mkdir -p "$config_target"
-    for item in "$config_source"/*; do
+    for item in "$config_source"/{.[!.]*,*}; do
         local basename="$(basename "$item")"
         local target_item="$config_target/$basename"
         # If item is a directory, recursively sync it
@@ -29,7 +29,7 @@ sync_config() {
 sync_config "$xdg_config_source" "$xdg_config"
 
 # synchronize the other things
-files=(".zshrc" ".shrc" ".Xmodmap" ".xinitrc" ".Xresources")
+files=(".zshenv" ".Xmodmap" ".xinitrc" ".Xresources")
 for file in "${files[@]}"; do
     ln -sf "$(pwd)/$file" "$HOME/$file"
 done

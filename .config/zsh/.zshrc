@@ -39,21 +39,12 @@ zle-line-init() {
 zle -N zle-line-init
 echo -ne '\e[3 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[3 q' ;} # Use beam shape cursor for each new prompt.
-#bindkey ' ' magic-space                           # do history expansion on space
-#bindkey '^U' backward-kill-line                   # ctrl + U
-#bindkey '^[[3;5~' kill-word                       # ctrl + Supr
-#bindkey '^[[3~' delete-char                       # delete
-#bindkey '^[[1;5C' forward-word                    # ctrl + ->
-#bindkey '^[[1;5D' backward-word                   # ctrl + <-
-#bindkey '^[[5~' beginning-of-buffer-or-history    # page up
-#bindkey '^[[6~' end-of-buffer-or-history          # page down
-#bindkey '^[[H' beginning-of-line                  # home
-#bindkey '^[[F' end-of-line                        # end
-#bindkey '^[[Z' undo                               # shift + tab undo last action
 
 # enable completion features
 autoload -Uz compinit
-compinit -d ~/.cache/zcompdump
+[ -d "$XDG_CACHE_HOME"/zsh ] || mkdir -p "$XDG_CACHE_HOME"/zsh
+zstyle ':completion:*' cache-path "$XDG_CACHE_HOME"/zsh/zcompcache
+compinit -d "$XDG_CACHE_HOME"/zsh/zcompdump
 zstyle ':completion:*:*:*:*:*' menu select
 zstyle ':completion:*' auto-description 'specify: %d'
 zstyle ':completion:*' completer _expand _complete
@@ -69,7 +60,8 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # History configurations
-HISTFILE=~/.zsh_history
+[ -d "$XDG_STATE_HOME"/zsh ] || mkdir -p "$XDG_STATE_HOME"/zsh
+HISTFILE="$XDG_STATE_HOME"/zsh/history
 HISTSIZE=1000
 SAVEHIST=2000
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
@@ -204,6 +196,8 @@ if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.z
     ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
 fi
 
-# source the basic configuration
-source ~/.shrc
+source $XDG_CONFIG_HOME/zsh/.zsh-autopair
+autopair-init
 
+# source the basic configuration
+source $XDG_CONFIG_HOME/.shrc
