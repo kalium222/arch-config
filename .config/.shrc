@@ -200,3 +200,5 @@ __get_conda_env() {
     fi
 }
 
+## env for xdg dir
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
