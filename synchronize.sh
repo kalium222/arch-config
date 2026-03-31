@@ -24,12 +24,12 @@ sync_config() {
         fi
     done
 }
-#
+
 # Call function to synchronize directories
 sync_config "$xdg_config_source" "$xdg_config"
 
 # synchronize the other things
-files=(".zshenv" ".Xmodmap" ".xinitrc" ".Xresources")
+files=(".zshenv")
 for file in "${files[@]}"; do
     ln -sf "$(pwd)/$file" "$HOME/$file"
 done
