@@ -111,7 +111,6 @@ timeshift
 tlp
 torbrowser-launcher
 tree-sitter-cli
-tree-sitter-python
 ttf-fira-code
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols
@@ -119,6 +118,7 @@ ttf-nerd-fonts-symbols-mono
 ueberzugpp
 unityhub
 unzip
+upower
 usbutils
 uwsm
 v2raya-bin
@@ -133,7 +133,6 @@ wireshark-cli
 wireshark-qt
 wl-clipboard
 wlr-randr
-woff2-font-awesome
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xray-bin
