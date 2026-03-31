@@ -29,7 +29,7 @@ sync_config() {
 sync_config "$xdg_config_source" "$xdg_config"
 
 # synchronize the other things
-files=(".zshenv")
+files=()
 for file in "${files[@]}"; do
     ln -sf "$(pwd)/$file" "$HOME/$file"
 done

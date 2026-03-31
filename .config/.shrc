@@ -201,4 +201,13 @@ __get_conda_env() {
 }
 
 ## env for xdg dir
+export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
+alias adb='HOME="$XDG_DATA_HOME"/android adb'
+
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export CARGO_HOME="$XDG_DATA_HOME"/cargo
+export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
+export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle

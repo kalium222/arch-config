@@ -1,0 +1,2 @@
+# use xdg dir for zsh config
+export ZDOTDIR="$XDG_CONFIG_HOME"/zsh
