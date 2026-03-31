@@ -8,7 +8,6 @@ import qs.theme
 
 Capsule {
     id: root
-    anchors.verticalCenter: parent.verticalCenter
     radius: height / 2
     color: "transparent"
 
