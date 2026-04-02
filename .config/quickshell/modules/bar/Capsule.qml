@@ -30,6 +30,7 @@ Rectangle {
         cursorShape: Qt.PointingHandCursor
         onClicked: root.clicked()
     }
+
     Behavior on color {
         ColorAnimation {
             duration: 300
@@ -41,6 +42,12 @@ Rectangle {
             easing.type: Easing.OutBack
         }
     }
+    // Behavior on implicitWidth {
+    //     NumberAnimation {
+    //         duration: 100
+    //         easing.type: Easing.OutBack
+    //     }
+    // }
     // TODO:
     // - different color onClicked
     // - animation when width change

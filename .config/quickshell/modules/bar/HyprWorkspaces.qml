@@ -11,12 +11,6 @@ Capsule {
     radius: height / 2
     color: "transparent"
 
-    Behavior on implicitWidth {
-        NumberAnimation {
-            duration: 200
-        }
-    }
-
     RowLayout {
         id: workspaces
         anchors.verticalCenter: parent.verticalCenter
@@ -27,8 +21,11 @@ Capsule {
             model: ScriptModel {
                 values: Hyprland.workspaces.values.filter(ws => ws.monitor == Hyprland.monitorFor(QsWindow.window.screen) && ws.id > 0)
             }
+
+            // NOTE: workspace identifier
             CapsuleText {
                 // NOTE: read https://quickshell.org/docs/v0.1.0/types/Quickshell/ObjectModel/
+                id: workspace_identifier
                 required property var modelData
                 Layout.preferredWidth: root.radius * 2
                 background_color: "transparent"
