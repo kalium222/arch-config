@@ -42,15 +42,4 @@ Rectangle {
             easing.type: Easing.OutBack
         }
     }
-    // Behavior on implicitWidth {
-    //     NumberAnimation {
-    //         duration: 100
-    //         easing.type: Easing.OutBack
-    //     }
-    // }
-    // TODO:
-    // - different color onClicked
-    // - animation when width change
-    //      this wont work
-    //      Behavior on width { NumAnimation {duration: 100} }
 }

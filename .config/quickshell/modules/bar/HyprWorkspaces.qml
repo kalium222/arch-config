@@ -8,7 +8,6 @@ import qs.theme
 
 Capsule {
     id: root
-    radius: height / 2
     color: "transparent"
 
     RowLayout {
@@ -57,7 +56,6 @@ Capsule {
                     opacity = 1;
                 }
                 // TODO: exit transition
-                // see https://quickshell.org/docs/v0.2.1/types/Quickshell/Retainable/
                 onClicked: {
                     Hyprland.dispatch(`workspace ${modelData.id}`);
                 }

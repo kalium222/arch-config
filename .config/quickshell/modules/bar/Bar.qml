@@ -33,12 +33,11 @@ PanelWindow {
         anchors.left: parent.left
         Audio {}
         Bluetooth {}
-        Network {}
+        // Network {}
     }
     // Middle Components
     CapsuleRow {
         anchors.horizontalCenter: parent.horizontalCenter
-        Privacy {}
         Text {
             text: ""
             color:"#89DCEB"
@@ -48,8 +47,8 @@ PanelWindow {
         Datetime {}
     }
     // Right Components
-    CapsuleRow {
-        anchors.right: parent.right
-        SystemTray {}
-    }
+    // CapsuleRow {
+    //     anchors.right: parent.right
+    //     SystemTray {}
+    // }
 }
