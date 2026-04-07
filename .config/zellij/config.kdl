@@ -14,7 +14,7 @@ keybinds clear-defaults=true {
         bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl m" { SwitchToMode "move"; }
         bind "Ctrl s" { SwitchToMode "resize"; }
-        bind "Ctrl \\" { SwitchToMode "session"; }
+        // bind "Ctrl w" { SwitchToMode "session"; }
         bind "Ctrl /" { SwitchToMode "scroll"; }
 
         // navigation
