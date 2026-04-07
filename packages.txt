@@ -10,6 +10,7 @@ bluez
 bluez-utils
 brightnessctl
 btop
+clang
 curl
 dkms
 dosfstools
