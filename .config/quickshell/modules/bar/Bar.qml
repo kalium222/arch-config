@@ -7,8 +7,8 @@ import qs.theme
 import qs.modules.bar.audio
 import qs.modules.bar.bluetooth
 import qs.modules.bar.datetime
-import qs.modules.bar.network
-import qs.modules.bar.systemtray
+// import qs.modules.bar.network
+// import qs.modules.bar.systemtray
 import qs.modules.bar.privacy
 
 PanelWindow {
@@ -38,6 +38,7 @@ PanelWindow {
     // Middle Components
     CapsuleRow {
         anchors.horizontalCenter: parent.horizontalCenter
+        Privacy {}
         Text {
             text: ""
             color:"#89DCEB"

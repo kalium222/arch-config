@@ -4,104 +4,93 @@ import Quickshell.Services.Pipewire
 
 import qs.modules.bar
 
-Capsule {
-    RowLayout {
-        Layout.rightMargin: 10
+// TODO: show information when hovered
+RowLayout {
+    id: privacy
+    Layout.rightMargin: 10
+    property var nodes: Pipewire.nodes.values
+    PwObjectTracker {
+        objects: privacy.nodes
+    }
 
-        Rectangle {
-            Layout.preferredWidth: content.implicitWidth
-            Layout.fillHeight: true
-            Text {
-                id: content
-                anchors.centerIn: parent
-                text: "todo: privacy"
-            }
-            MouseArea {
-                anchors.fill: parent
-                hoverEnabled: true
-                onClicked: {
-                    const state = screen_portal_identifier.state;
-                    if (state === "HIDE")
-                        screen_portal_identifier.state = "SHOW";
-                    else
-                        screen_portal_identifier.state = "HIDE";
-                }
-            }
-        }
-        CapsuleText {
-            id: screen_portal_identifier
-            // pw-cli list Node | rg xdg-desktop-portal-hyprland
-            // to find the node
-            property PwNode portal_node: Pipewire.nodes.values.find(n => n.name === "xdg-desktop-portal-hyprland")
-            text: "󱒃"
-            text_color: "red"
-            text_size: 9
-            leftPadding: 11.5
-            color: "black"
+    component Identifier: CapsuleText {
+        // pw-cli ls Node | grep xxx
+        // for example, pw-cli ls Node | grep "xdg-desktop-portal"
+        // to find the xdg-desktop-portal which are used for screen capture
+        id: identifier
+        text: "identifier"
+        text_color: "red"
+        text_size: 9
+        leftPadding: 11.5
+        color: "black"
+        mouser.hoverEnabled: false
 
-            onClicked: state = "HIDE"
-            state: "SHOW"
-            states: [
-                State {
-                    name: "SHOW"
-                    PropertyChanges {
-                        screen_portal_identifier {
-                            scale: 1
-                            opacity: 1
-                            // visible: true
-                        }
-                    }
-                },
-                State {
-                    name: "HIDE"
-                    PropertyChanges {
-                        screen_portal_identifier {
-                            scale: 0
-                            opacity: 0
-                            // visible: false
-                        }
+        required property list<PwNode> nodes
+
+        states: [
+            State {
+                name: "SHOW"
+                when: identifier.nodes.length != 0
+                PropertyChanges {
+                    identifier {
+                        opacity: 1
+                        visible: true
                     }
                 }
-            ]
-            transitions: [
-                Transition {
-                    from: "HIDE"
-                    to: "SHOW"
-                    SequentialAnimation {
-                        // PropertyAction {
-                        //     target: screen_portal_identifier
-                        //     property: "visible"
-                        //     value: true
-                        // }
-                        NumberAnimation {
-                            target: screen_portal_identifier
-                            properties: "scale, opacity"
-                            from: 0
-                            to: 1
-                        }
-                    }
-                },
-                Transition {
-                    from: "SHOW"
-                    to: "HIDE"
-                    SequentialAnimation {
-                        NumberAnimation {
-                            target: screen_portal_identifier
-                            properties: "scale, opacity"
-                            to: 0
-                            duration: 200
-                        }
-                        // PropertyAction {
-                        //     target: screen_portal_identifier
-                        //     property: "visible"
-                        //     value: false
-                        // }
+            },
+            State {
+                name: "HIDE"
+                when: identifier.nodes.length == 0
+                PropertyChanges {
+                    identifier {
+                        Layout.preferredHeight: 0
+                        Layout.preferredWidth: 0
+                        opacity: 0
+                        visible: false
                     }
                 }
-            ]
-        }
-        PwObjectTracker {
-            objects: [screen_portal_identifier.portal_node]
-        }
+            }
+        ]
+        transitions: [
+            Transition {
+                from: "SHOW"
+                to: "HIDE"
+                SequentialAnimation {
+                    NumberAnimation {
+                        target: identifier
+                        properties: "opacity, Layout.preferredHeight, Layout.preferredWidth"
+                        to: 0
+                        duration: 100
+                    }
+                    PropertyAction {
+                        target: identifier
+                        property: "visible"
+                        value: false
+                    }
+                }
+            }
+        ]
+
+    }
+
+    Identifier {
+        id: playback_identifier
+        nodes: privacy.nodes.filter(n => n.isStream)
+
+        text: ""
+        text_color: "lightblue"
+    }
+    Identifier {
+        id: mic_identifier
+        nodes: privacy.nodes.filter(n => n.properties["media.class"] === "Stream/Input/Audio")
+        
+        text: ""
+        text_color: "pink"
+    }
+    Identifier {
+        id: screen_portal_identifier
+        nodes: privacy.nodes.filter(n => n.name.includes("xdg-desktop-portal"))
+
+        text: "󱒃"
     }
 }
