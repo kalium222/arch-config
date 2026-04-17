@@ -8,7 +8,7 @@ import qs.modules.bar.audio
 import qs.modules.bar.bluetooth
 import qs.modules.bar.datetime
 // import qs.modules.bar.network
-// import qs.modules.bar.systemtray
+import qs.modules.bar.systemtray
 import qs.modules.bar.privacy
 
 PanelWindow {
@@ -48,8 +48,8 @@ PanelWindow {
         Datetime {}
     }
     // Right Components
-    // CapsuleRow {
-    //     anchors.right: parent.right
-    //     SystemTray {}
-    // }
+    CapsuleRow {
+        anchors.right: parent.right
+        SystemTray {}
+    }
 }
