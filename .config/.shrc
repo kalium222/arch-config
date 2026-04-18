@@ -85,56 +85,56 @@ function zellij_wrapper() {
 }
 alias z='zellij_wrapper'
 
-function fuck() {
-    ah="
-        ⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂
-        ⣿⣿⣿⡷⠊⡢⡹⣦⡑⢂⢕⢂⢕⢂⢕⢂⠕⠔⠌⠝⠛⠶⠶⢶⣦⣄⢂⢕⢂⢕
-        ⣿⣿⠏⣠⣾⣦⡐⢌⢿⣷⣦⣅⡑⠕⠡⠐⢿⠿⣛⠟⠛⠛⠛⠛⠡⢷⡈⢂⢕⢂
-        ⠟⣡⣾⣿⣿⣿⣿⣦⣑⠝⢿⣿⣿⣿⣿⣿⡵⢁⣤⣶⣶⣿⢿⢿⢿⡟⢻⣤⢑⢂
-        ⣾⣿⣿⡿⢟⣛⣻⣿⣿⣿⣦⣬⣙⣻⣿⣿⣷⣿⣿⢟⢝⢕⢕⢕⢕⢽⣿⣿⣷⣔
-        ⣿⣿⠵⠚⠉⢀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⢕⢕⢕⢕⢕⢕⣽⣿⣿⣿⣿
-        ⢷⣂⣠⣴⣾⡿⡿⡻⡻⣿⣿⣴⣿⣿⣿⣿⣿⣿⣷⣵⣵⣵⣷⣿⣿⣿⣿⣿⣿⡿
-        ⢌⠻⣿⡿⡫⡪⡪⡪⡪⣺⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
-        ⠣⡁⠹⡪⡪⡪⡪⣪⣾⣿⣿⣿⣿⠋⠐⢉⢍⢄⢌⠻⣿⣿⣿⣿⣿⣿⣿⣿⠏⠈
-        ⡣⡘⢄⠙⣾⣾⣾⣿⣿⣿⣿⣿⣿⡀⢐⢕⢕⢕⢕⢕⡘⣿⣿⣿⣿⣿⣿⠏⠠⠈
-        ⠌⢊⢂⢣⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢐⢕⢕⢕⢕⢕⢅⣿⣿⣿⣿⡿⢋⢜⠠⠈
-        ⠄⠁⠕⢝⡢⠈⠻⣿⣿⣿⣿⣿⣿⣿⣷⣕⣑⣑⣑⣵⣿⣿⣿⡿⢋⢔⢕⣿⠠⠈
-        ⠨⡂⡀⢑⢕⡅⠂⠄⠉⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⢔⢕⢕⣿⣿⠠⠈
-        ⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈
-"
-    echo $ah
-}
+# function fuck() {
+#     ah="
+#         ⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂
+#         ⣿⣿⣿⡷⠊⡢⡹⣦⡑⢂⢕⢂⢕⢂⢕⢂⠕⠔⠌⠝⠛⠶⠶⢶⣦⣄⢂⢕⢂⢕
+#         ⣿⣿⠏⣠⣾⣦⡐⢌⢿⣷⣦⣅⡑⠕⠡⠐⢿⠿⣛⠟⠛⠛⠛⠛⠡⢷⡈⢂⢕⢂
+#         ⠟⣡⣾⣿⣿⣿⣿⣦⣑⠝⢿⣿⣿⣿⣿⣿⡵⢁⣤⣶⣶⣿⢿⢿⢿⡟⢻⣤⢑⢂
+#         ⣾⣿⣿⡿⢟⣛⣻⣿⣿⣿⣦⣬⣙⣻⣿⣿⣷⣿⣿⢟⢝⢕⢕⢕⢕⢽⣿⣿⣷⣔
+#         ⣿⣿⠵⠚⠉⢀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⢕⢕⢕⢕⢕⢕⣽⣿⣿⣿⣿
+#         ⢷⣂⣠⣴⣾⡿⡿⡻⡻⣿⣿⣴⣿⣿⣿⣿⣿⣿⣷⣵⣵⣵⣷⣿⣿⣿⣿⣿⣿⡿
+#         ⢌⠻⣿⡿⡫⡪⡪⡪⡪⣺⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
+#         ⠣⡁⠹⡪⡪⡪⡪⣪⣾⣿⣿⣿⣿⠋⠐⢉⢍⢄⢌⠻⣿⣿⣿⣿⣿⣿⣿⣿⠏⠈
+#         ⡣⡘⢄⠙⣾⣾⣾⣿⣿⣿⣿⣿⣿⡀⢐⢕⢕⢕⢕⢕⡘⣿⣿⣿⣿⣿⣿⠏⠠⠈
+#         ⠌⢊⢂⢣⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢐⢕⢕⢕⢕⢕⢅⣿⣿⣿⣿⡿⢋⢜⠠⠈
+#         ⠄⠁⠕⢝⡢⠈⠻⣿⣿⣿⣿⣿⣿⣿⣷⣕⣑⣑⣑⣵⣿⣿⣿⡿⢋⢔⢕⣿⠠⠈
+#         ⠨⡂⡀⢑⢕⡅⠂⠄⠉⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⢔⢕⢕⣿⣿⠠⠈
+#         ⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈
+# "
+#     echo $ah
+# }
 
 # set the proxy
-setproxy() {
-    local proxy_server="localhost"
-    local socks5_port="20170"
-    local http_port="20171"
-    local http_rule_port="20172"
-    if [ "$1" = "http" ]; then
-        export http_proxy="http://${proxy_server}:${http_port}"
-        export https_proxy="http://${proxy_server}:${http_port}"
-        echo "HTTP proxy is set."
-    elif [ "$1" = "socks5" ]; then
-        export SOCKS5_PROXY="${proxy_server}:${socks5_port}"
-        echo "SOCKS5 proxy is set."
-    elif [ "$1" = "all" ] || [ "$1" = "on" ]; then
-        export http_proxy="http://${proxy_server}:${http_rule_port}"
-        export https_proxy="http://${proxy_server}:${http_rule_port}"
-        export SOCKS5_PROXY="${proxy_server}:${socks5_port}"
-        echo "ALL_PROXY is set."
-    elif [ "$1" = "off" ]; then
-        unset http_proxy
-        unset https_proxy
-        unset SOCKS5_PROXY
-        echo "Proxy settings are unset."
-    else
-        echo "Usage: set_proxy on|all|http|socks5|off"
-    fi
-    # check the proxy
-    echo "\nnow:"
-    curl cip.cc
-}
+# setproxy() {
+#     local proxy_server="localhost"
+#     local socks5_port="20170"
+#     local http_port="20171"
+#     local http_rule_port="20172"
+#     if [ "$1" = "http" ]; then
+#         export http_proxy="http://${proxy_server}:${http_port}"
+#         export https_proxy="http://${proxy_server}:${http_port}"
+#         echo "HTTP proxy is set."
+#     elif [ "$1" = "socks5" ]; then
+#         export SOCKS5_PROXY="${proxy_server}:${socks5_port}"
+#         echo "SOCKS5 proxy is set."
+#     elif [ "$1" = "all" ] || [ "$1" = "on" ]; then
+#         export http_proxy="http://${proxy_server}:${http_rule_port}"
+#         export https_proxy="http://${proxy_server}:${http_rule_port}"
+#         export SOCKS5_PROXY="${proxy_server}:${socks5_port}"
+#         echo "ALL_PROXY is set."
+#     elif [ "$1" = "off" ]; then
+#         unset http_proxy
+#         unset https_proxy
+#         unset SOCKS5_PROXY
+#         echo "Proxy settings are unset."
+#     else
+#         echo "Usage: set_proxy on|all|http|socks5|off"
+#     fi
+#     # check the proxy
+#     echo "\nnow:"
+#     curl cip.cc
+# }
 
 passgen() {
     read -s MSG
@@ -148,13 +148,12 @@ alias vi='nvim'
 alias t='tmux'
 alias f='fastfetch'
 alias py='python3'
-alias wine='~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
-alias proton='STEAM_COMPAT_DATA_PATH=~/.local/share/Steam/steamapps/compatdata  STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam ~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/proton'
+# alias wine='~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
+# alias proton='STEAM_COMPAT_DATA_PATH=~/.local/share/Steam/steamapps/compatdata  STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam ~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/proton'
 
 # env
 export EDITOR='nvim'
 export VISUAL='nvim'
-export PATH="$PATH:$HOME/.cargo/bin"
 export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
 export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
 
@@ -200,14 +199,28 @@ __get_conda_env() {
     fi
 }
 
-## env for xdg dir
+# env for xdg dir
+# bash
+export HISTFILE="$XDG_STATE_HOME"/zsh/history
+# gnu readline
+export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
+# android toolchain
 export ANDROID_USER_HOME="$XDG_DATA_HOME"/android
 alias adb='HOME="$XDG_DATA_HOME"/android adb'
+# nv
 export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
+# gnupg
+export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+# node
 export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export MODE_REPL_HISTORY="$XDG_STATE_HOME"/node_repl_history
+# rust toolchain
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
 export RUSTUP_HOME="$XDG_DATA_HOME"/rustup
+# dotnet toolchain
 export DOTNET_CLI_HOME="$XDG_DATA_HOME"/dotnet
 export NUGET_PACKAGES="$XDG_CACHE_HOME"/NuGetPackages
-export GNUPGHOME="$XDG_DATA_HOME"/gnupg
+# java toolchain
 export GRADLE_USER_HOME="$XDG_DATA_HOME"/gradle
+# python toolchain
+export PYTHON_HISTORY="$XDG_STATE_HOME"/python
