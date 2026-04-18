@@ -48,9 +48,8 @@ hyprlock
 hyprpaper
 hyprpolkitagent
 intel-ucode
-iptables-nft
+iptables
 lazydocker-bin
-libreoffice-fresh
 libvirt
 linux
 linux-firmware
@@ -94,10 +93,8 @@ pyright
 python
 qbittorrent
 qemu-desktop
-qt5-wayland
 qt6-wayland
 quickshell
-qutebrowser
 remmina
 ripgrep
 rofi
@@ -110,7 +107,6 @@ termshark
 thunderbird
 timeshift
 tlp
-torbrowser-launcher
 tree-sitter-cli
 ttf-fira-code
 ttf-monofur-nerd
@@ -133,7 +129,6 @@ wireplumber
 wireshark-cli
 wireshark-qt
 wl-clipboard
-wlr-randr
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
 xray-bin
