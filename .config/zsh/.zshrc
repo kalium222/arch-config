@@ -196,8 +196,8 @@ if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.z
     ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
 fi
 
-source $XDG_CONFIG_HOME/zsh/.zsh-autopair
+source $XDG_CONFIG_HOME/zsh/zsh-autopair
 autopair-init
 
 # source the basic configuration
-source $XDG_CONFIG_HOME/.shrc
+source $XDG_CONFIG_HOME/shrc
