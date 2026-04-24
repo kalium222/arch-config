@@ -8,7 +8,7 @@ import "../../../js/ui_tools.js" as Js
 CapsuleText {
     id: root
     property UPowerDevice battery: UPower.displayDevice
-    visible: battery !== null
+    visible: UPower.devices.values.length !== 0
     property var batterty_icon_list: ["", "", "", "", ""]
     property color state_color: {
         if (battery.percentage <= 0.25)
