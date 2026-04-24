@@ -10,14 +10,12 @@ settings:
     global: true
   colors.webpage.preferred_color_scheme:
     global: dark
-  # content.proxy:
-  #   global: http://localhost:20172
   fonts.default_family:
     global: MonofurNerdFont
   fonts.default_size:
     global: 15pt
-  # qt.force_software_rendering:
-  #   global: qt-quick
+  logging.level.ram:
+    global: error
   statusbar.show:
     global: in-mode
   tabs.indicator.padding:
@@ -29,7 +27,7 @@ settings:
   tabs.indicator.width:
     global: 5
   tabs.last_close:
-    global: blank
+    global: startpage
   tabs.padding:
     global:
       bottom: 3
@@ -42,7 +40,9 @@ settings:
     global: switching
   tabs.show_switching_delay:
     global: 5000
-  tabs.title.format:
-    global: '{audio}{index}:{current_title}'
+  tabs.tooltips:
+    global: false
   tabs.width:
-    global: 12%
+    global: 10%
+  url.default_page:
+    global: qute://bookmarks/
