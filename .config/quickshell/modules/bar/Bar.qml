@@ -10,6 +10,7 @@ import qs.modules.bar.datetime
 // import qs.modules.bar.network
 import qs.modules.bar.systemtray
 import qs.modules.bar.privacy
+import qs.modules.bar.battery
 
 PanelWindow {
     id: root
@@ -50,6 +51,7 @@ PanelWindow {
     // Right Components
     CapsuleRow {
         anchors.right: parent.right
+        Battery {}
         SystemTray {}
     }
 }

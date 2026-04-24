@@ -18,6 +18,10 @@ Singleton {
             property color audio: "#f2cdcd"
             property color bluetooth: "#89b4fa"
             property color network: "#94e2d5"
+
+            property color battery: Qt.rgba(0.59, 0.60, 0.16)
+            property color battery_charging: "#a6e3a1"
+            property color battery_urgent: "#f53c3c"
         }
         property var workspace: QtObject {
             property color inactive_color: Qt.rgba(0.62, 0.62, 0.62)

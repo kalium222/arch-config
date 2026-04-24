@@ -1,4 +1,3 @@
-import QtQuick
 import Quickshell.Bluetooth
 
 import qs.modules.bar
