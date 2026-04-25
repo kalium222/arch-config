@@ -49,7 +49,6 @@ hyprpaper
 hyprpolkitagent
 intel-ucode
 iptables
-lazydocker-bin
 libvirt
 linux
 linux-firmware
@@ -95,6 +94,7 @@ qbittorrent
 qemu-desktop
 qt6-wayland
 quickshell
+qutebrowser
 remmina
 ripgrep
 rofi
@@ -103,7 +103,6 @@ rsync
 ruff
 rustup
 slurp
-termshark
 thunderbird
 timeshift
 tlp
@@ -126,8 +125,6 @@ visual-studio-code-bin
 wayland
 wget
 wireplumber
-wireshark-cli
-wireshark-qt
 wl-clipboard
 xdg-desktop-portal-gtk
 xdg-desktop-portal-hyprland
