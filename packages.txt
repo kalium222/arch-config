@@ -112,7 +112,6 @@ ttf-monofur-nerd
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
 ueberzugpp
-unityhub
 unzip
 upower
 usbutils

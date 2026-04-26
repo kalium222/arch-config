@@ -21,7 +21,13 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
     alias diff='diff --color=auto'
     alias ip='ip --color=auto'
+fi
 
+# enable color support of manpage
+# if there is bat, then use bat
+if [ -x /usr/bin/bat ]; then
+    export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
+else
     export MANROFFOPT=-c
     export LESS=-R
     export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
@@ -33,36 +39,9 @@ if [ -x /usr/bin/dircolors ]; then
     export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 fi
 
-# colored GCC warnings and errors
-export GCC_COLORS='error=01;31:warning=01;35:note=01;36:caret=01;32:locus=01:quote=01'
-
-# some more ls aliases
-alias ll='ls -l'
-alias la='ls -A'
-alias l='ls -CF'
-
-# Add an "alert" alias for long running commands.  Use like so:
-#   sleep 10; alert
-alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
-
-
-
 # ---------------------- OTHERS ---------------------
 
 # ---------------- functions ----------------
-
-# # prevent ranger from starting multiple times
-# # if we need to run ranger with some options,
-# # use sh -c "ranger -xxx"
-# avoid_multiple_ranger() {
-#     if [ -z "$RANGER_LEVEL" ]
-#     then
-#         sh -c ranger
-#     else
-#         exit
-#     fi
-# }
-# alias ranger='avoid_multiple_ranger'
 
 # yazi wrapper
 function yazi_wrapper() {
@@ -84,26 +63,6 @@ function zellij_wrapper() {
         -exec rm -rf {} +
 }
 alias z='zellij_wrapper'
-
-# function fuck() {
-#     ah="
-#         ⣿⣿⣷⡁⢆⠈⠕⢕⢂⢕⢂⢕⢂⢔⢂⢕⢄⠂⣂⠂⠆⢂⢕⢂⢕⢂⢕⢂⢕⢂
-#         ⣿⣿⣿⡷⠊⡢⡹⣦⡑⢂⢕⢂⢕⢂⢕⢂⠕⠔⠌⠝⠛⠶⠶⢶⣦⣄⢂⢕⢂⢕
-#         ⣿⣿⠏⣠⣾⣦⡐⢌⢿⣷⣦⣅⡑⠕⠡⠐⢿⠿⣛⠟⠛⠛⠛⠛⠡⢷⡈⢂⢕⢂
-#         ⠟⣡⣾⣿⣿⣿⣿⣦⣑⠝⢿⣿⣿⣿⣿⣿⡵⢁⣤⣶⣶⣿⢿⢿⢿⡟⢻⣤⢑⢂
-#         ⣾⣿⣿⡿⢟⣛⣻⣿⣿⣿⣦⣬⣙⣻⣿⣿⣷⣿⣿⢟⢝⢕⢕⢕⢕⢽⣿⣿⣷⣔
-#         ⣿⣿⠵⠚⠉⢀⣀⣀⣈⣿⣿⣿⣿⣿⣿⣿⣿⣿⣗⢕⢕⢕⢕⢕⢕⣽⣿⣿⣿⣿
-#         ⢷⣂⣠⣴⣾⡿⡿⡻⡻⣿⣿⣴⣿⣿⣿⣿⣿⣿⣷⣵⣵⣵⣷⣿⣿⣿⣿⣿⣿⡿
-#         ⢌⠻⣿⡿⡫⡪⡪⡪⡪⣺⣿⣿⣿⣿⣿⠿⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⣿⠃
-#         ⠣⡁⠹⡪⡪⡪⡪⣪⣾⣿⣿⣿⣿⠋⠐⢉⢍⢄⢌⠻⣿⣿⣿⣿⣿⣿⣿⣿⠏⠈
-#         ⡣⡘⢄⠙⣾⣾⣾⣿⣿⣿⣿⣿⣿⡀⢐⢕⢕⢕⢕⢕⡘⣿⣿⣿⣿⣿⣿⠏⠠⠈
-#         ⠌⢊⢂⢣⠹⣿⣿⣿⣿⣿⣿⣿⣿⣧⢐⢕⢕⢕⢕⢕⢅⣿⣿⣿⣿⡿⢋⢜⠠⠈
-#         ⠄⠁⠕⢝⡢⠈⠻⣿⣿⣿⣿⣿⣿⣿⣷⣕⣑⣑⣑⣵⣿⣿⣿⡿⢋⢔⢕⣿⠠⠈
-#         ⠨⡂⡀⢑⢕⡅⠂⠄⠉⠛⠻⠿⢿⣿⣿⣿⣿⣿⣿⣿⣿⡿⢋⢔⢕⢕⣿⣿⠠⠈
-#         ⠄⠪⣂⠁⢕⠆⠄⠂⠄⠁⡀⠂⡀⠄⢈⠉⢍⢛⢛⢛⢋⢔⢕⢕⢕⣽⣿⣿⠠⠈
-# "
-#     echo $ah
-# }
 
 # set the proxy
 # setproxy() {
@@ -144,18 +103,12 @@ passgen() {
 
 # some aliases
 alias v='nvim'
-alias vi='nvim'
-alias t='tmux'
 alias f='fastfetch'
 alias py='python3'
-# alias wine='~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/files/bin/wine'
-# alias proton='STEAM_COMPAT_DATA_PATH=~/.local/share/Steam/steamapps/compatdata  STEAM_COMPAT_CLIENT_INSTALL_PATH=~/.local/share/Steam ~/.local/share/Steam/steamapps/common/Proton\ -\ Experimental/proton'
 
 # env
 export EDITOR='nvim'
 export VISUAL='nvim'
-export DOCKER_HOST="unix://$XDG_RUNTIME_DIR/podman/podman.sock"
-export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
 
 
 # >>> mamba initialize >>>
@@ -212,7 +165,7 @@ export CUDA_CACHE_PATH="$XDG_CACHE_HOME"/nv
 # gnupg
 export GNUPGHOME="$XDG_DATA_HOME"/gnupg
 # node
-export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export NPM_CONFIG_USERCONFIG="$XDG_CONFIG_HOME"/npm/npmrc
 export MODE_REPL_HISTORY="$XDG_STATE_HOME"/node_repl_history
 # rust toolchain
 export CARGO_HOME="$XDG_DATA_HOME"/cargo
