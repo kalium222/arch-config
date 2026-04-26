@@ -122,7 +122,6 @@ v4l2loopback-dkms
 virt-manager
 visual-studio-code-bin
 wayland
-wget
 wireplumber
 wl-clipboard
 xdg-desktop-portal-gtk
