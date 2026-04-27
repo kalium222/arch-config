@@ -60,7 +60,6 @@ lua-language-server
 ly
 man-db
 man-pages
-mariadb
 micromamba-bin
 mpc
 mpd
@@ -101,7 +100,6 @@ rofi
 roslyn-ls
 rsync
 ruff
-rustup
 slurp
 thunderbird
 timeshift
