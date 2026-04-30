@@ -37,7 +37,7 @@ settings:
   tabs.position:
     global: right
   tabs.show:
-    global: switching
+    global: always
   tabs.show_switching_delay:
     global: 5000
   tabs.tooltips:

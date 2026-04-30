@@ -10,7 +10,7 @@ disable_session_metadata true
 keybinds clear-defaults=true {
     shared {
         // switch the mode
-        bind "Ctrl p" { SwitchToMode "pane"; }
+        bind "Ctrl \\" { SwitchToMode "pane"; }
         bind "Ctrl t" { SwitchToMode "tab"; }
         bind "Ctrl m" { SwitchToMode "move"; }
         bind "Ctrl s" { SwitchToMode "resize"; }
