@@ -10,26 +10,25 @@ disable_session_metadata true
 keybinds clear-defaults=true {
     shared {
         // switch the mode
-        bind "Ctrl \\" { SwitchToMode "pane"; }
-        bind "Ctrl t" { SwitchToMode "tab"; }
-        bind "Ctrl m" { SwitchToMode "move"; }
-        bind "Ctrl s" { SwitchToMode "resize"; }
+        bind "Ctrl Tab" { SwitchToMode "pane"; }
+        bind "Ctrl Shift Tab" { SwitchToMode "tab"; }
+        bind "Ctrl \\" { SwitchToMode "move"; }
+        bind "Ctrl Shift \\" { SwitchToMode "resize"; }
         // bind "Ctrl w" { SwitchToMode "session"; }
         bind "Ctrl /" { SwitchToMode "scroll"; }
 
         // navigation
-        bind "Alt h" { MoveFocus "left"; }
-        bind "Alt j" { MoveFocus "down"; }
-        bind "Alt k" { MoveFocus "up"; }
-        bind "Alt l" { MoveFocus "right"; }
-        bind "Alt Enter" { NewPane; }
-        bind "Alt -" { GoToPreviousTab; }
-        bind "Alt =" { GoToNextTab; }
+        bind "Ctrl Alt h" { MoveFocus "left"; }
+        bind "Ctrl Alt j" { MoveFocus "down"; }
+        bind "Ctrl Alt k" { MoveFocus "up"; }
+        bind "Ctrl Alt l" { MoveFocus "right"; }
+        bind "Ctrl Alt -" { GoToPreviousTab; }
+        bind "Ctrl Alt =" { GoToNextTab; }
 
         // control
-        bind "Alt \\" { ToggleFloatingPanes; }
+        bind "Ctrl Alt \\" { ToggleFloatingPanes; }
         bind "Alt Space" { NextSwapLayout; }
-        bind "Alt Backspace" { Quit; }
+        bind "Ctrl Alt Backspace" { Quit; }
     }
     shared_except "normal" "entersearch" "renametab" "renamepane" {
         bind "esc" { SwitchToMode "normal"; }

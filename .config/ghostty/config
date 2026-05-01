@@ -53,3 +53,22 @@ font-style = Light
 font-family-italic = Monofur Nerd Font
 font-family-bold-italic = Cascadia Mono
 font-feature = +ss01, +ss02, +ss03, +ss19, +ss20
+
+# keybind
+# unbind split related
+keybind = ctrl+shift+e=unbind
+keybind = ctrl+shift+o=unbind
+keybind = ctrl+tab=unbind
+keybind = ctrl+shift+tab=unbind
+# unbind resize split
+keybind = super+ctrl+shift+arrow_down=unbind
+keybind = super+ctrl+shift+arrow_up=unbind
+keybind = super+ctrl+shift+arrow_left=unbind
+keybind = super+ctrl+shift+arrow_right=unbind
+# unbind write_screen_file
+keybind = super+ctrl+shift+j=unbind
+keybind = ctrl+alt+shift+j=unbind
+# others
+keybind = ctrl+enter=unbind
+keybind = ctrl+shift+comma=unbind
+keybind = super+ctrl+shift+r=reload_config
