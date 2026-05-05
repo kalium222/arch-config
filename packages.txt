@@ -49,6 +49,7 @@ hyprpaper
 hyprpolkitagent
 intel-ucode
 iptables
+jq
 libvirt
 linux
 linux-firmware
@@ -109,7 +110,6 @@ ttf-fira-code
 ttf-monofur-nerd
 ttf-nerd-fonts-symbols
 ttf-nerd-fonts-symbols-mono
-ueberzugpp
 unzip
 upower
 usbutils
