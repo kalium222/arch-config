@@ -25,6 +25,7 @@ Capsule {
                 MouseArea {
                     id: mouser
                     anchors.fill: parent
+                    acceptedButtons: Qt.LeftButton | Qt.RightButton | Qt.MiddleButton
                     cursorShape: Qt.PointingHandCursor
                     onClicked: e => {
                         const i = parent.modelData;
@@ -32,9 +33,11 @@ Capsule {
                         case Qt.LeftButton:
                             i.activate();
                             break;
+                        case Qt.MiddleButton:
+                            i.secondaryActivate();
+                            break;
                         case Qt.RightButton:
-                            // FIX: cannot goto this branch
-                            console.log("right");
+                            // TODO: menu
                             break;
                         }
                     }
