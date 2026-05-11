@@ -7,6 +7,7 @@ import qs.modules.bar
 
 Capsule {
     // TODO: menu
+    id: sysTray
     Layout.preferredWidth: row.implicitWidth + radius
     RowLayout {
         id: row
@@ -20,6 +21,24 @@ Capsule {
                 source: modelData.icon
                 Layout.preferredWidth: 20
                 Layout.preferredHeight: 20
+
+                MouseArea {
+                    id: mouser
+                    anchors.fill: parent
+                    cursorShape: Qt.PointingHandCursor
+                    onClicked: e => {
+                        const i = parent.modelData;
+                        switch (e.button) {
+                        case Qt.LeftButton:
+                            i.activate();
+                            break;
+                        case Qt.RightButton:
+                            // FIX: cannot goto this branch
+                            console.log("right");
+                            break;
+                        }
+                    }
+                }
             }
         }
     }
