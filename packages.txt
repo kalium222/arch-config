@@ -113,7 +113,6 @@ ttf-nerd-fonts-symbols-mono
 unzip
 upower
 usbutils
-uwsm
 v2raya-bin
 v2raya-bin-debug
 v4l2loopback-dkms
@@ -131,6 +130,7 @@ zathura-pdf-poppler
 zellij
 zip
 zsh
+zsh-autopair-git
 zsh-autosuggestions
 zsh-completions
 zsh-syntax-highlighting
