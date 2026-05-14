@@ -69,7 +69,7 @@ local mappings = {
   { "XF86AudioPrev",                    hl.dsp.exec_cmd("mpc prev"),                                   flag = { locked = true } },
   { "XF86AudioNext",                    hl.dsp.exec_cmd("mpc next"),                                   flag = { locked = true } },
   { "XF86MonBrightnessUp",              hl.dsp.exec_cmd("brightnessctl set '5%+'"),                    flag = { locked = true } },
-  { "XF86MonBrightnessDown",            hl.dsp.exec_cmd("brightnessctl set '5%+'"),                    flag = { locked = true } },
+  { "XF86MonBrightnessDown",            hl.dsp.exec_cmd("brightnessctl set '5%-'"),                    flag = { locked = true } },
 }
 
 -- num key related

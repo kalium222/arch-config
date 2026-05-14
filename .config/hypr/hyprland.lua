@@ -16,5 +16,7 @@ end)
 require "general"
 require "binds"
 require "decoration"
-require "monitors"
 require "windowrules"
+
+require "devices.monitors"
+require "devices.touchpad"
