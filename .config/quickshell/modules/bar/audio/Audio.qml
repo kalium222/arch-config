@@ -8,8 +8,6 @@ import "../../../js/ui_tools.js" as Js
 CapsuleText {
     id: root
     property PwNode sink: Pipewire.defaultAudioSink
-    property var volume_icon_list: ["", "", ""]
-    property var muted_icon: ""
     hover_background_color: Theme.bar.capsules.audio
     text_color: mouser.containsMouse ? Theme.bar.capsules.hover_content_color
     : sink.audio.muted ? Theme.bar.capsules.inactive_color
@@ -17,10 +15,11 @@ CapsuleText {
 
     text: {
         const audio = sink.audio;
+        const icon_list = ["", "", ""]
         if (audio.muted)
-            return muted_icon;
+            return "";
         const volume = sink.audio.volume;
-        const icon = Js.getByProgress(volume_icon_list, volume);
+        const icon = Js.getByProgress(icon_list, volume);
         const v = Math.round(volume * 100);
         return `${icon}  ${v}%`;
     }

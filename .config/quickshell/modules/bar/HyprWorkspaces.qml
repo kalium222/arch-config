@@ -57,7 +57,7 @@ Capsule {
                 }
                 // TODO: exit transition
                 onClicked: {
-                    Hyprland.dispatch(`workspace ${modelData.id}`);
+                    Hyprland.dispatch(`hl.dsp.focus{ workspace = ${modelData.id}}`);
                 }
             }
         }
