@@ -11,9 +11,9 @@ keybinds clear-defaults=true {
     shared {
         // switch the mode
         bind "Ctrl Tab" { SwitchToMode "pane"; }
-        bind "Ctrl Shift Tab" { SwitchToMode "tab"; }
-        bind "Ctrl m" { SwitchToMode "move"; }
-        bind "Ctrl s" { SwitchToMode "resize"; }
+        bind "Ctrl Shift t" { SwitchToMode "tab"; }
+        bind "Ctrl Shift m" { SwitchToMode "move"; }
+        bind "Ctrl Shift s" { SwitchToMode "resize"; }
         // bind "Ctrl w" { SwitchToMode "session"; }
         bind "Ctrl /" { SwitchToMode "scroll"; }
 
@@ -64,6 +64,7 @@ keybinds clear-defaults=true {
         bind "]" { MoveTab "Right"; SwitchToMode "normal"; }
         bind "b" { BreakPane; SwitchToMode "normal"; }
         bind "n" { NewTab; SwitchToMode "normal"; }
+        bind "Enter" { NewTab; SwitchToMode "normal"; }
         bind "r" { SwitchToMode "renametab"; TabNameInput 0; }
         bind "s" { ToggleActiveSyncTab; SwitchToMode "normal"; }
         bind "x" { CloseTab;  SwitchToMode "normal"; }

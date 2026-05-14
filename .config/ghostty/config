@@ -16,6 +16,8 @@ font-feature = +ss01, +ss02, +ss03, +ss19, +ss20
 # unbind split related
 keybind = ctrl+shift+e=unbind
 keybind = ctrl+shift+o=unbind
+# tab related
+keybind = ctrl+shift+t=unbind
 keybind = ctrl+tab=unbind
 keybind = ctrl+shift+tab=unbind
 # unbind resize split
