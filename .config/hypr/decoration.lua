@@ -34,7 +34,7 @@ hl.config {
 local animations = {
   { "windowsOut",       style = "popin 80%" },
   { "workspaces",       style = "slidevert" },
-  { "specialWorkspace", curve = "quick",    style = "fade" },
+  { "specialWorkspace", speed = 5,          curve = "quick", style = "fade" },
 }
 
 hl.curve("quick", { type = "bezier", points = { { 0.1, 0 }, { 0.4, 1 } } })
