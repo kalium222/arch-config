@@ -26,16 +26,18 @@ hl.config {
 ---@class animation
 ---@field [1] string leaf
 ---@field [2]? boolean enabled
----@field [3]? number speed
----@field [4]? string curve
+---@field speed? number speed
+---@field curve? string curve
 ---@field style? string style
 
 ---@type animation[]
 local animations = {
   { "windowsOut",       style = "popin 80%" },
   { "workspaces",       style = "slidevert" },
-  { "specialWorkspace", style = "fade" },
+  { "specialWorkspace", curve = "quick",    style = "fade" },
 }
+
+hl.curve("quick", { type = "bezier", points = { { 0.1, 0 }, { 0.4, 1 } } })
 
 for _, a in ipairs(animations) do
   hl.animation {
