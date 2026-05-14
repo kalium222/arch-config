@@ -67,7 +67,6 @@ mpd
 mpv
 nemo
 neovim
-network-manager-applet
 networkmanager
 nix
 nmap
