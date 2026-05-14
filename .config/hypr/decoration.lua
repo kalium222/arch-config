@@ -1,9 +1,11 @@
 -- decorations
 
+-- cursor
 hl.env("HYPRCURSOR_THEME", "rose-pine-hyprcursor")
 hl.env("XCURSOR_SIZE", "24")
 hl.env("HYPRCURSOR_SIZE", "24")
 
+-- decoration
 local decoration = {
   rounding = 10,
   active_opacity = 0.9,
@@ -18,6 +20,8 @@ local decoration = {
 hl.config {
   decoration = decoration,
 }
+
+-- animation
 
 ---@class animation
 ---@field [1] string leaf

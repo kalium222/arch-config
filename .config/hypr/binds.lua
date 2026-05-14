@@ -1,4 +1,5 @@
 -- keybind
+
 -- leader key
 local main = "SUPER"
 local sub = "ALT"
