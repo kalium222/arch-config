@@ -42,7 +42,7 @@ PanelWindow {
         Privacy {}
         Text {
             text: ""
-            color:"#89DCEB"
+            color: "#89DCEB"
             font.pointSize: 17
         }
         HyprWorkspaces {}

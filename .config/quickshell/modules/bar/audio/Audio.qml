@@ -9,13 +9,11 @@ CapsuleText {
     id: root
     property PwNode sink: Pipewire.defaultAudioSink
     hover_background_color: Theme.bar.capsules.audio
-    text_color: mouser.containsMouse ? Theme.bar.capsules.hover_content_color
-    : sink.audio.muted ? Theme.bar.capsules.inactive_color
-    : Theme.bar.capsules.audio
+    text_color: mouser.containsMouse ? Theme.bar.capsules.hover_background_color : sink.audio.muted ? Theme.bar.capsules.inactive_color : Theme.bar.capsules.audio
 
     text: {
         const audio = sink.audio;
-        const icon_list = ["", "", ""]
+        const icon_list = ["", "", ""];
         if (audio.muted)
             return "";
         const volume = sink.audio.volume;

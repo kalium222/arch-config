@@ -42,4 +42,5 @@ Rectangle {
             easing.type: Easing.OutBack
         }
     }
+    // TODO: animation on clicked
 }

@@ -14,20 +14,20 @@ CapsuleText {
         if (Networking.connectivity != 4)
             return Networking.connectivity;
         const t = adapter.type;
-        const icon_list = ["󰤟", "󰤢", "󰤥", "󰤨"];
         let icon;
-        let network = adapter.networks.values[0]
+        let network = adapter.networks.values[0];
         switch (t) {
         case 1: // wifi
-            icon = Js.getByProgress(icon_list, network.signalStrength);
+            icon = Js.getByProgress(["󰤟", "󰤢", "󰤥", "󰤨"], network.signalStrength);
             break;
         case 2: // ethernet
             icon = "";
             break;
-        default: // unknown
+        default:
+            // unknown
             icon = "󰀂";
             break;
         }
-        return `${icon}  ${network.name}`
+        return `${icon}  ${network.name}`;
     }
 }

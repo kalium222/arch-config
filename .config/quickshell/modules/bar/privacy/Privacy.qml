@@ -70,7 +70,6 @@ RowLayout {
                 }
             }
         ]
-
     }
 
     Identifier {
@@ -83,7 +82,7 @@ RowLayout {
     Identifier {
         id: mic_identifier
         nodes: privacy.nodes.filter(n => n.properties["media.class"] === "Stream/Input/Audio")
-        
+
         text: ""
         text_color: "pink"
     }
@@ -93,4 +92,5 @@ RowLayout {
 
         text: "󱒃"
     }
+    // TODO: camera identifier
 }
