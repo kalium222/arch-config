@@ -19,10 +19,6 @@ if [ -x /usr/bin/dircolors ]; then
 fi
 
 # enable color support of manpage
-# if there is bat, then use bat
-if [ -x /usr/bin/bat ]; then
-    export MANPAGER="sh -c 'awk '\''{ gsub(/\x1B\[[0-9;]*m/, \"\", \$0); gsub(/.\x08/, \"\", \$0); print }'\'' | bat -p -lman'"
-fi
 export MANROFFOPT=-c
 export LESS=-R
 export LESS_TERMCAP_mb=$'\E[1;31m'     # begin blink
@@ -101,8 +97,9 @@ alias f='fastfetch'
 alias py='python3'
 
 # env
-export EDITOR='nvim'
-export VISUAL='nvim'
+[ -x /bin/nvim ] && export EDITOR='nvim'
+[ -x /bin/nvim ] && export VISUAL='nvim'
+[ -x /bin/bat ] && export PAGER="bat -p"
 
 
 # >>> mamba initialize >>>
