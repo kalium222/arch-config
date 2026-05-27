@@ -42,7 +42,6 @@ function yazi_wrapper() {
 	fi
 	rm -f -- "$tmp"
 }
-alias y='yazi_wrapper'
 
 function zellij_wrapper() {
     zellij "$@"
@@ -52,7 +51,6 @@ function zellij_wrapper() {
         -name "????????-????-????-????-????????????" \
         -exec rm -rf {} +
 }
-alias z='zellij_wrapper'
 
 # set the proxy
 # setproxy() {
@@ -89,16 +87,21 @@ passgen() {
     read -s MSG
     echo -n "$MSG" | openssl dgst -sha256 -binary | base64 | head -c 12 | awk '{print $0"K@!"}'
 }
+
+cheat() {
+    curl -s cheat.sh/$1 | bat -p
+}
+
 # ---------------- constants ----------------
 
 # some aliases
 alias v='nvim'
 alias f='fastfetch'
-alias py='python3'
+alias y='yazi_wrapper'
+alias z='zellij_wrapper'
 
 # env
 [ -x /bin/nvim ] && export EDITOR='nvim'
-[ -x /bin/nvim ] && export VISUAL='nvim'
 [ -x /bin/bat ] && export PAGER="bat -p"
 
 
