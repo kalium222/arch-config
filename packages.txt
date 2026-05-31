@@ -116,7 +116,6 @@ v2raya-bin
 v2raya-bin-debug
 v4l2loopback-dkms
 virt-manager
-visual-studio-code-bin
 wayland
 wireplumber
 wl-clipboard
