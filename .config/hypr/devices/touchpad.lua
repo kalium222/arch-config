@@ -18,10 +18,10 @@ hl.config {
 
 ---@type gesture[]
 local gestures = {
-  { 3, "pinch", "fullscreen" },
+  { 3, "pinch",    "fullscreen" },
   { 3, "vertical", "workspace" },
-  { 4, "up", "float" },
-  { 4, "down", "close" },
+  { 4, "up",       "float" },
+  { 4, "down",     "close" },
 }
 
 for _, g in ipairs(gestures) do

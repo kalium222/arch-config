@@ -8,8 +8,8 @@
 
 ---@type monitor[]
 local monitors = {
-  { "DP-2", "preferred", position = "0x0" },
-  { "HDMI-A-2", "preferred", position = "auto-right"}
+  { "DP-2",     "preferred", position = "0x0" },
+  { "HDMI-A-2", "preferred", position = "auto-right" }
 }
 
 for _, monitor in ipairs(monitors) do
@@ -20,3 +20,14 @@ for _, monitor in ipairs(monitors) do
     scale = monitor.scale or "auto",
   }
 end
+
+hl.workspace_rule {
+  workspace = "10",
+  monitor = "HDMI-A-2",
+  default = true,
+}
+hl.workspace_rule {
+  workspace = "1",
+  monitor = "DP-2",
+  default = true,
+}
