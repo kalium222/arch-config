@@ -1,0 +1,7 @@
+com.github.xournalpp.xournalpp
+com.tencent.WeChat
+com.tencent.wemeet
+com.valvesoftware.Steam
+md.obsidian.Obsidian
+org.libreoffice.LibreOffice
+org.torproject.torbrowser-launcher
