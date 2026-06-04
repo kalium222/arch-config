@@ -20,3 +20,4 @@ require "windowrules"
 
 require "devices.monitors"
 require "devices.touchpad"
+require "devices.tablet"
