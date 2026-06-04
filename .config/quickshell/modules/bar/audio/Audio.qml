@@ -27,6 +27,18 @@ CapsuleText {
         audio.muted = !audio.muted;
     }
 
+
+    WheelHandler {
+        acceptedDevices: PointerDevice.Mouse | PointerDevice.TouchPad
+        onWheel: event => {
+            const step = 0.05
+            const audio = root.sink.audio;
+            const delta = event.angleDelta.y > 0 ? step : -step;
+            const next = Math.max(0, Math.min(1, audio.volume + delta));
+            audio.volume = next;
+        }
+    }
+
     PwObjectTracker {
         objects: [root.sink]
     }
