@@ -1,10 +1,18 @@
+# --system
 com.github.xournalpp.xournalpp
-com.tencent.WeChat
-com.tencent.wemeet
 com.valvesoftware.Steam
-
 # see https://github.com/flathub/md.obsidian.Obsidian#wayland-support
 # to use wayland
 md.obsidian.Obsidian
 org.libreoffice.LibreOffice
 org.torproject.torbrowser-launcher
+
+# --user
+# override the envs to use fcitx in flatpak
+# XMODIFIERS=@im=fcitx
+# GTK_IM_MODULE=fcitx
+# QT_IM_MODULE=fcitx
+# SDL_IM_MODULE=fcitx
+# GLFW_IM_MODULE=fcitx
+com.tencent.WeChat
+com.tencent.wemeet
