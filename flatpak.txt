@@ -2,6 +2,9 @@ com.github.xournalpp.xournalpp
 com.tencent.WeChat
 com.tencent.wemeet
 com.valvesoftware.Steam
+
+# see https://github.com/flathub/md.obsidian.Obsidian#wayland-support
+# to use wayland
 md.obsidian.Obsidian
 org.libreoffice.LibreOffice
 org.torproject.torbrowser-launcher
