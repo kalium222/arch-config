@@ -6,3 +6,4 @@ c: ConfigContainer = c  # noqa: F821 pylint: disable=E0602,C0103
 
 config.load_autoconfig()
 config.source('kanagawa.py')
+config.bind('<Escape>', 'spawn fcitx5-remote -c;; mode-leave', mode = 'insert')
