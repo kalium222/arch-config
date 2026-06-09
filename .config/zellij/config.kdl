@@ -90,6 +90,12 @@ keybinds clear-defaults=true {
     }
     scroll {
         bind "e" { EditScrollback; SwitchToMode "normal"; }
+        bind "j" { ScrollDown; }
+        bind "k" { ScrollUp; }
+        bind "Ctrl f" "PageDown" { PageScrollDown; }
+        bind "Ctrl b" "PageUp" { PageScrollUp; }
+        bind "d" "Ctrl d" { HalfPageScrollDown; }
+        bind "u" "Ctrl u" { HalfPageScrollUp; }
         // NOTE:
         // need this!
         bind "Alt h" { MoveFocusOrTab "left"; SwitchToMode "normal"; }
