@@ -35,8 +35,8 @@ keybinds clear-defaults=true {
     }
 
     pane {
-        bind "i" { NewPane "up"; SwitchToMode "normal"; }
-        bind "s" { NewPane "left"; SwitchToMode "normal"; }
+        bind "s" { NewPane "up"; SwitchToMode "normal"; }
+        bind "v" { NewPane "left"; SwitchToMode "normal"; }
         bind "t" { NewPane "stacked"; SwitchToMode "normal"; }
         bind "f" { ToggleFocusFullscreen; SwitchToMode "normal"; }
         bind "Tab" { SwitchFocus; }
