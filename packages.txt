@@ -94,6 +94,7 @@ qemu-desktop
 qt6-wayland
 quickshell
 qutebrowser
+rclone
 remmina
 ripgrep
 rofi
