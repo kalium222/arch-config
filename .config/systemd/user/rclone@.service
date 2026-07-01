@@ -20,6 +20,7 @@ ExecStart=/usr/bin/rclone mount \
     --config %h/.config/rclone/rclone.conf \
     --vfs-cache-max-size 1G \
     --vfs-cache-mode writes \
+    --allow-non-empty \
     %i: %h/Documents/Remote/%i
 ExecStop=/usr/bin/fusermount -u %h/Documents/Remote/%i
 Restart=on-failure
