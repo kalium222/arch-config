@@ -3,6 +3,7 @@
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
 source $HOME/.config/environment
+source ${XDG_CONFIG_HOME:-$HOME/.config}/profile
 
 setopt autocd              # change directory just by typing its name
 setopt correct            # auto correct mistakes
@@ -197,6 +198,3 @@ if [ -f /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.z
     ZSH_HIGHLIGHT_STYLES[bracket-level-5]=fg=cyan,bold
     ZSH_HIGHLIGHT_STYLES[cursor-matchingbracket]=standout
 fi
-
-# source the basic configuration
-source ${XDG_CONFIG_HOME:-$HOME/.config}/shrc

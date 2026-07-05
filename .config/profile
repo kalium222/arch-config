@@ -1,13 +1,9 @@
-#!/bin/bash
+#!/bin/sh
 
-# Some basic configurations such as
-# alias, colors, functions and others
-# should be sourced in whichever .xxshrc file
+# basic shell config
 
 
-# ---------------------- ALIAS and COLOR ---------------------
-
-# enable color support of ls, less and man, and also add handy aliases
+# enable color support
 if [ -x /usr/bin/dircolors ]; then
     test -r ~/.dircolors && eval "$(dircolors -b ~/.dircolors)" || eval "$(dircolors -b)"
     export LS_COLORS="$LS_COLORS:ow=30;44:" # fix ls color for folders with 777 permissions
@@ -29,28 +25,37 @@ export LESS_TERMCAP_se=$'\E[0m'        # reset reverse video
 export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
+# history setting
+HISTFILE="${XDG_STATE_HOME:-${HOME}/.local/state/history}"
+HISTSIZE=1000
+SAVEHIST=2000
+
 # ---------------------- OTHERS ---------------------
 
 # ---------------- functions ----------------
 
 # yazi wrapper
-function yazi_wrapper() {
-	local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
-	yazi "$@" --cwd-file="$tmp"
-	if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
-		cd -- "$cwd"
-	fi
-	rm -f -- "$tmp"
-}
+if command -v yazi 2>&1 > /dev/null; then
+    function yazi_wrapper() {
+        local tmp="$(mktemp -t "yazi-cwd.XXXXXX")"
+        yazi "$@" --cwd-file="$tmp"
+        if cwd="$(cat -- "$tmp")" && [ -n "$cwd" ] && [ "$cwd" != "$PWD" ]; then
+            cd -- "$cwd"
+        fi
+        rm -f -- "$tmp"
+    }
+fi
 
-function zellij_wrapper() {
-    zellij "$@"
-    # remove all the temp cache
-    find "${XDG_CACHE_HOME:-$HOME/.cache}/zellij" \
-        -maxdepth 1 -type d \
-        -name "????????-????-????-????-????????????" \
-        -exec rm -rf {} +
-}
+if command -v zellij 2>&1 > /dev/null; then
+    function zellij_wrapper() {
+        zellij "$@"
+        # remove all the temp cache
+        find "${XDG_CACHE_HOME:-$HOME/.cache}/zellij" \
+            -maxdepth 1 -type d \
+            -name "????????-????-????-????-????????????" \
+            -exec rm -rf {} +
+    }
+fi
 
 # set the proxy
 # setproxy() {
@@ -89,7 +94,13 @@ passgen() {
 }
 
 cheat() {
-    curl -s cheat.sh/$1 | bat -p
+    curl -s "cheat.sh/$1" | {
+        if command -v bat 2>&1 > /dev/null; then
+            bat -p
+        else
+            less
+        fi
+    }
 }
 
 claudman() {
@@ -118,23 +129,26 @@ alias y='yazi_wrapper'
 alias z='zellij_wrapper'
 
 # env
-[ -x /bin/nvim ] && export EDITOR='nvim'
-[ -x /bin/bat ] && export PAGER="bat -p"
+command -v nvim > /dev/null 2>&1 && export EDITOR='nvim'
+command -v bat > /dev/null 2>&1 && export PAGER="bat -p"
 
 
-# >>> mamba initialize >>>
-# !! Contents within this block are managed by 'micromamba shell init' !!
-export MAMBA_EXE='/usr/bin/micromamba';
-export MAMBA_ROOT_PREFIX='/home/Kalium/.local/share/mamba';
-__mamba_setup="$("$MAMBA_EXE" shell hook --shell zsh --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
-if [ $? -eq 0 ]; then
-    eval "$__mamba_setup"
-else
-    alias micromamba="$MAMBA_EXE"  # Fallback on help from micromamba activate
+if [ -x /usr/bin/micromamba ]; then
+    # >>> mamba initialize >>>
+    # !! Contents within this block are managed by 'micromamba shell init' !!
+    # tweaked to this
+    export MAMBA_EXE='/usr/bin/micromamba';
+    export MAMBA_ROOT_PREFIX="$HOME/.local/share/mamba";
+    __mamba_setup="$("$MAMBA_EXE" shell hook --shell $(basename "$SHELL") --root-prefix "$MAMBA_ROOT_PREFIX" 2> /dev/null)"
+    if [ $? -eq 0 ]; then
+        eval "$__mamba_setup"
+    else
+        alias micromamba="$MAMBA_EXE"  # Fallback on help from micromamba activate
+    fi
+    alias conda='micromamba'
+    unset __mamba_setup
+    # <<< mamba initialize <<<
 fi
-alias conda='micromamba'
-unset __mamba_setup
-# <<< mamba initialize <<<
 
 
 # ---------------- misc ----------------
@@ -162,4 +176,3 @@ __get_conda_env() {
         echo "─{${CONDA_SYMBOL}${CONDA_ENV}}"
     fi
 }
-
