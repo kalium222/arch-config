@@ -63,10 +63,10 @@ zstyle ':completion:*' verbose true
 zstyle ':completion:*:kill:*' command 'ps -u $USER -o pid,%cpu,tty,cputime,cmd'
 
 # History configurations
-[ -d "$XDG_STATE_HOME" ] || mkdir -p "$XDG_STATE_HOME"
-[ -n "$HISTFILE" ] || HISTFILE="$XDG_STATE_HOME"/history
-HISTSIZE=1000
-SAVEHIST=2000
+# [ -d "$XDG_STATE_HOME" ] || mkdir -p "$XDG_STATE_HOME"
+# [ -n "$HISTFILE" ] || HISTFILE="$XDG_STATE_HOME"/history
+# HISTSIZE=1000
+# SAVEHIST=2000
 setopt hist_expire_dups_first # delete duplicates first when HISTFILE size exceeds HISTSIZE
 setopt hist_ignore_dups       # ignore duplicated commands history list
 setopt hist_ignore_space      # ignore commands that start with space

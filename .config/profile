@@ -26,9 +26,8 @@ export LESS_TERMCAP_us=$'\E[1;32m'     # begin underline
 export LESS_TERMCAP_ue=$'\E[0m'        # reset underline
 
 # history setting
-HISTFILE="${XDG_STATE_HOME:-${HOME}/.local/state/history}"
+HISTFILE="${XDG_STATE_HOME:-${HOME}/.local/state}/history"
 HISTSIZE=1000
-SAVEHIST=2000
 
 # ---------------------- OTHERS ---------------------
 

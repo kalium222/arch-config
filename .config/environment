@@ -8,7 +8,8 @@ export XDG_RUNTIME_DIR="${XDG_RUNTIME_DIR:-/run/user/$(id -u)}"
 
 
 # history
-export HISTFILE="$XDG_STATE_HOME"/history
+HISTFILE="$XDG_STATE_HOME/history"
+HISTSIZE=1000
 # gnu readline
 export INPUTRC="$XDG_CONFIG_HOME"/readline/inputrc
 # android toolchain
