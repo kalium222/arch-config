@@ -1,0 +1,1 @@
+/home/Kalium/.config/profile

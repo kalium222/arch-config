@@ -2,9 +2,6 @@
 # ~/.zshrc file for zsh interactive shells.
 # see /usr/share/doc/zsh/examples/zshrc for examples
 
-source $HOME/.config/environment
-source ${XDG_CONFIG_HOME:-$HOME/.config}/profile
-
 setopt autocd              # change directory just by typing its name
 setopt correct            # auto correct mistakes
 setopt interactivecomments # allow comments in interactive mode
