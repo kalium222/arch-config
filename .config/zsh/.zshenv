@@ -1,1 +1,1 @@
-/home/Kalium/.config/environment
+../environment
