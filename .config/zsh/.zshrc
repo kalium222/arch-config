@@ -83,7 +83,10 @@ esac
 
 # ------------------------------------------------------------------------------
 
-__get_prompt_extra_info() {}
+# __get_prompt_extra_info() {}
+if ! which __get_prompt_extra_info > /dev/null; then
+    __get_prompt_extra_info() {}
+fi
 
 if [ -x /usr/bin/tput ] && tput setaf 1 >&/dev/null; then
     color_prompt=yes

@@ -64,6 +64,10 @@ local rules = {
     opacity = "1 override",
   },
   {
+    { class = "^org.gimp.GIMP$" },
+    opacity = "1 override",
+  },
+  {
     { class = "^steam_app_3548580$" },
     opacity = "1 override",
   },
