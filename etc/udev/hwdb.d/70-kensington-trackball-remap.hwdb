@@ -2,6 +2,6 @@
 # put into /etc/udev/hwdb.d/
 # delete the fucking stupid comments
 # and run `systemd-hwdb update`
-evdev:input:v047Dp8019e0001*
+evdev:input:v047Dp8019*
  KEYBOARD_KEY_90002=275
  KEYBOARD_KEY_90004=273
